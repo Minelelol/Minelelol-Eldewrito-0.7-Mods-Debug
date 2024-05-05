@@ -1,0 +1,7 @@
+color 0A
+cd mods\tagMods\ThirdPerson_Ammo_Counter
+ECHO FMM_OUTPUT Installing Third Person Ammo Counter...
+
+Install.bat
+
+ECHO FMM_OUTPUT Third Person Ammo Counter Has been installed Succesfully.

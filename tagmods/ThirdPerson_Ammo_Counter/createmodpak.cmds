@@ -1,0 +1,9 @@
+createmodpackage
+Third Person Ammo Counter
+Adds working ammo counter in third person for most weapons (most)
+Minelelol
+1.0
+Multiplayer
+
+Runcommands "apply.cmds"
+savemodpackage "3PAmmo_Counter.pak"

@@ -1,0 +1,96 @@
+ECHO ########################
+ECHO #    ASSAULT RIFLE     #
+ECHO ########################
+
+#BASE
+edittag objects\weapons\rifle\assault_rifle\assault_rifle.render_model
+setfield Materials[4].RenderMethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6\material_12.rmsh
+setfield Materials[5].RenderMethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6\material_13.rmsh
+savetagchanges
+exitto tags
+
+#ACC
+edittag objects\weapons\rifle\assault_rifle_accuracy\assault_rifle_accuracy.render_model
+setfield Materials[4].RenderMethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v5\material_13.rmsh
+setfield Materials[5].RenderMethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v5\material_12.rmsh
+savetagchanges
+exitto tags
+
+#DMG
+edittag objects\weapons\rifle\assault_rifle_damage\assault_rifle_damage.render_model
+setfield Materials[13].RenderMethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v2\material_11.rmsh
+setfield Materials[14].RenderMethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v2\material_12.rmsh
+savetagchanges
+exitto tags
+
+#POW
+edittag objects\weapons\rifle\assault_rifle_power\assault_rifle_power.render_model
+setfield Materials[5].RenderMethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6\material_13.rmsh
+setfield Materials[6].RenderMethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6\material_12.rmsh
+savetagchanges
+exitto tags
+
+#ROF
+edittag objects\weapons\rifle\assault_rifle_rof\assault_rifle_rof.render_model
+setfield Materials[12].RenderMethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v3\material_11.rmsh
+setfield Materials[13].RenderMethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v3\material_11.rmsh
+savetagchanges
+exitto tags
+
+ECHO ########################
+ECHO #     BATTLE RIFLE     #
+ECHO ########################
+
+#BASE
+edittag objects\weapons\rifle\battle_rifle\battle_rifle.render_model
+setfield Materials[6].RenderMethod objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle\material_7.rmsh
+setfield Materials[7].RenderMethod objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle\material_8.rmsh
+savetagchanges
+exitto tags
+
+#AMMO
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_ammo.render_model
+setfield Materials[10].RenderMethod objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v3\material_7.rmsh
+setfield Materials[11].RenderMethod objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v3\material_8.rmsh
+savetagchanges
+exitto tags
+
+#DMG
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_damage.render_model
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4\material_7.rmsh
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4\material_6.rmsh
+savetagchanges
+exitto tags
+
+#POW
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_power.render_model
+setfield Materials[5].RenderMethod objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v6\material_6.rmsh
+setfield Materials[6].RenderMethod objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v6\material_7.rmsh
+savetagchanges
+exitto tags
+
+ECHO ########################
+ECHO #       CARBINE        #
+ECHO ########################
+
+#BASE
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
+setfield Materials[3].RenderMethod objects\weapons\rifle\covenant_carbine\covenant_carbine_v3\material_9.rmsh
+setfield Materials[4].RenderMethod objects\weapons\rifle\covenant_carbine\covenant_carbine_v3\material_8.rmsh
+savetagchanges
+exitto tags
+
+ECHO ########################
+ECHO #         DMR          #
+ECHO ########################
+
+#BASE
+edittag objects\weapons\rifle\dmr\dmr\material_7.shader
+setfield SortLayer PostPass
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\dmr\dmr\material_5.shader
+setfield SortLayer PostPass
+savetagchanges
+exitto tags

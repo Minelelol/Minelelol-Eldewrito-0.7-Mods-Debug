@@ -1,0 +1,9 @@
+createmodpackage
+High Detail Bubble Shield
+This increases the distortion effect LOD so you can see it from afar
+Minelelol
+1.0
+Multiplayer
+
+Runcommands "apply.cmds"
+savemodpackage "HIGHDETAIL_BubbleShield.pak"

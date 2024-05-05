@@ -1,0 +1,9 @@
+createmodpackage
+Low Detail Bubble Shield
+This removes the distortion effect, and use the low detailed version instead
+Minelelol
+1.0
+Multiplayer
+
+Runcommands "apply.cmds"
+savemodpackage "LOWDETAIL_BubbleShield.pak"

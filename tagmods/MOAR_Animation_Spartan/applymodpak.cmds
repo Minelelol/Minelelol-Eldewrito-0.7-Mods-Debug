@@ -1,0 +1,3 @@
+openmodpackage "..\MOAR_Animation_Spartan\MOAR_Animation_for_Spartan.pak"
+applymodpackage
+exitmodpackage

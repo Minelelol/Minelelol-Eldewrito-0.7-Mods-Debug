@@ -1,1 +1,1 @@
-Type "createmodpak.cmds" | TagTool.exe ..\..\..\maps\tags.dat
+Type "createmodpak.cmds" | ..\..\Tagtool\TagTool.exe ..\..\..\maps\tags.dat

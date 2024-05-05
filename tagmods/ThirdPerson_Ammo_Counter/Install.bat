@@ -1,1 +1,1 @@
-Type "apply.cmds" | TagTool.exe ..\..\..\maps\tags.dat
+Type "apply.cmds" | ..\..\Tagtool\TagTool.exe ..\..\..\maps\tags.dat

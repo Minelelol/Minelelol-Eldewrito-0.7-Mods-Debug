@@ -1,0 +1,7 @@
+EditTag objects\equipment\bubbleshield\fx\active.effe
+SetField Events[1].ParticleSystems[0].LodOutDistance 500
+SetField Events[1].ParticleSystems[1].LodOutDistance 250
+SetField Events[1].ParticleSystems[1].NearCutoff 48.9264
+SetField Events[1].ParticleSystems[2].LodOutDistance 105
+SaveTagChanges
+exitto tags

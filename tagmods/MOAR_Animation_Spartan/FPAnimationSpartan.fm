@@ -1,0 +1,7 @@
+color 0A
+cd mods\tagMods\MOAR_Animation_Spartan
+ECHO FMM_OUTPUT Installing MOAR Animation for Spartan...
+
+Install.bat
+
+ECHO FMM_OUTPUT MOAR Animation for Spartan Has been installed Succesfully.

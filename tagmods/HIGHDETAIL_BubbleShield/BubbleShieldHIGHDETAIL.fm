@@ -1,0 +1,6 @@
+ECHO FMM_OUTPUT Installing Bubble Shield Fix HIGH DETAIL
+
+cd mods\tagMods\HIGHDETAIL_BubbleShield
+Install.bat
+
+ECHO FMM_OUTPUT Bubble Shield Fix HIGH DETAIL has been installed!

@@ -25,7 +25,7 @@ setfield animations[7].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
 setfield animations[12].PlaybackFlags DisableWeaponAim1stPerson
 setfield animations[13].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
 setfield animations[14].PlaybackFlags DisableWeaponAim1stPerson
-addanimation Animation\FallSET\6
+addanimation Animation\FallSET\lite\6
 savetagchanges
 exit
 ECHO --------------------------------------------------------------------------------------------------------
@@ -50,7 +50,7 @@ setfield animations[7].PlaybackFlags DisableWeaponAim1stPerson
 setfield animations[12].PlaybackFlags DisableWeaponAim1stPerson
 setfield animations[15].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
 removeblockelements Animations 16 *
-addanimation Animation\FallSET\6
+addanimation Animation\FallSET\lite\6
 addanimation Animation\Oddball
 savetagchanges
 exit
@@ -75,7 +75,7 @@ setfield animations[6].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
 setfield animations[12].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
 setfield animations[13].PlaybackFlags DisableWeaponIk
 removeblockelements Animations 14 *
-addanimation Animation\FallSET\9
+addanimation Animation\FallSET\lite\9
 addanimation Animation\Flag
 removeblockelements Animations 14 *
 savetagchanges
@@ -144,7 +144,7 @@ setfield animations[27].animationdata.Frameevents[2].Frame 23
 setfield animations[28].weight 1
 setfield animations[28].animationdata.ParentAnimation 17
 setfield animations[28].animationdata.Soundevents[0].Sound 1
-addanimation Animation\FallSET\4
+addanimation Animation\FallSET\lite\4
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
 savetagchanges
 exitto tags
@@ -199,7 +199,7 @@ setfield animations[26].animationdata.Frameevents[1].Frame 14
 setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
 setfield animations[26].animationdata.Frameevents[2].Frame 23
 setfield animations[26].PlaybackFlags DisableWeaponAim1stPerson
-addanimation Animation\FallSET\4
+addanimation Animation\FallSET\lite\4
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
 savetagchanges
 exitto tags
@@ -209,7 +209,7 @@ echo ---------------------------------------------------------------------------
 ECHO BS
 edittag objects\characters\masterchief\fp\weapons\support_low\fp_brute_shot\fp_brute_shot.jmad
 setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
-addanimation Animation\FallSET\8
+addanimation Animation\FallSET\lite\8
 savetagchanges
 exitto tags
 echo --------------------------------------------------------------------------------------------------------
@@ -240,7 +240,7 @@ setfield animations[20].PlaybackFlags ForceWeaponIkOn
 setfield animations[21].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
 setfield animations[22].PlaybackFlags ForceWeaponIkOn
 setfield animations[26].PlaybackFlags DisableWeaponIk
-addanimation Animation\FallSET\3
+addanimation Animation\FallSET\lite\3
 savetagchanges
 exitto tags
 echo --------------------------------------------------------------------------------------------------------
@@ -269,7 +269,7 @@ setfield animations[10].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
 setfield animations[11].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
 setfield animations[12].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
 setfield animations[27].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
-addanimation Animation\FallSET\4
+addanimation Animation\FallSET\lite\4
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 19 *
 savetagchanges
 exitto tags
@@ -408,7 +408,7 @@ setfield animations[26].animationdata.Frameevents[1].Frame 14
 setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
 setfield animations[26].animationdata.Frameevents[2].Frame 23
 setfield animations[26].PlaybackFlags DisableWeaponAim1stPerson
-addanimation Animation\FallSET\4
+addanimation Animation\FallSET\lite\4
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
 savetagchanges
 exitto tags
@@ -449,7 +449,7 @@ setfield animations[16].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
 setfield animations[17].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
 setfield animations[22].PlaybackFlags DisableWeaponIk
 setfield animations[23].PlaybackFlags DisableWeaponIk
-addanimation Animation\FallSET\5
+addanimation Animation\FallSET\lite\5
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
 savetagchanges
 exitto tags
@@ -516,7 +516,7 @@ setfield animations[23].animationdata.Frameevents[1].TypeED SecondaryKeyframe
 setfield animations[23].animationdata.Frameevents[1].Frame 15
 setfield animations[23].animationdata.Frameevents[2].TypeED AllowInterruption
 setfield animations[23].animationdata.Frameevents[2].Frame 15
-addanimation Animation\FallSET\1
+addanimation Animation\FallSET\lite\1
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 18 *
 savetagchanges
 exitto tags
@@ -580,7 +580,7 @@ setfield animations[49].animationdata.Frameevents[1].Frame 15
 setfield animations[49].animationdata.Frameevents[2].TypeED AllowInterruption
 setfield animations[49].animationdata.Frameevents[2].Frame 23
 setfield animations[49].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
-addanimation Animation\FallSET\2
+addanimation Animation\FallSET\lite\2
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
 savetagchanges
 exitto tags
@@ -606,7 +606,7 @@ setfield animations[46].animationdata.Frameevents[1].Frame 15
 setfield animations[46].animationdata.Frameevents[2].TypeED AllowInterruption
 setfield animations[46].animationdata.Frameevents[2].Frame 22
 setfield animations[46].PlaybackFlags DisableWeaponAim1stPerson
-addanimation Animation\FallSET\2
+addanimation Animation\FallSET\lite\2
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
 sortmodes
 savetagchanges
@@ -722,7 +722,7 @@ setfield animations[26].animationdata.Frameevents[1].Frame 28
 setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
 setfield animations[26].animationdata.Frameevents[2].Frame 22
 setfield animations[26].PlaybackFlags DisableWeaponAim1stPerson
-addanimation Animation\FallSET\6
+addanimation Animation\FallSET\lite\6
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
 savetagchanges
 exitto tags
@@ -815,7 +815,7 @@ setfield animations[58].animationdata.Frameevents[1].Frame 15
 setfield animations[58].animationdata.Frameevents[2].TypeED AllowInterruption
 setfield animations[58].animationdata.Frameevents[2].Frame 29
 setfield animations[58].PlaybackFlags DisableWeaponAim1stPerson
-addanimation Animation\FallSET\3
+addanimation Animation\FallSET\lite\3
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 20 *
 savetagchanges
 exitto tags
@@ -844,7 +844,7 @@ setfield animations[29].PlaybackFlags DisableWeaponIk
 setfield animations[30].PlaybackFlags DisableWeaponIk
 setfield animations[43].PlaybackFlags DisableWeaponAim1stPerson
 setfield animations[44].PlaybackFlags DisableWeaponIk
-addanimation Animation\FallSET\5
+addanimation Animation\FallSET\lite\5
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 18 *
 sortmodes
 savetagchanges
@@ -880,7 +880,7 @@ setfield animations[26].animationdata.Frameevents[1].Frame 15
 setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
 setfield animations[26].animationdata.Frameevents[2].Frame 30
 setfield animations[26].animationdata.Productionflags VerifySoundEvents
-addanimation Animation\FallSET\5
+addanimation Animation\FallSET\lite\5
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
 savetagchanges
 exitto tags
@@ -902,7 +902,7 @@ addanimation Animation\sentinel
 setfield animations[14].PlaybackFlags ForceWeaponIkOn
 setfield animations[15].PlaybackFlags DisableWeaponAim1stPerson
 setfield animations[16].PlaybackFlags DisableWeaponAim1stPerson
-addanimation Animation\FallSET\10
+addanimation Animation\FallSET\lite\10
 savetagchanges
 exitto tags
 echo --------------------------------------------------------------------------------------------------------
@@ -991,7 +991,7 @@ addblockelements animations[24].animationdata.FrameEvents 1
 setfield animations[24].animationdata.Frameevents[0].Frame 12
 setfield animations[24].PlaybackFlags DisableWeaponIk
 setfield animations[25].PlaybackFlags DisableWeaponIk
-addanimation Animation\FallSET\3
+addanimation Animation\FallSET\lite\3
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 21 *
 savetagchanges
 exitto tags
@@ -1002,7 +1002,7 @@ echo SMG Sub Machine Gun
 edittag objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.jmad
 addanimation Animation\SMG
 setfield animations[31].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
-addanimation Animation\FallSET\3
+addanimation Animation\FallSET\lite\3
 savetagchanges
 exitto tags
 echo --------------------------------------------------------------------------------------------------------
@@ -1091,7 +1091,7 @@ setfield animations[16].animationdata.Productionflags VerifySoundEvents
 setfield animations[1].PlaybackFlags ForceWeaponIkOn
 setfield animations[2].PlaybackFlags ForceWeaponIkOn
 setfield animations[3].PlaybackFlags ForceWeaponIkOn
-addanimation Animation\FallSET\7
+addanimation Animation\FallSET\lite\7
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
 savetagchanges
 exitto tags
@@ -1141,7 +1141,7 @@ setfield animations[32].animationdata.Frameevents[1].Frame 15
 setfield animations[32].animationdata.Frameevents[2].TypeED AllowInterruption
 setfield animations[32].animationdata.Frameevents[2].Frame 32
 setfield animations[32].animationdata.Productionflags VerifySoundEvents
-addanimation Animation\FallSET\4
+addanimation Animation\FallSET\lite\4
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 19 *
 savetagchanges
 exitto tags
@@ -1162,7 +1162,7 @@ setfield animations[35].PlaybackFlags ForceWeaponIkOn
 setfield animations[36].PlaybackFlags ForceWeaponIkOn
 setfield animations[37].PlaybackFlags ForceWeaponIkOn
 setfield animations[38].PlaybackFlags ForceWeaponIkOn
-addanimation Animation\FallSET\3
+addanimation Animation\FallSET\lite\3
 sortmodes
 savetagchanges
 exitto tags
@@ -1259,7 +1259,7 @@ setfield animations[31].PlaybackFlags DisableWeaponAim1stPerson
 setfield animations[31].animationdata.Productionflags VerifySoundEvents
 setfield animations[31].weight 1
 setfield animations[31].animationdata.ParentAnimation 18
-addanimation Animation\FallSET\1
+addanimation Animation\FallSET\lite\1
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 19 *
 savetagchanges
 exitto tags

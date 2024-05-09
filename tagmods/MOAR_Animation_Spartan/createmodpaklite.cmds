@@ -1,0 +1,9 @@
+createmodpackage
+MOAR Animation for Spartan LITE
+Adds MOAR First Person animation to spartan
+Minelelol
+1.1
+Multiplayer
+
+Runcommands "applylite.cmds"
+savemodpackage "MOAR_Animation_for_Spartan_LITE.pak"

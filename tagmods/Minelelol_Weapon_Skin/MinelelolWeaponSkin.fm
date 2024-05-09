@@ -1,0 +1,7 @@
+color 0A
+cd mods\tagMods\Minelelol_Weapon_Skin
+ECHO FMM_OUTPUT Installing Minelelol Weapons Skin...
+
+Install.bat
+
+ECHO FMM_OUTPUT Minelelol Weapons Skin Has been installed Succesfully.

@@ -1,0 +1,101 @@
+Echo #################
+Echo # ASSAULT RIFLE #
+Echo #################
+edittag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_11\base_map.bitm
+importbitmap 0 DDS/0x0EED.dds
+savetagchanges
+exitto tags
+
+Echo ################
+Echo # BATTLE RIFLE #
+Echo ################
+
+echo BASE
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_v5\material_8\base_map.bitm
+importbitmap 0 DDS/BR2.dds
+savetagchanges
+exitto tags
+
+echo DAMAGE
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_v2\material_8\base_map.bitm
+importbitmap 0 DDS/00000FCE.dds
+savetagchanges
+exitto tags
+
+echo AMMO
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_v1\material_1\base_map.bitm
+importbitmap 0 DDS/00000FC1.dds
+savetagchanges
+exitto tags
+
+echo ACCURACY AND RANGE
+importTag objects\weapons\rifle\battle_rifle\battle_rifle_v5\material_9.rmsh material_1.shader
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_v5\material_9.rmsh
+setfield Parameters[0].bitmap objects\weapons\rifle\battle_rifle\battle_rifle_v5\material_9\base_map.bitm
+setfield Shaderproperties[0].Realconstants[3].Values 0.065 0.6 0.18 1
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_v5\material_9\base_map.bitm
+importbitmap 0 DDS/BRSCOPE.dds
+savetagchanges
+exitto tags
+
+echo POWER
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_v6\material_9\base_map.bitm
+importbitmap 0 DDS/00000FD5.dds
+savetagchanges
+exitto tags
+
+
+Echo #################
+Echo # PLASMA PISTOl #
+Echo #################
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_v6\material_5\self_illum_map.bitm
+importbitmap 0 DDS\11B2.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_v6\material_6\meter_map.bitm
+importbitmap 0 DDS\11B3.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol_v3\material_1\meter_map.bitm
+importbitmap 0 DDS\PAIN.dds
+savetagchanges
+exitto tags
+
+ECHO Plasma Illum
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_v6\material_11\self_illum_map.bitm
+importbitmap 0 DDS\11B9.DDS
+savetagchanges
+exitto tags
+
+ECHO Plasma Illum POWER
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_v6\material_9\self_illum_map.bitm
+importbitmap 0 DDS\11DB.DDS
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_v6\material_5.rmsh
+SetField ShaderProperties[0].Realconstants[5].Values 1 0 0 1
+SaveTagChanges
+exitto tags
+
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_v6\material_11.rmsh
+setfield Shaderproperties[0].Realconstants[4].Values 4 4 4 4
+setfield Shaderproperties[0].Realconstants[27].Values 0.2901961 0.3333333 0.4156863 1
+setfield Shaderproperties[0].Realconstants[31].Values 2 2 2 2
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_v6\material_13.rmsh
+SetField ShaderProperties[0].Realconstants[4].Values 0 0 0.5 1
+SaveTagChanges
+exitto tags
+
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol\material_3.rmsh
+SetField ShaderProperties[0].Realconstants[2].Values 0 0 0.5 1
+SaveTagChanges
+exitto tags

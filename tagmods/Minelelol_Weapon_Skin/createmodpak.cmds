@@ -1,0 +1,9 @@
+createmodpackage
+Minelelol Weapons Skin
+Combines my weapons skin into one modpak for 0.7
+Minelelol, Mythic
+1.0
+Multiplayer
+
+Runcommands "apply.cmds"
+savemodpackage "Minelelol_Weapons_Skin.pak"

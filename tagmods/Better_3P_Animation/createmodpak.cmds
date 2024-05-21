@@ -1,9 +1,9 @@
 createmodpackage
-Better Third Person Sprint for Elite
+Better 3rd Person Animation
 It's just better
 Minelelol, Enash
 1.0
 Multiplayer
 
 Runcommands "apply.cmds"
-savemodpackage "Better3P_Sprint_Elite.pak"
+savemodpackage "Better_3PPerson_Animation.pak"

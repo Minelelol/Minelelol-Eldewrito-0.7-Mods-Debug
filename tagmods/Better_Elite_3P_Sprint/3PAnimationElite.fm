@@ -1,7 +1,0 @@
-color 0A
-cd mods\tagMods\Better_Elite_3P_Sprint
-ECHO FMM_OUTPUT Installing Better Elite Sprint...
-
-Install.bat
-
-ECHO FMM_OUTPUT Better Elite Sprint Has been installed Succesfully.

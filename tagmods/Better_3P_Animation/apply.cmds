@@ -70,3 +70,15 @@ setfield Animations[1597].AnimationData.EffectEvents[0].MarkerName shield_rechar
 setfield Animations[1597].AnimationData.EffectEvents[0].DamageEffectReportingType.HaloOnline Guardians
 savetagchanges
 exitto tags
+
+edittag objects\characters\masterchief\masterchief.jmad
+addanimation Masterchief
+addblockelements Animations[1241].AnimationData.FrameEvents 2
+setfield Animations[1241].AnimationData.FrameEvents[0].TypeED LeftFoot
+setfield Animations[1241].AnimationData.FrameEvents[0].Frame 1
+setfield Animations[1241].AnimationData.FrameEvents[1].TypeED RightFoot
+setfield Animations[1241].AnimationData.FrameEvents[1].Frame 8
+setfield Animations[1241].AnimationData.Heading 0.9999995 -0.0009953227 0
+setfield Animations[1241].AnimationData.AverageTranslationMagnitude 0.1199909
+savetagchanges
+exitto tags

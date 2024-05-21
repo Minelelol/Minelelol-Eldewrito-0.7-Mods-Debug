@@ -1,0 +1,7 @@
+color 0A
+cd mods\tagMods\Better_3P_Animation
+ECHO FMM_OUTPUT Installing Better 3rd Person Animation...
+
+Install.bat
+
+ECHO FMM_OUTPUT Better 3rd Person Animation Has been installed Succesfully.

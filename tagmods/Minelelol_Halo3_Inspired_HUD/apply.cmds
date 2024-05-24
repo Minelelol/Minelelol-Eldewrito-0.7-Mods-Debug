@@ -1,0 +1,2150 @@
+edittag ui\chud\bitmaps\red_flash.bitm
+importbitmap 0 DDS\red_flash.DDS
+savetagchanges
+exitto tags
+
+edittag ui\chud\bitmaps\consumable_scematics.bitm
+importbitmap 0 DDS\consumable_scematics.DDS
+savetagchanges
+exitto tags
+
+edittag ui\chud\bitmaps\equipment_scematics.bitm
+importbitmap 0 DDS\equipment_scematics.dds
+savetagchanges
+exitto tags
+
+edittag ui\chud\bitmaps\grenade_scematics.bitm
+importbitmap 1 DDS\grenade_schematic.dds
+setfield Sequences[1].Sprites[0].BitmapIndex 1
+savetagchanges
+exitto tags
+
+edittag ui\chud\bitmaps\waypoints_hf2p.bitm
+importbitmap 0 DDS\waypoints_hf2p.dds
+savetagchanges
+exitto tags
+
+edittag ui\chud\bitmaps\scopes\spartan_laser_scope_overheat.bitm
+importbitmap 0 DDS\spartan_laser_scope_overheat.dds
+savetagchanges
+exitto tags
+
+edittag ui\chud\bitmaps\scopes\spartan_laser_overheat_bkd.bitm
+importbitmap 0 DDS\spartan_laser_overheat_bkd.dds
+savetagchanges
+exitto tags
+
+edittag ui\chud\bitmaps\weapon_scematics\sentinel_beam.bitm
+importbitmap 0 DDS\sentinel.dds
+savetagchanges
+exitto tags
+
+generatebitmap ui\chud\bitmaps\motion_tracker_disabled DDS\motion_tracker_disabled.dds
+
+edittag ui\chud\spartan.chdt
+setfield HUDWidgets[0].BitmapWidgets[1].StateData[0].Player_SpecialFlags ShieldsHeavyDamage
+setField HUDWidgets[0].BitmapWidgets[1].StateData[0].UnitGeneralFlags 0
+setfield HUDWidgets[0].BitmapWidgets[2].StateData[0].Player_SpecialFlags ShieldsHeavyDamage
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Origin 0 -1.152
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Offset 0 -3.65
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Scale 0.9875 0.841
+
+setfield HUDWidgets[0].BitmapWidgets[3].AnimationData[0].Initializing.Animation ui\chud\animations\shield_color.chud_animation_definition
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Origin 0 -1.152
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Offset 0 -3.65
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Scale 0.9875 0.841
+
+setfield HUDWidgets[0].BitmapWidgets[4].AnimationData[0].Initializing.Animation ui\chud\animations\shield_color.chud_animation_definition
+setfield HUDWidgets[0].BitmapWidgets[4].PlacementData[0].Origin 0 -1.152
+setfield HUDWidgets[0].BitmapWidgets[4].PlacementData[0].Offset 0 -3.65
+setfield HUDWidgets[0].BitmapWidgets[4].PlacementData[0].Scale 0.9875 0.841
+
+setfield HUDWidgets[0].BitmapWidgets[5].AnimationData[0].Initializing.Animation ui\chud\animations\shield_color.chud_animation_definition
+setfield HUDWidgets[0].BitmapWidgets[5].PlacementData[0].Origin 0 -1.152
+setfield HUDWidgets[0].BitmapWidgets[5].PlacementData[0].Offset 0 -3.65
+setfield HUDWidgets[0].BitmapWidgets[5].PlacementData[0].Scale 0.9875 0.841
+
+setfield HUDWidgets[2].PlacementData[0].Offset -25 35
+setfield HUDWidgets[2].PlacementData[0].Scale 1.3 1.3
+
+setfield HUDWidgets[3].PlacementData[0].Offset -25 35
+setfield HUDWidgets[3].PlacementData[0].Scale 1.3 1.3
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Offset 26 3.5
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 0.5 0.5
+
+setfield HUDWidgets[4].PlacementData[0].Offset -24 35
+setfield HUDWidgets[4].PlacementData[0].Scale 1.3 1.3
+
+setfield HUDWidgets[5].PlacementData[0].Offset -23 35
+setfield HUDWidgets[5].PlacementData[0].Scale 1.3 1.3
+swapblockelements Hudwidgets 22 25
+removeblockelements Hudwidgets 23 *
+
+addblockelements HUDWidgets
+addblockelements HUDWidgets[23].Textwidgets
+addblockelements HUDWidgets[23].Placementdata
+addblockelements HUDWidgets[23].Statedata
+addblockelements HUDWidgets[23].Bitmapwidgets
+addblockelements HUDWidgets[23].Bitmapwidgets[0].PlacementData
+addblockelements HUDWidgets[23].Bitmapwidgets[0].AnimationData
+addblockelements HUDWidgets[23].Bitmapwidgets[0].RenderData
+
+setfield HUDWidgets[23].StateData[0].UnitGeneralFlags MotionTrackerDisabled
+setfield HUDWidgets[23].StateData[0].UnitZoomFlags BinocularsEnabled
+setfield HUDWidgets[23].PlacementData[0].Scale 0.43 0.43
+setfield HUDWidgets[23].PlacementData[0].Offset 109 -30
+setfield HUDWidgets[23].PlacementData[0].Anchor BottomLeft
+setfield HUDWidgets[23].BitmapWidgets[0].RuntimeWidgetIndex 13
+setfield HUDWidgets[23].BitmapWidgets[0].Bitmap ui\chud\bitmaps\motion_tracker_disabled.bitm
+setfield HUDWidgets[23].BitmapWidgets[0].PlacementData[0].Scale 1 1
+setfield HUDWidgets[23].BitmapWidgets[0].PlacementData[0].Anchor Parent
+setfield HUDWidgets[23].BitmapWidgets[0].AnimationData[0].Initializing.Animation ui\chud\animations\mt_readying2.chad
+setfield HUDWidgets[23].BitmapWidgets[0].RenderData[0].LocalColorA 0 0 19 25
+setfield HUDWidgets[23].BitmapWidgets[0].RenderData[0].OutputColorA HighlightForeground
+savetagchanges
+exitto tags
+
+edittag ui\chud\elite.chdt
+removeblockelements Hudwidgets[0].BitmapWidgets 0 *
+setfield HUDWidgets[3].PlacementData[0].Offset -24 32
+setfield HUDWidgets[3].PlacementData[0].Scale 1.3 1.3
+
+setfield HUDWidgets[4].PlacementData[0].Offset -24 32
+setfield HUDWidgets[4].PlacementData[0].Scale 1.3 1.3
+setfield HUDWidgets[4].BitmapWidgets[0].PlacementData[0].Offset 26 3.5
+setfield HUDWidgets[4].BitmapWidgets[0].PlacementData[0].Scale 0.5 0.5
+
+setfield HUDWidgets[5].PlacementData[0].Offset -23 32
+setfield HUDWidgets[5].PlacementData[0].Scale 1.3 1.3
+
+setfield HUDWidgets[6].PlacementData[0].Offset -22 32
+setfield HUDWidgets[6].PlacementData[0].Scale 1.3 1.3
+
+removeblockelements HUDWidgets 23 *
+addblockelements HUDWidgets
+addblockelements HUDWidgets[23].Textwidgets
+addblockelements HUDWidgets[23].Placementdata
+addblockelements HUDWidgets[23].Statedata
+addblockelements HUDWidgets[23].Bitmapwidgets
+addblockelements HUDWidgets[23].Bitmapwidgets[0].PlacementData
+addblockelements HUDWidgets[23].Bitmapwidgets[0].AnimationData
+addblockelements HUDWidgets[23].Bitmapwidgets[0].RenderData
+
+setfield HUDWidgets[23].StateData[0].UnitGeneralFlags MotionTrackerDisabled
+setfield HUDWidgets[23].StateData[0].UnitZoomFlags BinocularsEnabled
+setfield HUDWidgets[23].PlacementData[0].Scale 0.43 0.43
+setfield HUDWidgets[23].PlacementData[0].Offset 97 -38
+setfield HUDWidgets[23].PlacementData[0].Anchor BottomLeft
+setfield HUDWidgets[23].BitmapWidgets[0].RuntimeWidgetIndex 13
+setfield HUDWidgets[23].BitmapWidgets[0].Bitmap ui\chud\bitmaps\motion_tracker_disabled.bitm
+setfield HUDWidgets[23].BitmapWidgets[0].PlacementData[0].Scale 1 1
+setfield HUDWidgets[23].BitmapWidgets[0].PlacementData[0].Anchor Parent
+setfield HUDWidgets[23].BitmapWidgets[0].AnimationData[0].Initializing.Animation ui\chud\animations\mt_readying2.chad
+setfield HUDWidgets[23].BitmapWidgets[0].RenderData[0].LocalColorA 0 0 19 25
+setfield HUDWidgets[23].BitmapWidgets[0].RenderData[0].OutputColorA HighlightForeground
+savetagchanges
+exitto tags
+
+edittag ui\chud\globals.chgd
+setfield Hudglobals[0].Hudattributes[0].MessageCountDelta -2
+Echo Nice :)
+setfield Hudglobals[0].GrenadeAnchorOffset 69
+setfield Hudglobals[0].Hudattributes[0].StateMessageScale 1.1
+setfield Hudglobals[0].Hudattributes[0].StateLeftRightOffset_HO 0 0.20
+savetagchanges
+exitto tags
+
+edittag objects\characters\elite\mp_elite\chud\globals.chgd
+Echo Not nice :(
+setfield Hudglobals[0].GrenadeAnchorOffset 74
+setfield Hudglobals[0].Hudattributes[0].StateMessageScale 1.1
+setfield Hudglobals[0].Hudattributes[0].StateLeftRightOffset_HO 0 0.20
+savetagchanges
+exitto tags
+ECHO ---------------
+ECHO | MINOR FIXES |
+ECHO ---------------
+
+ECHO HAMMER
+Edittag ui\chud\hammer.chdt
+setfield HUDWidgets[2].BitmapWidgets[3].BitmapSequenceIndex 0
+savetagchanges
+copyblockelements HUDWidgets[2].BitmapWidgets 1 5
+exitto tags
+
+ECHO PLASMA TURRET
+edittag ui\chud\plasma_turret.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets 1 *
+pasteblockelements HUDWidgets[0].BitmapWidgets
+setfield HUDWidgets[0].TextWidgets[0].Placementdata[0].Scale 0 0
+setfield HUDWidgets[0].BitmapWidgets[2].RenderData[0].ExternalInput WeaponAmmoLoaded
+setfield HUDWidgets[0].BitmapWidgets[2].RenderData[0].LocalScalarD 200
+setfield HUDWidgets[0].BitmapWidgets[0].Placementdata[0].Offset -15 2.5
+setfield HUDWidgets[0].BitmapWidgets[5].StateData[0].Weapon_SpecialFlags ClipBelowCutoff
+savetagchanges
+exitto tags
+
+ECHO -------------
+ECHO | AMMO ICON |
+ECHO -------------
+edittag ui\chud\bitmaps\ammo_h2fp.bitm
+importbitmap 0 DDS\ammo\base.dds
+importbitmap 1 DDS\ammo\bruteshot.dds
+importbitmap 2 DDS\ammo\carbine.dds
+importbitmap 3 DDS\ammo\fuel_rod.dds
+importbitmap 4 DDS\ammo\mauler.dds
+importbitmap 5 DDS\ammo\missilepods.dds
+importbitmap 6 DDS\ammo\needler.dds
+importbitmap 7 DDS\ammo\rocket_launcher.dds
+importbitmap 8 DDS\ammo\shotgun.dds
+removeblockelements Sequences 0 *
+addblockelements Sequences 9
+addblockelements Sequences[0].Sprites 1
+setfield Sequences[0].BitmapCount 1
+setfield Sequences[0].Sprites[0].BitmapIndex 0
+setfield Sequences[0].Sprites[0].Left -0.1
+setfield Sequences[0].Sprites[0].Right 10
+setfield Sequences[0].Sprites[0].Top -0.15
+setfield Sequences[0].Sprites[0].Bottom 10
+
+addblockelements Sequences[1].Sprites 1
+setfield Sequences[1].BitmapCount 1
+setfield Sequences[1].Sprites[0].BitmapIndex 1
+setfield Sequences[1].Sprites[0].Left -0.05
+setfield Sequences[1].Sprites[0].Right 10
+setfield Sequences[1].Sprites[0].Top -0.15
+setfield Sequences[1].Sprites[0].Bottom 10
+
+addblockelements Sequences[2].Sprites 1
+setfield Sequences[2].BitmapCount 1
+setfield Sequences[2].Sprites[0].BitmapIndex 2
+setfield Sequences[2].Sprites[0].Left -0.05
+setfield Sequences[2].Sprites[0].Right 10
+setfield Sequences[2].Sprites[0].Top -0.12
+setfield Sequences[2].Sprites[0].Bottom 10
+
+addblockelements Sequences[3].Sprites 1
+setfield Sequences[3].BitmapCount 1
+setfield Sequences[3].Sprites[0].BitmapIndex 3
+setfield Sequences[3].Sprites[0].Left -0.05
+setfield Sequences[3].Sprites[0].Right 10
+setfield Sequences[3].Sprites[0].Top -0.12
+setfield Sequences[3].Sprites[0].Bottom 10
+
+addblockelements Sequences[4].Sprites 1
+setfield Sequences[4].BitmapCount 1
+setfield Sequences[4].Sprites[0].BitmapIndex 4
+setfield Sequences[4].Sprites[0].Left -0.05
+setfield Sequences[4].Sprites[0].Right 10
+setfield Sequences[4].Sprites[0].Top -0.15
+setfield Sequences[4].Sprites[0].Bottom 10
+
+addblockelements Sequences[5].Sprites 1
+setfield Sequences[5].BitmapCount 1
+setfield Sequences[5].Sprites[0].BitmapIndex 5
+setfield Sequences[5].Sprites[0].Left -0.05
+setfield Sequences[5].Sprites[0].Right 10
+setfield Sequences[5].Sprites[0].Top -0.15
+setfield Sequences[5].Sprites[0].Bottom 10
+
+addblockelements Sequences[6].Sprites 1
+setfield Sequences[6].BitmapCount 1
+setfield Sequences[6].Sprites[0].BitmapIndex 6
+setfield Sequences[6].Sprites[0].Left -0.05
+setfield Sequences[6].Sprites[0].Right 10
+setfield Sequences[6].Sprites[0].Top -0.15
+setfield Sequences[6].Sprites[0].Bottom 10
+
+addblockelements Sequences[7].Sprites 1
+setfield Sequences[7].BitmapCount 1
+setfield Sequences[7].Sprites[0].BitmapIndex 7
+setfield Sequences[7].Sprites[0].Left -0.05
+setfield Sequences[7].Sprites[0].Right 10
+setfield Sequences[7].Sprites[0].Top -0.12
+setfield Sequences[7].Sprites[0].Bottom 10
+
+addblockelements Sequences[8].Sprites 1
+setfield Sequences[8].BitmapCount 1
+setfield Sequences[8].Sprites[0].BitmapIndex 8
+setfield Sequences[8].Sprites[0].Left -0.05
+setfield Sequences[8].Sprites[0].Right 10
+setfield Sequences[8].Sprites[0].Top -0.13
+setfield Sequences[8].Sprites[0].Bottom 10
+savetagchanges
+exitto tags
+
+edittag ui\chud\brute_shot.chdt
+setfield HUDWidgets[4].BitmapWidgets[2].BitmapSequenceIndex 1
+savetagchanges
+exitto tags
+
+Edittag ui\chud\carbine.chdt
+setfield HUDWidgets[6].BitmapWidgets[2].BitmapSequenceIndex 2
+savetagchanges
+exitto tags
+
+edittag ui\chud\covenant_carbine_accuracy.chdt
+setfield HUDWidgets[6].BitmapWidgets[2].BitmapSequenceIndex 2
+savetagchanges
+exitto tags
+
+edittag ui\chud\covenant_carbine_damage.chdt
+setfield HUDWidgets[6].BitmapWidgets[2].BitmapSequenceIndex 2
+savetagchanges
+exitto tags
+
+edittag ui\chud\covenant_carbine_power.chdt
+setfield HUDWidgets[6].BitmapWidgets[2].BitmapSequenceIndex 2
+savetagchanges
+exitto tags
+
+edittag ui\chud\covenant_carbine_range.chdt
+setfield HUDWidgets[7].BitmapWidgets[2].BitmapSequenceIndex 2
+savetagchanges
+exitto tags
+
+edittag ui\chud\covenant_carbine_rof.chdt
+setfield HUDWidgets[6].BitmapWidgets[2].BitmapSequenceIndex 2
+savetagchanges
+exitto tags
+
+ECHO ------------------------------------------------------------------------------------------------------ Curse of Carbine is Gone
+
+edittag ui\chud\fuel_rod_cannon.chdt
+setfield HUDWidgets[3].BitmapWidgets[2].BitmapSequenceIndex 3
+savetagchanges
+exitto tags
+
+edittag ui\chud\excavator.chdt
+setfield HUDWidgets[3].BitmapWidgets[2].BitmapSequenceIndex 4
+setfield HUDWidgets[7].BitmapWidgets[2].BitmapSequenceIndex 4
+savetagchanges
+exitto tags
+
+edittag ui\chud\excavator_power.chdt
+setfield HUDWidgets[3].BitmapWidgets[2].BitmapSequenceIndex 4
+setfield HUDWidgets[7].BitmapWidgets[2].BitmapSequenceIndex 4
+savetagchanges
+exitto tags
+
+edittag ui\chud\needler.chdt
+setfield HUDWidgets[4].BitmapWidgets[2].BitmapSequenceIndex 6
+savetagchanges
+exitto tags
+
+edittag ui\chud\spike_rifle.chdt
+setfield HUDWidgets[3].BitmapWidgets[2].BitmapSequenceIndex 6
+setfield HUDWidgets[5].BitmapWidgets[2].BitmapSequenceIndex 6
+savetagchanges
+exitto tags
+
+edittag ui\chud\rocket.chdt
+setfield HUDWidgets[5].BitmapWidgets[2].BitmapSequenceIndex 7
+savetagchanges
+exitto tags
+
+edittag ui\chud\shotgun.chdt
+setfield HUDWidgets[4].BitmapWidgets[2].BitmapSequenceIndex 8
+savetagchanges
+exitto tags
+
+edittag ui\chud\missile.chdt
+setfield HUDWidgets[1].BitmapWidgets[2].BitmapSequenceIndex 5
+savetagchanges
+exitto tags
+
+
+### IF ANYONE WANT TO CHANGE/MODIFY THE COMMAND BELOW
+### PLEASE USE THIS GITHUB LINK AS A REFERENCE POINT
+### https://github.com/theTwist84/ManagedDonkey/blob/main/game/source/interface/user_interface_text.hpp#L8-L161
+
+### HUD STRINGS FIXUP , PAIN
+edittag objects\weapons\turret\missile_pod\missile_pod.vehi
+setfield seats[0].SeatedDetachString remove_pod_melee
+savetagchanges
+exitto tags
+
+ECHO WHY DID I SPEND 8 HOUR ON THIS?????
+edittag ui\hud\hud_messages.unic
+setstring english ar_acc_picked_up "Picked up a Assault Rifle with Accuracy mods"
+setstring english ar_acc_pickup "\uE461\uE45F to pick up|n|r\uE139"
+setstring english ar_acc_swap "\uE461\uE45F to swap for|n|r\uE139"
+setstring english ar_acc_swap_ai "\uE461\uE45F to take ally's|n|r\uE139"
+setstring english ar_acc_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE139"
+
+setstring english ar_dmg_picked_up "Picked up a Assault Rifle with Damage mods"
+setstring english ar_dmg_pickup "\uE461\uE45F to pick up|n|r\uE13A"
+setstring english ar_dmg_swap "\uE461\uE45F to swap for|n|r\uE13A"
+setstring english ar_dmg_swap_ai "\uE461\uE45F to take ally's|n|r\uE13A"
+setstring english ar_dmg_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE13A"
+
+setstring english ar_picked_up "Picked up a Assault Rifle"
+setstring english ar_pickup "\uE461\uE45F to pick up|n|r\uE112"
+setstring english ar_swap "\uE461\uE45F to swap for|n|r\uE112"
+setstring english ar_swap_ai "\uE461\uE45F to take ally's|n|r\uE112"
+setstring english ar_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE112"
+
+setstring english ar_pwr_picked_up "Picked up a Assault Rifle with Power mods"
+setstring english ar_pwr_pickup "\uE461\uE45F to pick up|n|r\uE13B"
+setstring english ar_pwr_swap "\uE461\uE45F to swap for|n|r\uE13B"
+setstring english ar_pwr_swap_ai "\uE461\uE45F to take ally's|n|r\uE13B"
+setstring english ar_pwr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE13B"
+
+setstring english ar_rof_picked_up "Picked up a Assault Rifle with Rate of Fire mods"
+setstring english ar_rof_pickup "\uE461\uE45F to pick up|n|r\uE13C"
+setstring english ar_rof_swap "\uE461\uE45F to swap for|n|r\uE13C"
+setstring english ar_rof_swap_ai "\uE461\uE45F to take ally's|n|r\uE13C"
+setstring english ar_rof_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE13C"
+
+setstring english assault_defusal "\uE461\uE45F to defuse the bomb"
+setstring english autoturret_swap "\uE461\uE45F to swap for Auto-Turret"
+
+setstring english banshee_board "\uE461\uE45F to board enemy Banshee"
+setstring english banshee_enter "\uE461\uE45F to pilot Banshee"
+setstring english banshee_flip "\uE461\uE45F to flip Banshee"
+
+setstring english be_pickup "\uE461\uE45F to pick up|n|r\uE126"
+setstring english be_swap "\uE461\uE45F to swap for|n|r\uE126"
+setstring english be_swap_ai "\uE461\uE45F to take ally's|n|r\uE126"
+setstring english be_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE126"
+
+setstring english behemoth_enter_driver "\uE461\uE45F to drive Elephant"
+setstring english behemoth_enter_gunner "\uE461\uE45F to operate Elephant turret"
+setstring english behemoth_flip "\uE461\uE45F to flip... wait, what? How did you do that?"
+
+setstring english bo_pickup "\uE461\uE45F to pick up|n|r\uE115"
+setstring english bombrun_swap "\uE461\uE45F to swap for Bomb Run"
+setstring english boot_griefer "\uE455 betrayed you.|nHold \uE45F to eject this betrayer from the game."
+
+setstring english br_pickup "\uE461\uE45F to pick up|n|r\uE114"
+setstring english br_swap "\uE461\uE45F to swap for|n|r\uE114"
+setstring english br_swap_ai "\uE461\uE45F to take ally's|n|r\uE114"
+setstring english br_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE114"
+
+setstring english br_acc_pickup "\uE461\uE45F to pick up|n|r\uE13D"
+setstring english br_acc_swap "\uE461\uE45F to swap for|n|r\uE13D"
+setstring english br_acc_swap_ai "\uE461\uE45F to take ally's|n|r\uE13D"
+setstring english br_acc_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE13D"
+
+setstring english br_dmg_pickup "\uE461\uE45F to pick up|n|r\uE13E"
+setstring english br_dmg_swap "\uE461\uE45F to swap for|n|r\uE13E"
+setstring english br_dmg_swap_ai "\uE461\uE45F to take ally's|n|r\uE13E"
+setstring english br_dmg_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE13E"
+
+setstring english br_mag_pickup "\uE461\uE45F to pick up|n|r\uE13F"
+setstring english br_mag_swap "\uE461\uE45F to swap for|n|r\uE13F"
+setstring english br_mag_swap_ai "\uE461\uE45F to take ally's|n|r\uE13F"
+setstring english br_mag_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE13F"
+
+setstring english br_pwr_pickup "\uE461\uE45F to pick up|n|r\uE140"
+setstring english br_pwr_swap "\uE461\uE45F to swap for|n|r\uE140"
+setstring english br_pwr_swap_ai "\uE461\uE45F to take ally's|n|r\uE140"
+setstring english br_pwr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE140"
+
+setstring english br_rng_pickup "\uE461\uE45F to pick up|n|r\uE141"
+setstring english br_rng_swap "\uE461\uE45F to swap for|n|r\uE141"
+setstring english br_rng_swap_ai "\uE461\uE45F to take ally's|n|r\uE141"
+setstring english br_rng_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE141"
+
+setstring english br_rof_pickup "\uE461\uE45F to pick up|n|r\uE142"
+setstring english br_rof_swap "\uE461\uE45F to swap for|n|r\uE142"
+setstring english br_rof_swap_ai "\uE461\uE45F to take ally's|n|r\uE142"
+setstring english br_rof_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE142"
+
+setstring english bs_pickup "\uE461\uE45F to pick up|n|r\uE116"
+setstring english bs_swap "\uE461\uE45F to swap for|n|r\uE116"
+setstring english bs_swap_ai "\uE461\uE45F to take ally's|n|r\uE116"
+setstring english bs_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE116"
+
+setstring english bubbleshield_swap "\uE461\uE45F to swap for Bubble Shield"
+setstring english c_tower_enter "\uE461\uE45F to use Covenant gun tower"
+
+setstring english cc_pickup "\uE461\uE45F to pick up|n|r\uE117"
+setstring english cc_swap "\uE461\uE45F to swap for|n|r\uE117"
+setstring english cc_swap_ai "\uE461\uE45F to take ally's|n|r\uE117"
+setstring english cc_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE117"
+
+setstring english cc_acc_pickup "\uE461\uE45F to pick up|n|r\uE143"
+setstring english cc_acc_swap "\uE461\uE45F to swap for|n|r\uE143"
+setstring english cc_acc_swap_ai "\uE461\uE45F to take ally's|n|r\uE143"
+setstring english cc_acc_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE143"
+
+setstring english cc_dmg_pickup "\uE461\uE45F to pick up|n|r\uE144"
+setstring english cc_dmg_swap "\uE461\uE45F to swap for|n|r\uE144"
+setstring english cc_dmg_swap_ai "\uE461\uE45F to take ally's|n|r\uE144"
+setstring english cc_dmg_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE144"
+
+setstring english cc_mag_pickup "\uE461\uE45F to pick up|n|r\uE145"
+setstring english cc_mag_swap "\uE461\uE45F to swap for|n|r\uE145"
+setstring english cc_mag_swap_ai "\uE461\uE45F to take ally's|n|r\uE145"
+setstring english cc_mag_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE145"
+
+setstring english cc_pwr_pickup "\uE461\uE45F to pick up|n|r\uE146"
+setstring english cc_pwr_swap "\uE461\uE45F to swap for|n|r\uE146"
+setstring english cc_pwr_swap_ai "\uE461\uE45F to take ally's|n|r\uE146"
+setstring english cc_pwr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE146"
+
+setstring english cc_rng_pickup "\uE461\uE45F to pick up|n|r\uE147"
+setstring english cc_rng_swap "\uE461\uE45F to swap for|n|r\uE147"
+setstring english cc_rng_swap_ai "\uE461\uE45F to take ally's|n|r\uE147"
+setstring english cc_rng_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE147"
+
+setstring english cc_rof_pickup "\uE461\uE45F to pick up|n|r\uE148"
+setstring english cc_rof_swap "\uE461\uE45F to swap for|n|r\uE148"
+setstring english cc_rof_swap_ai "\uE461\uE45F to take ally's|n|r\uE148"
+setstring english cc_rof_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE148"
+
+setstring english chopper_board "\uE461\uE45F to board enemy Chopper"
+setstring english chopper_enter "\uE461\uE45F to drive Chopper"
+setstring english chopper_flip "\uE461\uE45F to flip Chopper"
+
+setstring english concussiveblast_swap "\uE461\uE45F to swap for Concussive Blast"
+setstring english device_activate "\uE461\uE45F to power up terminal"
+setstring english device_bomb "\uE461\uE45F to arm bomb"
+setstring english device_bridge "\uE461\uE45F to extend bridge"
+setstring english device_cartographer "\uE461\uE45F to activate cartographer"
+setstring english device_door "\uE461\uE45F to open door"
+setstring english device_elevator "\uE461\uE45F to activate elevator"
+setstring english device_fakeout "\uE461\uE45F to retrieve Cortana"
+setstring english device_generator "\uE461\uE45F to deactivate shield generator"
+setstring english device_gondola "\uE461\uE45F to start gondola"
+setstring english device_hangar "\uE461\uE45F to open hangar doors"
+setstring english device_lower_shield "\uE461\uE45F to deactivate plasma shield"
+setstring english device_pelican "\uE461\uE45F to enter Pelican"
+setstring english device_piston "\uE461\uE45F to activate piston"
+setstring english device_plug "\uE461\uE45F to power down containment shield"
+setstring english device_plug_lock "\uE461\uE45F to deactivate plug lock"
+setstring english device_pylons "\uE461\uE45F to expose reactor pylons"
+setstring english device_terminal "\uE461\uE45F to access terminal"
+setstring english docks_gate_action "\uE461\uE45F to extend bridge"
+
+setstring english ex_dual "\uE461\uE45E to dual wield|n|r\uE070"
+setstring english ex_dual_swap "\uE461\uE45E to swap for|n|r\uE070"
+setstring english ex_pickup "\uE461\uE45F to pick up|n|r\uE11A"
+setstring english ex_swap "\uE461\uE45F to swap for|n|r\uE11A"
+setstring english ex_swap_ai "\uE461\uE45F to take ally's|n|r\uE11A"
+setstring english ex_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE11A"
+
+setstring english ex_pwr_dual "\uE461\uE45E to dual wield|n|r\uE159"
+setstring english ex_pwr_dual_swap "\uE461\uE45E to swap for|n|r\uE159"
+setstring english ex_pwr_pickup "\uE461\uE45F to pick up|n|r\uE160"
+setstring english ex_pwr_swap "\uE461\uE45F to swap for|n|r\uE160"
+setstring english ex_pwr_swap_ai "\uE461\uE45F to take ally's|n|r\uE160"
+setstring english ex_pwr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE160"
+
+setstring english fc_pickup "\uE461\uE45F to pick up|n|r\uE11F"
+setstring english fc_swap "\uE461\uE45F to swap for|n|r\uE11F"
+setstring english fc_swap_ai "\uE461\uE45F to take ally's|n|r\uE11F"
+setstring english fc_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE11F"
+
+setstring english fl_pickup "\uE461\uE45F to pick up|n|r\uE11C"
+
+setstring english flamethrower_pickup "\uE461\uE45F to pick up|n|r\uE11D"
+setstring english flamethrower_swap "\uE461\uE45F to swap for|n|r\uE11D"
+setstring english flamethrower_swap_ai "\uE461\uE45F to take ally's|n|r\uE11D"
+
+setstring english gc_pickup "\uE461\uE45F to pick up|n|r\7-Wood"
+setstring english gc_swap "\uE461\uE45F to swap for|n|r\7-Wood"
+setstring english gc_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\7-Wood"
+
+setstring english ghost_board "\uE461\uE45F to board enemy Ghost"
+setstring english ghost_enter "\uE461\uE45F to drive Ghost"
+setstring english ghost_flip "\uE461\uE45F to flip Ghost"
+
+setstring english gravlift_swap "\uE461\uE45F to swap for Grav Lift"
+
+setstring english ham_pickup "\uE461\uE45F to pick up|n|r\uE120"
+setstring english ham_swap "\uE461\uE45F to swap for|n|r\uE120"
+setstring english ham_swap_ai "\uE461\uE45F to take ally's|n|r\uE120"
+setstring english ham_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE120"
+
+setstring english hologram_swap "\uE461\uE45F to swap for Hologram"
+
+setstring english hornet_board "\uE461\uE45F to board enemy Hornet"
+setstring english hornet_d_enter "\uE461\uE45F to pilot Hornet"
+setstring english hornet_p_enter "\uE461\uE45F to ride in Hornet"
+setstring english hornet_enter_gunner "\uE461\uE45F to operate Hornet turret"
+setstring english hornet_flip "\uE461\uE45F to flip Hornet"
+
+setstring english instantcover_swap "\uE461\uE45F to swap for Deployable Cover"
+setstring english invincibility_swap "\uE461\uE45F to swap for Invincibility"
+setstring english invisibility_swap "\uE461\uE45F to swap for Cloaking"
+setstring english invisibility_vehicle_swap "\uE461\uE45F to swap for Vehicle Cloaking"
+setstring english jammer_swap "\uE461\uE45F to swap for Radar Jammer"
+setstring english lightningstrike_swap "\uE461\uE45F to swap for Lightning Strike"
+
+setstring english laz_pickup "\uE461\uE45F to pick up|n|r\uE12C"
+setstring english laz_swap "\uE461\uE45F to swap for|n|r\uE12C"
+setstring english laz_swap_ai "\uE461\uE45F to take ally's|n|r\uE12C"
+setstring english laz_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE12C"
+
+setstring english mauler_board "\uE461\uE45F to board enemy Prowler"
+setstring english mauler_enter_driver "\uE461\uE45F to drive Prowler"
+setstring english mauler_enter_passenger "\uE461\uE45F to ride in Prowler"
+setstring english mauler_enter_gunner "\uE461\uE45F to operate Prowler turret"
+setstring english mauler_flip "\uE461\uE45F to flip Prowler"
+
+setstring english mgturret_pickup "\uE461\uE45F to pick up|n|r\uE122"
+setstring english mgturret_swap "\uE461\uE45F to swap for|n|r\uE122"
+setstring english ml_pickup "\uE461\uE45F to pick up|n|r\uE124"
+setstring english ml_swap "\uE461\uE45F to swap for|n|r\uE124"
+setstring english ml_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE124"
+
+setstring english mongoose_board "\uE461\uE45F to board enemy Mongoose"
+setstring english mongoose_enter_driver "\uE461\uE45F to drive Mongoose"
+setstring english mongoose_enter_passenger "\uE461\uE45F to ride in Mongoose"
+setstring english mongoose_flip "\uE461\uE45F to flip Mongoose"
+
+setstring english mp_dual "\uE461\uE45E to dual wield|n|r\uE071"
+setstring english mp_dual_swap "\uE461\uE45E to swap for|n|r\uE071"
+setstring english mp_pickup "\uE461\uE45F to pick up|n|r\uE123"
+setstring english mp_swap "\uE461\uE45F to swap for|n|r\uE123"
+setstring english mp_swap_ai "\uE461\uE45F to take ally's|n|r\uE123"
+setstring english mp_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE123"
+
+setstring english mp_dmg_dual "\uE461\uE45E to dual wield|n|r\uE155"
+setstring english mp_dmg_dual_swap "\uE461\uE45E to swap for|n|r\uE155"
+setstring english mp_dmg_pickup "\uE461\uE45F to pick up|n|r\uE156"
+setstring english mp_dmg_swap "\uE461\uE45F to swap for|n|r\uE156"
+setstring english mp_dmg_swap_ai "\uE461\uE45F to take ally's|n|r\uE156"
+setstring english mp_dmg_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE156"
+
+setstring english mp_pwr_dual "\uE461\uE45E to dual wield|n|r\uE157"
+setstring english mp_pwr_dual_swap "\uE461\uE45E to swap for|n|r\uE157"
+setstring english mp_pwr_pickup "\uE461\uE45F to pick up|n|r\uE158"
+setstring english mp_pwr_swap "\uE461\uE45F to swap for|n|r\uE158"
+setstring english mp_pwr_swap_ai "\uE461\uE45F to take ally's|n|r\uE158"
+setstring english mp_pwr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE158"
+
+setstring english mr_pickup "\uE461\uE45F to pick up|n|r\uE170"
+setstring english mr_swap "\uE461\uE45F to swap for|n|r\uE170"
+setstring english mr_swap_ai "\uE461\uE45F to take ally's|n|r\uE170"
+setstring english mr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE170"
+
+setstring english mr_acc_pickup "\uE461\uE45F to pick up|n|r\uE149"
+setstring english mr_acc_swap "\uE461\uE45F to swap for|n|r\uE149"
+setstring english mr_acc_swap_ai "\uE461\uE45F to take ally's|n|r\uE149"
+setstring english mr_acc_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE149"
+
+setstring english mr_dmg_pickup "\uE461\uE45F to pick up|n|r\uE150"
+setstring english mr_dmg_swap "\uE461\uE45F to swap for|n|r\uE150"
+setstring english mr_dmg_swap_ai "\uE461\uE45F to take ally's|n|r\uE150"
+setstring english mr_dmg_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE150"
+
+setstring english mr_mag_pickup "\uE461\uE45F to pick up|n|r\uE151"
+setstring english mr_mag_swap "\uE461\uE45F to swap for|n|r\uE151"
+setstring english mr_mag_swap_ai "\uE461\uE45F to take ally's|n|r\uE151"
+setstring english mr_mag_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE151"
+
+setstring english mr_pwr_pickup "\uE461\uE45F to pick up|n|r\uE152"
+setstring english mr_pwr_swap "\uE461\uE45F to swap for|n|r\uE152"
+setstring english mr_pwr_swap_ai "\uE461\uE45F to take ally's|n|r\uE152"
+setstring english mr_pwr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE152"
+
+setstring english mr_rng_pickup "\uE461\uE45F to pick up|n|r\uE153"
+setstring english mr_rng_swap "\uE461\uE45F to swap for|n|r\uE153"
+setstring english mr_rng_swap_ai "\uE461\uE45F to take ally's|n|r\uE153"
+setstring english mr_rng_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE153"
+
+setstring english mr_rof_pickup "\uE461\uE45F to pick up|n|r\uE154"
+setstring english mr_rof_swap "\uE461\uE45F to swap for|n|r\uE154"
+setstring english mr_rof_swap_ai "\uE461\uE45F to take ally's|n|r\uE154"
+setstring english mr_rof_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE154"
+
+setstring english nd_dual "\uE461\uE45E to dual wield|n|r\uE125"
+setstring english nd_pickup "\uE461\uE45F to pick up|n|r\uE125"
+setstring english nd_swap "\uE461\uE45F to swap for|n|r\uE125"
+setstring english nd_swap_ai "\uE461\uE45F to take ally's|n|r\uE125"
+setstring english nd_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE125"
+
+setstring english ob_pickup "\uE461\uE45F to pick up|n|r\uE113"
+setstring english pcannon_enter "\uE461\uE45F to operate Plasma Cannon"
+setstring english pod_enter "\uE461\uE45F to operate Missile Pod"
+
+setstring english phantom_enter_passenger "\uE461\uE45F to ride in Phantom"
+setstring english pelican_enter_passenger "\uE461\uE45F to ride in Pelican"
+setstring english pelican_enter_gunner "\uE461\uE45F to operate Pelican turret"
+
+setstring english powerdrain_swap "\uE461\uE45F to swap for Power Drain"
+setstring english powerup_pickup_yellow "Picked up an Custom Powerup"
+
+setstring english pp_dual "\uE461\uE45E to dual wield|n|r\uE072"
+setstring english pp_dual_swap "\uE461\uE45E to swap for|n|r\uE072"
+setstring english pp_pickup "\uE461\uE45F to pick up|n|r\uE129"
+setstring english pp_swap "\uE461\uE45F to swap for|n|r\uE129"
+setstring english pp_swap_ai "\uE461\uE45F to take ally's|n|r\uE129"
+setstring english pp_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE129"
+
+setstring english pp_pwr_dual "\uE461\uE45E to dual wield|n|r\uE161"
+setstring english pp_pwr_dual_swap "\uE461\uE45E to swap for|n|r\uE161"
+setstring english pp_pwr_pickup "\uE461\uE45F to pick up|n|r\uE162"
+setstring english pp_pwr_swap "\uE461\uE45F to swap for|n|r\uE162"
+setstring english pp_pwr_swap_ai "\uE461\uE45F to take ally's|n|r\uE162"
+setstring english pp_pwr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE162"
+
+setstring english pr_dual "\uE461\uE45E to dual wield|n|r\uE073"
+setstring english pr_dual_swap "\uE461\uE45E to swap for|n|r\uE073"
+setstring english pr_pickup "\uE461\uE45F to pick up|n|r\uE12A"
+setstring english pr_swap "\uE461\uE45F to swap for|n|r\uE12A"
+setstring english pr_swap_ai "\uE461\uE45F to take ally's|n|r\uE12A"
+setstring english pr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE12A"
+
+setstring english pr_pwr_dual "\uE461\uE45E to dual wield|n|r\uE163"
+setstring english pr_pwr_dual_swap "\uE461\uE45E to swap for|n|r\uE163"
+setstring english pr_pwr_pickup "\uE461\uE45F to pick up|n|r\uE164"
+setstring english pr_pwr_swap "\uE461\uE45F to swap for|n|r\uE164"
+setstring english pr_pwr_swap_ai "\uE461\uE45F to take ally's|n|r\uE164"
+setstring english pr_pwr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE164"
+
+setstring english ps_picked_up "Picked up a Energy Sword"
+setstring english ps_pickup "\uE461\uE45F to pick up|n|r\uE119"
+setstring english ps_swap "\uE461\uE45F to swap for|n|r\uE119"
+setstring english ps_swap_ai "\uE461\uE45F to take ally's|n|r\uE119"
+setstring english ps_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE119"
+
+setstring english pturret_picked_up "Picked up a Plasma Cannon"
+setstring english pturret_pickup "\uE461\uE45F to pick up|n|r\uE12B"
+setstring english pturret_swap "\uE461\uE45F to pick up|n|r\uE12B"
+
+setstring english reactive_armor_swap "\uE461\uE45F to swap for Reflective Shield"
+setstring english regenerator_swap  "\uE461\uE45F to swap for Regenerator"
+
+setstring english remove_turret_melee "Press \uE447 to detach Turret"
+
+setstring english rl_pickup "\uE461\uE45F to pick up|n|r\uE12D"
+setstring english rl_swap "\uE461\uE45F to swap for|n|r\uE12D"
+setstring english rl_swap_ai "\uE461\uE45F to take ally's|n|r\uE12D"
+setstring english rl_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE12D"
+setstring english rocket_lock_available "Hold \uE44A to lock on"
+
+setstring english scorpion_board "\uE461\uE45F to board enemy Scorpion"
+setstring english scorpion_enter_driver "\uE461\uE45F to drive Scorpion"
+setstring english scorpion_enter_passenger "\uE461\uE45F to operate Scorpion turret"
+setstring english scorpion_flip "\uE461\uE45F to flip Scorpion"
+
+setstring english sen_b_pickup "\uE461\uE45F to pick up|n|r\uE12E"
+setstring english sen_b_swap "\uE461\uE45F to swap for|n|r\uE12E"
+setstring english sen_b_swap_ai "\uE461\uE45F to take ally's|n|r\uE12E"
+setstring english sen_b_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE12E"
+
+setstring english sg_pickup "\uE461\uE45F to pick up|n|r\uE12F"
+setstring english sg_swap "\uE461\uE45F to swap for|n|r\uE12F"
+setstring english sg_swap_ai "\uE461\uE45F to take ally's|n|r\uE12F"
+setstring english sg_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE12F"
+
+setstring english shade_enter "\uE461\uE45F to operate Shade Turret"
+
+setstring english smg_dual "\uE461\uE45E to dual wield|n|r\uE068"
+setstring english smg_dual_swap "\uE461\uE45E to swap for|n|r\uE068"
+setstring english smg_picked_up "Picked up a SMG"
+setstring english smg_pickup "\uE461\uE45F to pick up|n|r\uE130"
+setstring english smg_swap "\uE461\uE45F to swap for|n|r\uE130"
+setstring english smg_swap_ai "\uE461\uE45F to take ally's|n|r\uE130"
+setstring english smg_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE130"
+
+setstring english smg_acc_dual "\uE461\uE45E to dual wield|n|r\uE165"
+setstring english smg_acc_dual_swap "\uE461\uE45E to swap for|n|r\uE165"
+setstring english smg_acc_picked_up "Picked up a SMG with Accuracy mods"
+setstring english smg_acc_pickup "\uE461\uE45F to pick up|n|r\uE166"
+setstring english smg_acc_swap "\uE461\uE45F to swap for|n|r\uE166"
+setstring english smg_acc_swap_ai "\uE461\uE45F to take ally's|n|r\uE166"
+setstring english smg_acc_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE166"
+
+setstring english smg_dmg_dual "\uE461\uE45E to dual wield|n|r\uE168"
+setstring english smg_dmg_dual_swap "\uE461\uE45E to swap for|n|r\uE168"
+setstring english smg_dmg_picked_up "Picked up a SMG with Damage mods"
+setstring english smg_dmg_pickup "\uE461\uE45F to pick up|n|r\uE169"
+setstring english smg_dmg_swap "\uE461\uE45F to swap for|n|r\uE169"
+setstring english smg_dmg_swap_ai "\uE461\uE45F to take ally's|n|r\uE169"
+setstring english smg_dmg_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE169"
+
+setstring english smg_pwr_dual "\uE461\uE45E to dual wield|n|r\uE15A"
+setstring english smg_pwr_dual_swap "\uE461\uE45E to swap for|n|r\uE15A"
+setstring english smg_pwr_picked_up "Picked up a SMG with Power mods"
+setstring english smg_pwr_pickup "\uE461\uE45F to pick up|n|r\uE15B"
+setstring english smg_pwr_swap "\uE461\uE45F to swap for|n|r\uE15B"
+setstring english smg_pwr_swap_ai "\uE461\uE45F to take ally's|n|r\uE15B"
+setstring english smg_pwr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE15B"
+
+setstring english smg_rof_dual "\uE461\uE45E to dual wield|n|r\uE15C"
+setstring english smg_rof_dual_swap "\uE461\uE45E to swap for|n|r\uE15C"
+setstring english smg_rof_picked_up "Picked up a SMG with Rate of Fire mods"
+setstring english smg_rof_pickup "\uE461\uE45F to pick up|n|r\uE15D"
+setstring english smg_rof_swap "\uE461\uE45F to swap for|n|r\uE15D"
+setstring english smg_rof_swap_ai "\uE461\uE45F to take ally's|n|r\uE15D"
+setstring english smg_rof_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE15D"
+
+setstring english sn_pickup "\uE461\uE45F to pick up|n|r\uE131"
+setstring english sn_swap "\uE461\uE45F to swap for|n|r\uE131"
+setstring english sn_swap_ai "\uE461\uE45F to take ally's|n|r\uE131"
+setstring english sn_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE131"
+
+setstring english sr_pickup_dual "\uE461\uE45E to dual wield|n|r\uE069"
+setstring english sr_swap_dual "\uE461\uE45E to swap for|n|r\uE069"
+setstring english sr_pickup "\uE461\uE45F to pick up|n|r\uE132"
+setstring english sr_swap "\uE461\uE45F to swap for|n|r\uE132"
+setstring english sr_swap_ai "\uE461\uE45F to take ally's|n|r\uE132"
+setstring english sr_switch_to "Out of ammo|nPress \uE446 to switch to|n|r\uE132"
+
+setstring english tripmine_swap "\uE461\uE45F to swap for Trip Mine"
+setstring english turret_enter "\uE461\uE45F to operate Turret"
+setstring english vision_swap "\uE461\uE45F to swap for V.I.S.R"
+
+setstring english vortex_swap "\uE461\uE45F to swap for Vortex"
+
+setstring english warthog_board "\uE461\uE45F to board enemy Warthog"
+setstring english warthog_enter_driver "\uE461\uE45F to drive Warthog"
+setstring english warthog_enter_passenger "\uE461\uE45F to ride in Warthog"
+setstring english warthog_enter_gunner "\uE461\uE45F to operate Warthog turret"
+setstring english warthog_flip "\uE461\uE45F to flip Warthog"
+
+setstring english wp_pickup "\uE461\uE45F to pick up|n|r"
+
+setstring english wraith_board "\uE461\uE45F to board enemy wraith"
+setstring english wraith_enter_driver "\uE461\uE45F to drive wraith"
+setstring english wraith_enter_gunner "\uE461\uE45F to operate wraith turret"
+setstring english wraith_flip "\uE461\uE45F to flip Wraith"
+setstring english zanzibar_gate_action "\uE461\uE45F to open the gate"
+savetagchanges
+exitto tags
+
+ImportFonts font_package.bin
+ECHO #############------------------------------------------------------
+ECHO # CROSSHAIR #                                                     |
+ECHO #############------------------------------------------------------
+
+ECHO -----------------------------
+ECHO |       HUD_RETICLES        |
+ECHO -----------------------------
+ECHO Yes they've lied to all of us, but we've got alot of work.
+edittag ui\chud\bitmaps\hud_reticles_reach.bitm
+importbitmap 1 DDS\HUD_Reticles_Reach\1.dds
+importbitmap 2 DDS\HUD_Reticles_Reach\2.dds
+setfield Sequences[2].Sprites[0].Left 1
+setfield Sequences[2].Sprites[0].Right 0
+setfield Sequences[2].Sprites[0].Top 1
+setfield Sequences[2].Sprites[0].Bottom 0
+savetagchanges
+exitto tags
+
+ECHO IT'S GOING TO BE OUR XANADU.
+edittag ms30\ui\chud\bitmaps\hud_reticles.bitm
+importbitmap 0 DDS\HUD_Reticles\0.dds
+importbitmap 3 DDS\HUD_Reticles\3.dds
+importbitmap 4 DDS\HUD_Reticles\4.dds
+importbitmap 7 DDS\HUD_Reticles\7.dds
+importbitmap 8 DDS\HUD_Reticles\8.dds
+importbitmap 9 DDS\HUD_Reticles\9.dds
+importbitmap 11 DDS\HUD_Reticles\11.dds
+importbitmap 16 DDS\HUD_Reticles\16.dds
+importbitmap 18 DDS\HUD_Reticles\18.dds
+importbitmap 19 DDS\HUD_Reticles\19.dds
+importbitmap 25 DDS\HUD_Reticles\25.dds
+savetagchanges
+exitto tags
+
+generatebitmap ui\chud\bitmaps\scopes\ssmg_scope_elements DDS\SSMG\scope_element.dds
+generatebitmap ui\chud\bitmaps\scopes\ssmg_scope_rim DDS\SSMG\ssmg_rim.dds
+
+edittag ui\chud\bitmaps\scopes\ssmg_scope_elements.bitm
+removeblockelements Sequences 0 *
+addblockelements Sequences 2
+addblockelements Sequences[0].Sprites 1
+addblockelements Sequences[1].Sprites 1
+setfield Sequences[0].BitmapCount 1
+setfield Sequences[0].Sprites[0].Left 0
+setfield Sequences[0].Sprites[0].Right 0.7578125
+setfield Sequences[0].Sprites[0].top 0.75
+setfield Sequences[0].Sprites[0].Bottom 0.984375
+setfield Sequences[0].Sprites[0].RegistrationPoint 0.3789063 0.1171875
+
+setfield Sequences[1].BitmapCount 1
+setfield Sequences[1].Sprites[0].Left 0
+setfield Sequences[1].Sprites[0].Right 0.1640625
+setfield Sequences[1].Sprites[0].top 0
+setfield Sequences[1].Sprites[0].Bottom 0.75
+setfield Sequences[1].Sprites[0].RegistrationPoint 0.08203125 0.375
+savetagchanges
+exitto tags
+
+edittag ui\chud\bitmaps\spartan_outerring.bitm
+importbitmap 0 DDS\spartanlaser_outerring.dds
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |       ASSAULT_RIFLE       |
+ECHO -----------------------------
+edittag ui\chud\assault_rifle.chdt
+setfield HUDWidgets[5].BitmapWidgets[0].PlacementData[0].Scale 0.885 0.885
+setfield HUDWidgets[5].BitmapWidgets[0].Flags None
+setfield HUDWidgets[5].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[5].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+copyblockelements HudWidgets[5].BitmapWidgets 0
+savetagchanges
+exitto tags
+
+edittag ui\chud\assault_rifle_accuracy.chdt
+removeblockelements HUDWidgets[5].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[5].BitmapWidgets 0
+savetagchanges
+exitto tags
+
+edittag ui\chud\assault_rifle_damage.chdt
+removeblockelements HUDWidgets[5].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[5].BitmapWidgets 0
+savetagchanges
+exitto tags
+
+edittag ui\chud\assault_rifle_power.chdt
+removeblockelements HUDWidgets[5].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[5].BitmapWidgets 0
+savetagchanges
+exitto tags
+
+edittag ui\chud\assault_rifle_rof.chdt
+removeblockelements HUDWidgets[5].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[5].BitmapWidgets 0
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |        BATTLE_RIFLE       |
+ECHO -----------------------------
+edittag ui\chud\battle_rifle.chdt
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.885 0.885
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.8 0.8
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Offset 0 10.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Offset -37.5 67.5
+copyblockelements HUDWidgets[2].BitmapWidgets
+savetagchanges
+exitto tags
+
+edittag ui\chud\battle_rifle_accuracy.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 0
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Offset 0 10.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Offset -37.5 67.5
+savetagchanges
+exitto tags
+
+edittag ui\chud\battle_rifle_ammo.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 0
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Offset 0 10.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Offset -37.5 67.5
+savetagchanges
+exitto tags
+
+edittag ui\chud\battle_rifle_damage.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 0
+savetagchanges
+exitto tags
+
+edittag ui\chud\battle_rifle_power.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 0
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Offset 0 10.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Offset -37.5 67.5
+savetagchanges
+exitto tags
+
+edittag ui\chud\battle_rifle_range.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 0
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Offset 0 10.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Offset -37.5 67.5
+savetagchanges
+exitto tags
+
+edittag ui\chud\battle_rifle_rof.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 0
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Offset 0 10.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Offset -37.5 67.5
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |        BEAM_RIFLE         |
+ECHO -----------------------------
+edittag ui\chud\beam_rifle.chdt
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Origin 2.3 1.05
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Offset 2.95 0
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Scale -3.4 3.4
+
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.885 0.885
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.73 0.73
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Origin 2.21 1.05
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Offset -2.95 0
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Scale 3.5 3.5
+
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 1.77 1.77
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 3.55 3.55
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[1].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[1].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+setfield HUDWidgets[5].BitmapWidgets[0].PlacementData[0].Origin 0 0.2
+setfield HUDWidgets[5].BitmapWidgets[0].PlacementData[0].Offset 649 0
+setfield HUDWidgets[5].BitmapWidgets[0].PlacementData[0].Scale 1.7 1.7
+
+setfield HUDWidgets[5].BitmapWidgets[1].PlacementData[0].Origin 7 1
+setfield HUDWidgets[5].BitmapWidgets[1].PlacementData[0].Offset 0 0
+setfield HUDWidgets[5].BitmapWidgets[1].PlacementData[0].Scale 1.7 1.7
+
+setfield HUDWidgets[5].BitmapWidgets[2].PlacementData[0].Origin 0 -0.2
+setfield HUDWidgets[5].BitmapWidgets[2].PlacementData[0].Offset -649 0
+setfield HUDWidgets[5].BitmapWidgets[2].PlacementData[0].Scale 1.7 1.7
+
+setfield HUDWidgets[5].BitmapWidgets[3].PlacementData[0].Origin 7 1
+setfield HUDWidgets[5].BitmapWidgets[3].PlacementData[0].Offset 1 0
+setfield HUDWidgets[5].BitmapWidgets[3].PlacementData[0].Scale 1.7 1.7
+
+setfield HUDWidgets[5].BitmapWidgets[4].PlacementData[0].Origin 7 1
+setfield HUDWidgets[5].BitmapWidgets[4].PlacementData[0].Offset -1 0
+setfield HUDWidgets[5].BitmapWidgets[4].PlacementData[0].Scale -1.7 1.7
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |        BRUTE_SHOT         |
+ECHO -----------------------------
+edittag ui\chud\brute_shot.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.9 0.9
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |         CARBINE           |
+ECHO -----------------------------
+edittag ui\chud\carbine.chdt
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.885 0.885
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.8 0.8
+
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[4].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Offset 382.5 154.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Scale -2.1 -2.1
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Offset -468 -162
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Offset 0 0
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Scale 1.365 1.365
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[5].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[6].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[7].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+copyblockelements HUDWidgets[2].BitmapWidgets
+savetagchanges
+exitto tags
+
+edittag ui\chud\carbine_ammo.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets 2 *
+removeblockelements HUDWidgets[1].BitmapWidgets 2 *
+swapblockelements HUDWidgets[2].BitmapWidgets 0 8
+exitto ui\chud\carbine_ammo.chud_definition
+swapblockelements HUDWidgets[2].BitmapWidgets 1 7
+exitto ui\chud\carbine_ammo.chud_definition
+removeblockelements HUDWidgets[2].BitmapWidgets 2 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 2
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Anchor Crosshair
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Offset 0 0
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Origin 0 -4
+
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Anchor Crosshair
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Offset 0 0
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Origin 0.872 -5.5
+
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[4].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Offset 382.5 154.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Scale -2.1 -2.1
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Offset -468 -162
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Offset 0 0
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Scale 1.365 1.365
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[5].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[6].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[7].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+savetagchanges
+exitto tags
+
+edittag ui\chud\covenant_carbine_accuracy.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 0
+
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[4].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Offset 382.5 154.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Scale -2.1 -2.1
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Offset -468 -162
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Offset 0 0
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Scale 1.365 1.365
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[5].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[6].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[7].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+savetagchanges
+exitto tags
+
+edittag ui\chud\covenant_carbine_damage.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 0
+
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[4].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Offset 382.5 154.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Scale -2.1 -2.1
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Offset -468 -162
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Offset 0 0
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Scale 1.365 1.365
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[5].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[6].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[7].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+savetagchanges
+exitto tags
+
+edittag ui\chud\covenant_carbine_power.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 0
+
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[4].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Offset 382.5 154.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Scale -2.1 -2.1
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Offset -468 -162
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Offset 0 0
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Scale 1.365 1.365
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[5].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[6].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[7].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+savetagchanges
+exitto tags
+
+edittag ui\chud\covenant_carbine_range.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 0
+removeblockelements HUDWidgets[5].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[5].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[5].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[5].BitmapWidgets[1].AnimationData 0 *
+addblockelements HUDWidgets[5].BitmapWidgets[1].AnimationData 1
+setfield HUDWidgets[5].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+savetagchanges
+exitto tags
+
+edittag ui\chud\covenant_carbine_rof.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets 0
+
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[4].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Offset 382.5 154.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Scale -2.1 -2.1
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Offset -468 -162
+setfield HUDWidgets[3].BitmapWidgets[6].PlacementData[0].Scale 2.1 2.1
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Offset 0 0
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Scale 1.365 1.365
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[5].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[6].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[6].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+
+removeblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[7].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[7].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |           DMR             |
+ECHO -----------------------------
+edittag ui\chud\bitmaps\scopes\dmr_scope.bitm
+importbitmap 0 DDS\dmr_scope.dds
+savetagchanges
+exitto tags
+edittag ui\chud\bitmaps\scopes\dmr_scope_elements.bitm
+importbitmap 0 DDS\dmr_scope_elements.dds
+savetagchanges
+exitto tags
+
+edittag ui\chud\dmr.chdt
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.585 0.585
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.8 0.8
+setfield HUDWidgets[2].BitmapWidgets[2].PlacementData[0].Scale 0.86 0.86
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Offset -10 12
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].SortLayer Background
+savetagchanges
+exitto tags
+
+edittag ui\chud\dmr_accuracy.chdt
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.585 0.585
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.8 0.8
+setfield HUDWidgets[2].BitmapWidgets[2].PlacementData[0].Scale 0.86 0.86
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Offset -10 12
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].SortLayer Background
+savetagchanges
+exitto tags
+
+edittag ui\chud\dmr_ammo.chdt
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.585 0.585
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.8 0.8
+setfield HUDWidgets[2].BitmapWidgets[2].PlacementData[0].Scale 0.86 0.86
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Offset -10 12
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].SortLayer Background
+savetagchanges
+exitto tags
+
+edittag ui\chud\dmr_power.chdt
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.585 0.585
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.8 0.8
+setfield HUDWidgets[2].BitmapWidgets[2].PlacementData[0].Scale 0.86 0.86
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Offset -10 12
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].SortLayer Background
+savetagchanges
+exitto tags
+
+edittag ui\chud\dmr_rof.chdt
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.585 0.585
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.8 0.8
+setfield HUDWidgets[2].BitmapWidgets[2].PlacementData[0].Scale 0.86 0.86
+setfield HUDWidgets[3].BitmapWidgets[7].PlacementData[0].Offset -10 12
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].SortLayer Background
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |          MAULER           |
+ECHO -----------------------------
+edittag ui\chud\excavator.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.9 0.9
+savetagchanges
+exitto tags
+
+edittag ui\chud\excavator_power.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.9 0.9
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |       FLAMETHROWER        |
+ECHO -----------------------------
+edittag ui\chud\flamethrower.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.81 0.81
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |         FUEL_ROD          |
+ECHO -----------------------------
+edittag ui\chud\fuel_rod_cannon.chdt
+removeblockelements HUDWidgets[4].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[4].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[4].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[4].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[4].BitmapWidgets[0].PlacementData[0].Scale 0.6 0.6
+
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 5.7 4.5
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 2.85 2.25
+setfield HUDWidgets[2].BitmapWidgets[2].PlacementData[0].Offset -315 0
+setfield HUDWidgets[2].BitmapWidgets[2].PlacementData[0].Scale 1.65 1.65
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |          HAMMER           |
+ECHO -----------------------------
+edittag ui\chud\hammer.chdt
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+echo original value is 6.83
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 0.6 0.6
+savetagchanges
+exitto tags
+
+
+ECHO -----------------------------
+ECHO |      MACHINE TURRET       |
+ECHO -----------------------------
+edittag ui\chud\t_machinegun.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.55 0.55
+savetagchanges
+exitto tags
+edittag ui\chud\machinegun_turret.chdt
+removeblockelements HUDWidgets[1].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[1].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[1].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[1].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 0.7 0.7
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |          MAGNUM           |
+ECHO -----------------------------
+edittag ui\chud\magnum.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.886 0.886
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.8 0.8
+copyblockelements HUDWidgets[2].BitmapWidgets
+savetagchanges
+exitto tags
+
+edittag ui\chud\magnum_damage.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets
+savetagchanges
+exitto tags
+
+edittag ui\chud\magnum_power.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets
+
+removeblockelements HUDWidgets[6].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[6].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[6].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[6].BitmapWidgets[0].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[6].BitmapWidgets[1].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[6].BitmapWidgets[1].PlacementData[0].Offset 0 10.5
+setfield HUDWidgets[6].BitmapWidgets[2].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[6].BitmapWidgets[3].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[6].BitmapWidgets[3].PlacementData[0].Offset -37.5 67.5
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |          MISSILE          |
+ECHO -----------------------------
+edittag ui\chud\t_missile.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.8139 0.8139
+setfield HUDWidgets[0].BitmapWidgets[1].PlacementData[0].Scale 0.705 0.705
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Scale 0.705 0.705
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Scale 0.8139 0.8139
+setfield HUDWidgets[0].BitmapWidgets[4].PlacementData[0].Scale 0.8139 0.8139
+removeblockelements HUDWidgets[0].BitmapWidgets[5].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[5].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[5].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[5].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[5].PlacementData[0].Scale 0.8139 0.8139
+savetagchanges
+exitto tags
+edittag ui\chud\missile.chdt
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 0.9139 0.9139
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 0.805 0.805
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 0.805 0.805
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 0.9139 0.9139
+setfield HUDWidgets[3].BitmapWidgets[4].PlacementData[0].Scale 0.9139 0.9139
+removeblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[5].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[5].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[3].BitmapWidgets[5].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Scale 0.9139 0.9139
+savetagchanges
+exitto tags
+
+
+ECHO -----------------------------
+ECHO |          NEEDLER          |
+ECHO -----------------------------
+edittag ui\chud\needler.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.623 0.623
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |       PLASMA_PISTOL       |
+ECHO -----------------------------
+edittag ui\chud\plasma_pistol.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.82 0.82
+copyblockelements HUDWidgets[2].BitmapWidgets
+savetagchanges
+exitto tags
+
+edittag ui\chud\plasma_pistol_power.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |        PLASMA_RIFLE       |
+ECHO -----------------------------
+edittag ui\chud\plasma_rifle.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.867 0.867
+copyblockelements HUDWidgets[2].BitmapWidgets
+savetagchanges
+exitto tags
+
+edittag ui\chud\plasma_rifle_power.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDWidgets[2].BitmapWidgets
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |       PLASMA_CANNON       |
+ECHO -----------------------------
+edittag ui\chud\t_plasmaturret.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.55 0.55
+savetagchanges
+exitto tags
+edittag ui\chud\plasma_turret.chdt
+removeblockelements HUDWidgets[1].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[1].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[1].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[1].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 0.7 0.7
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |      ROCKET_LAUNCHER      |
+ECHO -----------------------------
+edittag ui\chud\rocket.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.89 0.89
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+Setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+removeblockelements HUDWidgets[3].BitmapWidgets[1].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[1].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+Setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 4.5 4.5
+Setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 7.5 7.5
+Setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Offset -198 165
+Setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 1.5 1.5
+Setfield HUDWidgets[3].Textwidgets[0].PlacementData[0].Offset 240 187.5
+Setfield HUDWidgets[3].Textwidgets[0].PlacementData[0].Scale 1.95 1.95
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |       Sentinel_Beam       |
+ECHO -----------------------------
+edittag ui\chud\sentinel_beam.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.89 0.89
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |         Shotgun           |
+ECHO -----------------------------
+edittag ui\chud\shotgun.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.574 0.574
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |           SMG             |
+ECHO -----------------------------
+edittag ui\chud\smg.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.895 0.895
+copyblockelements HUDWidgets[2].BitmapWidgets
+savetagchanges
+exitto tags
+
+edittag ui\chud\smg_accuracy.chdt
+removeblockelements HUDWidgets[1].BitmapWidgets 0 *
+pasteblockelements HUDwidgets[1].BitmapWidgets 0
+
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Origin -1 -1
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Offset 0 0
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.25 2.25
+
+removeblockelements HUDWidgets[0].BitmapWidgets[1].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[1].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[0].BitmapWidgets[1].Bitmap ui\chud\bitmaps\scopes\ssmg_scope_elements.bitm
+setfield HUDWidgets[0].BitmapWidgets[1].PlacementData[0].Origin 1.75 0
+setfield HUDWidgets[0].BitmapWidgets[1].PlacementData[0].Offset 0 10.5
+setfield HUDWidgets[0].BitmapWidgets[1].PlacementData[0].Scale 2 2
+
+removeblockelements HUDWidgets[0].BitmapWidgets[2].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[2].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[0].BitmapWidgets[2].Bitmap ui\chud\bitmaps\scopes\ssmg_scope_elements.bitm
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Origin 0 1.75
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Offset 0 0
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Scale 2 2
+
+removeblockelements HUDWidgets[0].BitmapWidgets[3].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[3].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[3].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[0].BitmapWidgets[3].Bitmap ui\chud\bitmaps\scopes\ssmg_scope_rim.bitm
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Origin -1.02 -1.0195
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Offset 0 0
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[0].BitmapWidgets[3].BitmapSequenceIndex 0
+setfield HUDWidgets[0].BitmapWidgets[3].Flags MirrorHorizontally,MirrorVertically
+savetagchanges
+exitto tags
+
+edittag ui\chud\smg_damage.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDwidgets[2].BitmapWidgets 0
+savetagchanges
+exitto tags
+
+edittag ui\chud\smg_power.chdt
+removeblockelements HUDWidgets[1].BitmapWidgets 0 *
+pasteblockelements HUDwidgets[1].BitmapWidgets 0
+
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Origin -1 -1
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Offset 0 0
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.25 2.25
+
+removeblockelements HUDWidgets[0].BitmapWidgets[1].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[1].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[0].BitmapWidgets[1].Bitmap ui\chud\bitmaps\scopes\ssmg_scope_elements.bitm
+setfield HUDWidgets[0].BitmapWidgets[1].PlacementData[0].Origin 1.75 0
+setfield HUDWidgets[0].BitmapWidgets[1].PlacementData[0].Offset 0 10.5
+setfield HUDWidgets[0].BitmapWidgets[1].PlacementData[0].Scale 2 2
+
+removeblockelements HUDWidgets[0].BitmapWidgets[2].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[2].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[0].BitmapWidgets[2].Bitmap ui\chud\bitmaps\scopes\ssmg_scope_elements.bitm
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Origin 0 1.75
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Offset 0 0
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Scale 2 2
+
+removeblockelements HUDWidgets[0].BitmapWidgets[3].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[3].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[3].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[0].BitmapWidgets[3].Bitmap ui\chud\bitmaps\scopes\ssmg_scope_rim.bitm
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Origin -1.02 -1.0195
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Offset 0 0
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[0].BitmapWidgets[3].BitmapSequenceIndex 0
+setfield HUDWidgets[0].BitmapWidgets[3].Flags MirrorHorizontally,MirrorVertically
+savetagchanges
+exitto tags
+
+edittag ui\chud\smg_rof.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets 0 *
+pasteblockelements HUDwidgets[2].BitmapWidgets 0
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |       Sniper_Rifle        |
+ECHO -----------------------------
+edittag ui\chud\sniper_rifle.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].RenderData[0].RangeInput Zero
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.85 0.85
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.73 0.73
+
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\zoom_scope.chad
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+
+setfield HUDWidgets[3].Textwidgets[0].PlacementData[0].Offset 352.5 270
+setfield HUDWidgets[3].Textwidgets[0].PlacementData[0].Scale 1.725 1.725
+setfield HUDWidgets[3].Textwidgets[1].PlacementData[0].Offset 352.5 270
+setfield HUDWidgets[3].Textwidgets[1].PlacementData[0].Scale 1.725 1.725
+setfield HUDWidgets[3].Textwidgets[2].PlacementData[0].Offset -352.5 244.5
+setfield HUDWidgets[3].Textwidgets[2].PlacementData[0].Scale 1.725 1.725
+setfield HUDWidgets[3].Textwidgets[3].PlacementData[0].Offset -288 232.5
+setfield HUDWidgets[3].Textwidgets[3].PlacementData[0].Scale 1.725 1.725
+setfield HUDWidgets[3].Textwidgets[4].PlacementData[0].Offset -288 258
+setfield HUDWidgets[3].Textwidgets[4].PlacementData[0].Scale 1.725 1.725
+
+setfield HUDWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 3.15 3.15
+
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Offset -9 157.5
+setfield HUDWidgets[3].BitmapWidgets[2].PlacementData[0].Scale 1.8 1.8
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Offset -318 105
+setfield HUDWidgets[3].BitmapWidgets[3].PlacementData[0].Scale 1.5 1.5
+
+setfield HUDWidgets[3].BitmapWidgets[4].PlacementData[0].Origin 14 0
+setfield HUDWidgets[3].BitmapWidgets[4].PlacementData[0].Scale 3.5 0.8
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Offset 0 -142.5
+setfield HUDWidgets[3].BitmapWidgets[5].PlacementData[0].Scale 1.8 1.8
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |       Spartan_Laser       |
+ECHO -----------------------------
+ECHO WHAT THE FUCK
+edittag ui\chud\animations\crosshair_animations\spartan_laser.chad
+removeblockelements Alpha 0 *
+setfield RuntimePeriodMSEC 180
+setfield Rotation[0].Keyframes[1].FrameNumber 180
+setfield Rotation[0].Function.Data 08340000000000000000803F000000000000000000000000000000001C00000001000000070000CDFFFF7F7F8017033FC08B01C0E0C5204000000000
+savetagchanges
+exitto tags
+ECHO ---------------------------------------------------------------------------------------------------------------------------------
+edittag ui\chud\animations\laser_charge.chad
+setfield Rotation[0].Keyframes[1].Angles -180 0 0
+setfield Rotation[0].Function.Data 08340000000000000000803F000000000000000000000000000000001400000001000000040000CDFFFF7F7F0000803F00000000
+savetagchanges
+exitto tags
+ECHO ---------------------------------------------------------------------------------------------------------------------------------
+edittag ui\chud\animations\crosshair_animations\spartan_laser_crosshair.chad
+setfield Alpha[0].Keyframes[1].TimeOffset 180
+setfield Alpha[0].Keyframes[1].ScalarValue 0.2
+
+removeblockelements Scale 0 *
+addblockelements Scale 1
+addblockelements Scale[0].Keyframes 2
+setfield Scale[0].Keyframes[0].Scale 1 1
+setfield Scale[0].Keyframes[0].TimeOffset 0
+setfield Scale[0].Keyframes[1].Scale 0.75 0.75
+setfield Scale[0].Keyframes[1].TimeOffset 180
+setfield Scale[0].Function.Data 08340000000000000000803F000000000000000000000000000000001400000001000000040000CDFFFF7F7F0000803F00000000
+
+removeblockelements Rotation 0 *
+addblockelements Rotation
+addblockelements Rotation[0].Keyframes 2
+setfield Rotation[0].Keyframes[1].FrameNumber 360
+setfield Rotation[0].Keyframes[1].Angles -90 0 0
+setfield Rotation[0].Function.Data 08340000000000000000803F000000000000000000000000000000001C00000001000000070000CDFFFF7F7F8017033FC08B01C0E0C5204000000000
+savetagchanges
+exitto tags
+ECHO ---------------------------------------------------------------------------------------------------------------------------------
+edittag ui\chud\animations\laser_zoom_level.chad
+setfield Rotation[0].Keyframes[1].Angles -270 0 0
+savetagchanges
+exitto tags
+ECHO ---------------------------------------------------------------------------------------------------------------------------------
+edittag ui\chud\spartan_laser.chdt
+setfield HUDWidgets[2].BitmapWidgets[2].AnimationData[0].Active.InputType Time
+setfield HUDWidgets[2].BitmapWidgets[2].AnimationData[0].Active.Flags 0
+
+setfield HUDWidgets[2].BitmapWidgets[3].AnimationData[0].Active.InputType Time
+setfield HUDWidgets[2].BitmapWidgets[3].AnimationData[0].Active.Flags 0
+
+setfield HUDWidgets[2].BitmapWidgets[6].AnimationData[0].Active.InputType Time
+setfield HUDWidgets[2].BitmapWidgets[6].AnimationData[0].Active.Flags 0
+
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].ShaderType Simple
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].LocalScalarD 0
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputColorA HighlightForeground
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputColorB LocalA
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputColorC LocalA
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputColorD LocalD
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputColorE LocalA
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputColorF LocalA
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputScalarA Input
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputScalarB Input
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputScalarC Input
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputScalarD Input
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputScalarE Input
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].OutputScalarF Input
+
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Offset -57 -52.5
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Scale 2.25 2.25
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Offset 57 -52.5
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Scale -2.25 2.25
+
+ECHO UNZOOMED CROSSHAIR
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.85 0.85
+
+ECHO ZOOMED CROSSHAIR
+removeblockelements HUDWidgets[2].BitmapWidgets[1].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[1].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[1].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.85 0.85
+setfield HUDWidgets[2].BitmapWidgets[1].BitmapSequenceIndex 25
+
+setfield HUDWidgets[2].BitmapWidgets[2].PlacementData[0].Scale 1.77 1.77
+setfield HUDWidgets[2].BitmapWidgets[2].PlacementData[0].Origin 0 -10
+setfield HUDWidgets[2].BitmapWidgets[2].RenderData[0].Rangeinput Zero
+setfield HUDWidgets[2].BitmapWidgets[2].AnimationData[0].Active.InputType Extern1
+setfield HUDWidgets[2].BitmapWidgets[2].Bitmap ui\chud\bitmaps\scopes\spartan_laser_reticule.bitm
+setfield HUDWidgets[2].BitmapWidgets[2].BitmapSequenceIndex 0
+
+swapblockelements HUDWidgets[2].BitmapWidgets 4 6
+exitto ui\chud\spartan_laser.chud_definition
+removeblockelements HUDWidgets[2].BitmapWidgets 5 *
+
+ECHO OTHER
+setfield HUDWidgets[2].BitmapWidgets[3].Bitmap ui\chud\bitmaps\spartan_outerring.bitm
+setfield HUDWidgets[2].BitmapWidgets[3].PlacementData[0].Scale 0.7125 0.7125
+setfield HUDWidgets[2].BitmapWidgets[3].PlacementData[0].Origin 0 0
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].Rangeinput Autoaim
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].ExternalInput Autoaim
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].LocalColorD 0 0 0 0 
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].LocalScalarA 2
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].LocalScalarB 2
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].LocalScalarC 2
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].LocalScalarD 2
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].OutputColorD LocalA
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].OutputScalarA Input
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].OutputScalarB RangeInput
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].OutputScalarC RangeInput
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].OutputScalarD RangeInput
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].OutputScalarE RangeInput
+setfield HUDWidgets[2].BitmapWidgets[3].RenderData[0].OutputScalarF RangeInput
+setfield HUDWidgets[2].BitmapWidgets[3].StateData[0].Unitzoomflags BinocularsEnabled
+setfield HUDWidgets[2].BitmapWidgets[4].Bitmap ui\chud\bitmaps\spartan_outerring.bitm
+setfield HUDWidgets[2].BitmapWidgets[4].PlacementData[0].Scale 0.75 0.75
+setfield HUDWidgets[2].BitmapWidgets[4].PlacementData[0].Origin 0 0
+setfield HUDWidgets[2].BitmapWidgets[4].RenderData[0].Rangeinput Autoaim
+setfield HUDWidgets[2].BitmapWidgets[4].StateData[0].Unitzoomflags Unitiszoomedlevel1
+
+setfield HUDWidgets[6].TextWidgets[0].PlacementData[0].Offset 0 186
+setfield HUDWidgets[6].TextWidgets[0].PlacementData[0].Scale 1.2 1.2
+setfield HUDWidgets[6].BitmapWidgets[0].PlacementData[0].Scale 1.65 1.65
+
+setfield HUDWidgets[6].BitmapWidgets[1].PlacementData[0].Scale 1.5 -1.5
+setfield HUDWidgets[6].BitmapWidgets[1].BitmapSequenceIndex 1
+setfield HUDWidgets[6].BitmapWidgets[1].Bitmap ui\chud\bitmaps\scopes\spartan_laser_reticule.bitm
+
+setfield HUDWidgets[6].BitmapWidgets[2].PlacementData[0].Scale 1.5 -1.5
+setfield HUDWidgets[6].BitmapWidgets[2].PlacementData[0].Origin 1 -1
+setfield HUDWidgets[6].BitmapWidgets[2].PlacementData[0].Offset -18 0
+setfield HUDWidgets[6].BitmapWidgets[2].BitmapSequenceIndex 2
+setfield HUDWidgets[6].BitmapWidgets[2].Bitmap ui\chud\bitmaps\scopes\spartan_laser_reticule.bitm
+
+setfield HUDWidgets[6].BitmapWidgets[3].PlacementData[0].Scale 1.5 -1.5
+setfield HUDWidgets[6].BitmapWidgets[3].RenderData[0].ExternalInput Zero
+setfield HUDWidgets[6].BitmapWidgets[3].BitmapSequenceIndex 4
+setfield HUDWidgets[6].BitmapWidgets[3].Bitmap ui\chud\bitmaps\scopes\spartan_laser_reticule.bitm
+setfield HUDWidgets[6].BitmapWidgets[3].Flags 0
+
+setfield HUDWidgets[6].BitmapWidgets[4].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[6].BitmapWidgets[4].PlacementData[0].Offset 0 169.5
+setfield HUDWidgets[6].BitmapWidgets[4].BitmapSequenceIndex 3
+setfield HUDWidgets[6].BitmapWidgets[4].Bitmap ui\chud\bitmaps\scopes\spartan_laser_reticule.bitm
+
+setfield HUDWidgets[6].BitmapWidgets[5].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[6].BitmapWidgets[5].BitmapSequenceIndex 3
+
+setfield HUDWidgets[6].BitmapWidgets[6].PlacementData[0].Scale 1.515 1.5
+setfield HUDWidgets[6].BitmapWidgets[6].PlacementData[0].Origin 1 -1
+setfield HUDWidgets[6].BitmapWidgets[6].PlacementData[0].Offset 102.5 2
+
+setfield HUDWidgets[6].BitmapWidgets[7].PlacementData[0].Scale 1.515 -1.5
+setfield HUDWidgets[6].BitmapWidgets[7].PlacementData[0].Origin 1 -1
+setfield HUDWidgets[6].BitmapWidgets[7].PlacementData[0].Offset -102.5 2
+
+setfield HUDWidgets[6].BitmapWidgets[8].PlacementData[0].Scale 1.5 1.5
+setfield HUDWidgets[6].BitmapWidgets[8].PlacementData[0].Origin -2.98 -1
+
+setfield HUDWidgets[6].BitmapWidgets[9].PlacementData[0].Scale -1.5 1.5
+setfield HUDWidgets[6].BitmapWidgets[9].PlacementData[0].Origin -2.98 -1
+savetagchanges
+exitto tags
+
+
+ECHO -----------------------------
+ECHO |          Spiker           |
+ECHO -----------------------------
+edittag ui\chud\spike_rifle.chdt
+removeblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[2].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[2].BitmapWidgets[0].RenderData[0].RangeInput Zero
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[2].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.9 0.9
+savetagchanges
+exitto tags
+
+ECHO -----------------------------
+ECHO |       Energy_Sword        |
+ECHO -----------------------------
+edittag ui\chud\sword.chdt
+removeblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[3].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[3].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 0.6 0.6
+savetagchanges
+exitto tags
+
+ECHO ------------------------------------------------------------VEHICLES------------------------------------------------------------------
+
+edittag ui\chud\v_banshee.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.54 0.54
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_chaingun.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.7 0.7
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_chopper.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.697 0.694
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_driver.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.56 0.56
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_gaussturret.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.53 0.53
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_ghost.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.7 0.7
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_grinderdriver.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.56 0.56
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Offset 0 -50
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_grinderturret.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.64 0.64
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_hornet.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.82 0.82
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_mongoose.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.56 0.56
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_scorpion.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.705 0.705
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_scorpionturret.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.7 0.7
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_shade.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.7 0.7
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_wraith.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.7 0.7
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_wraithturret.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.7 0.7
+savetagchanges
+exitto tags
+
+edittag ui\chud\v_wraith_anti_air.chdt
+removeblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 0 *
+addblockelements HUDWidgets[0].BitmapWidgets[0].AnimationData 1
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.InputType Extern2
+setfield HUDWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\crosshair_animations\br_crosshair.chad
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 0.7 0.7
+savetagchanges
+exitto tags

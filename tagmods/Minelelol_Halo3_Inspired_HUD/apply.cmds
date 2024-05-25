@@ -1,3 +1,13 @@
+ECHO ###############
+ECHO #  HEALTH BAR #
+ECHO ###############
+ECHO HEALTH BAR ASSET FROM SEEDONATOR THANK YOU SO MUCH <3
+generatebitmap ui\chud\bitmaps\health_meter DDS\Shield\healthmeter.dds
+generatebitmap ui\chud\bitmaps\health_border DDS\Shield\healthborder.dds
+
+generatebitmap ui\chud\bitmaps\shield_meter_cut DDS\Shield\shieldmeter.dds
+generatebitmap ui\chud\bitmaps\shield_border_cut DDS\Shield\shieldborder.dds
+
 edittag ui\chud\bitmaps\red_flash.bitm
 importbitmap 0 DDS\red_flash.DDS
 savetagchanges
@@ -15,7 +25,14 @@ exitto tags
 
 edittag ui\chud\bitmaps\grenade_scematics.bitm
 importbitmap 1 DDS\grenade_schematic.dds
-setfield Sequences[1].Sprites[0].BitmapIndex 1
+removeblockelements Sequences 6 *
+addblockelements Sequences
+addblockelements Sequences[6].Sprites
+setfield Sequences[6].Sprites[0].BitmapIndex 1
+setfield Sequences[6].Sprites[0].Right 0.3125
+setfield Sequences[6].Sprites[0].Top 0.375
+setfield Sequences[6].Sprites[0].Bottom 0.6875
+setfield Sequences[6].Sprites[0].RegistrationPoint 0.15625 0.15625
 savetagchanges
 exitto tags
 
@@ -44,25 +61,31 @@ generatebitmap ui\chud\bitmaps\motion_tracker_disabled DDS\motion_tracker_disabl
 edittag ui\chud\spartan.chdt
 setfield HUDWidgets[0].BitmapWidgets[1].StateData[0].Player_SpecialFlags ShieldsHeavyDamage
 setField HUDWidgets[0].BitmapWidgets[1].StateData[0].UnitGeneralFlags 0
+setfield HUDWidgets[0].BitmapWidgets[1].Bitmap ui\chud\bitmaps\shield_border_cut.bitm
+
 setfield HUDWidgets[0].BitmapWidgets[2].StateData[0].Player_SpecialFlags ShieldsHeavyDamage
 setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Origin 0 -1.152
-setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Offset 0 -3.65
-setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Scale 0.9875 0.841
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Offset 0 -3.2
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Scale 0.985 0.835
+setfield HUDWidgets[0].BitmapWidgets[2].Bitmap ui\chud\bitmaps\shield_meter_cut.bitm
 
 setfield HUDWidgets[0].BitmapWidgets[3].AnimationData[0].Initializing.Animation ui\chud\animations\shield_color.chud_animation_definition
 setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Origin 0 -1.152
-setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Offset 0 -3.65
-setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Scale 0.9875 0.841
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Offset 0 -3.2
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Scale 0.985 0.835
+setfield HUDWidgets[0].BitmapWidgets[3].Bitmap ui\chud\bitmaps\shield_meter_cut.bitm
 
 setfield HUDWidgets[0].BitmapWidgets[4].AnimationData[0].Initializing.Animation ui\chud\animations\shield_color.chud_animation_definition
 setfield HUDWidgets[0].BitmapWidgets[4].PlacementData[0].Origin 0 -1.152
-setfield HUDWidgets[0].BitmapWidgets[4].PlacementData[0].Offset 0 -3.65
-setfield HUDWidgets[0].BitmapWidgets[4].PlacementData[0].Scale 0.9875 0.841
+setfield HUDWidgets[0].BitmapWidgets[4].PlacementData[0].Offset 0 -3.2
+setfield HUDWidgets[0].BitmapWidgets[4].PlacementData[0].Scale 0.985 0.835
+setfield HUDWidgets[0].BitmapWidgets[4].Bitmap ui\chud\bitmaps\shield_meter_cut.bitm
 
 setfield HUDWidgets[0].BitmapWidgets[5].AnimationData[0].Initializing.Animation ui\chud\animations\shield_color.chud_animation_definition
 setfield HUDWidgets[0].BitmapWidgets[5].PlacementData[0].Origin 0 -1.152
-setfield HUDWidgets[0].BitmapWidgets[5].PlacementData[0].Offset 0 -3.65
-setfield HUDWidgets[0].BitmapWidgets[5].PlacementData[0].Scale 0.9875 0.841
+setfield HUDWidgets[0].BitmapWidgets[5].PlacementData[0].Offset 0 -3.2
+setfield HUDWidgets[0].BitmapWidgets[5].PlacementData[0].Scale 0.985 0.835
+setfield HUDWidgets[0].BitmapWidgets[5].Bitmap ui\chud\bitmaps\shield_meter_cut.bitm
 
 setfield HUDWidgets[2].PlacementData[0].Offset -25 35
 setfield HUDWidgets[2].PlacementData[0].Scale 1.3 1.3
@@ -71,6 +94,7 @@ setfield HUDWidgets[3].PlacementData[0].Offset -25 35
 setfield HUDWidgets[3].PlacementData[0].Scale 1.3 1.3
 setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Offset 26 3.5
 setfield HUDWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 0.5 0.5
+setfield HUDWidgets[3].BitmapWidgets[0].BitmapSequenceIndex 6
 
 setfield HUDWidgets[4].PlacementData[0].Offset -24 35
 setfield HUDWidgets[4].PlacementData[0].Scale 1.3 1.3
@@ -101,6 +125,28 @@ setfield HUDWidgets[23].BitmapWidgets[0].PlacementData[0].Anchor Parent
 setfield HUDWidgets[23].BitmapWidgets[0].AnimationData[0].Initializing.Animation ui\chud\animations\mt_readying2.chad
 setfield HUDWidgets[23].BitmapWidgets[0].RenderData[0].LocalColorA 0 0 19 25
 setfield HUDWidgets[23].BitmapWidgets[0].RenderData[0].OutputColorA HighlightForeground
+
+echo ##############
+echo # HEALTH BAR #
+echo ##############
+removeblockelements Hudwidgets[0].BitmapWidgets 12 *
+copyblockelements HUDWidgets[0].BitmapWidgets 1 2
+pasteblockelements HUDWidgets[0].BitmapWidgets
+setfield HUDWidgets[0].BitmapWidgets[13].Bitmap ui\chud\bitmaps\health_meter.bitm
+setfield HUDWidgets[0].BitmapWidgets[13].RenderData[0].ExternalInput BodyVitality
+setfield HUDWidgets[0].BitmapWidgets[13].RenderData[0].RangeInput HealthRecentDamage
+setfield HUDWidgets[0].BitmapWidgets[13].PlacementData[0].Origin 0 -1
+setfield HUDWidgets[0].BitmapWidgets[13].PlacementData[0].Offset 0 12
+setfield HUDWidgets[0].BitmapWidgets[13].PlacementData[0].Scale 0.8 1
+setfield HUDWidgets[0].BitmapWidgets[13].StateData[0].UnitGeneralFlags 0
+
+setfield HUDWidgets[0].BitmapWidgets[12].Bitmap ui\chud\bitmaps\health_border.bitm
+setfield HUDWidgets[0].BitmapWidgets[12].RenderData[0].ExternalInput Zero
+setfield HUDWidgets[0].BitmapWidgets[12].RenderData[0].RangeInput BodyVitality
+setfield HUDWidgets[0].BitmapWidgets[12].RenderData[0].LocalScalarB 1
+setfield HUDWidgets[0].BitmapWidgets[12].PlacementData[0].Offset 0 12
+setfield HUDWidgets[0].BitmapWidgets[12].PlacementData[0].Scale 0.8 1
+setfield HUDWidgets[0].BitmapWidgets[12].StateData[0].UnitGeneralFlags 0
 savetagchanges
 exitto tags
 
@@ -113,6 +159,7 @@ setfield HUDWidgets[4].PlacementData[0].Offset -24 32
 setfield HUDWidgets[4].PlacementData[0].Scale 1.3 1.3
 setfield HUDWidgets[4].BitmapWidgets[0].PlacementData[0].Offset 26 3.5
 setfield HUDWidgets[4].BitmapWidgets[0].PlacementData[0].Scale 0.5 0.5
+setfield HUDWidgets[4].BitmapWidgets[0].BitmapSequenceIndex 6
 
 setfield HUDWidgets[5].PlacementData[0].Offset -23 32
 setfield HUDWidgets[5].PlacementData[0].Scale 1.3 1.3

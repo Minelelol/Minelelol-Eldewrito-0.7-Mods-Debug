@@ -47,6 +47,31 @@ importbitmap 0 DDS/00000FD5.dds
 savetagchanges
 exitto tags
 
+Echo ##############
+Echo # BEAM RIFLE #
+Echo ##############
+edittag objects\weapons\rifle\beam_rifle\beam_rifle\material_1.rmsh
+setfield ShaderProperties[0].RealConstants[2].Values 1 1 1 1
+setfield ShaderProperties[0].RealConstants[13].Values 4 4 4 4
+setfield ShaderProperties[0].RealConstants[14].Values 0.5 0.5 0.5 0.5
+savetagchanges
+exitto tags
+
+Echo ################
+Echo # ENERGY SWORD #
+Echo ################
+edittag objects\weapons\melee\energy_blade\shaders\energy_blade.rmsh
+setfield ShaderProperties[0].RealConstants[13].Values 35 35 35 35
+setfield ShaderProperties[0].RealConstants[12].Values 15.5 15.5 15.5 15.5
+setfield ShaderProperties[0].RealConstants[8].Values 0.3921569 0.7254902 2 1.4
+setfield ShaderProperties[0].RealConstants[6].Values 0.2215686 0 1 1.2
+savetagchanges
+exitto tags
+
+edittag objects\weapons\melee\energy_blade\shaders\energy_blade_illum.rmsh
+setfield ShaderProperties[0].RealConstants[2].Values 0.05 0.1490196 1 1
+savetagchanges
+exitto tags
 
 Echo #################
 Echo # PLASMA PISTOl #

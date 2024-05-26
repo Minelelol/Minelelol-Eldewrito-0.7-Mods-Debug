@@ -1,0 +1,9 @@
+createmodpackage
+RipOFF Halo 3 Warthog
+Tried to match halo 3 warthog looks
+Minelelol, Mythic ( I used his warthog snow texture asset )
+1.0
+Multiplayer
+
+Runcommands "apply.cmds"
+savemodpackage "RipOFFH3Warthog.pak"

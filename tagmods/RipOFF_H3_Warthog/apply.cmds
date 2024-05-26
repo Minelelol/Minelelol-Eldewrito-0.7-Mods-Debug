@@ -1,0 +1,44 @@
+edittag ms23\objects\vehicles\warthog\bitmaps\warthog.bitm
+importbitmap 0 DDS\warthog.dds
+savetagchanges
+exitto tags
+
+edittag objects\vehicles\warthog\bitmaps\warthog_diffuse_upscaled.bitm
+importbitmap 0 DDS\warthog.dds
+savetagchanges
+exitto tags
+
+edittag objects\vehicles\warthog\bitmaps\hub.bitm
+importbitmap 0 DDS\hub.dds
+savetagchanges
+exitto tags
+
+edittag ms23\objects\vehicles\warthog\bitmaps\tires.bitm
+importbitmap 0 DDS\warthog_tire.dds
+savetagchanges
+exitto tags
+
+edittag ms23\objects\vehicles\warthog\bitmaps\warthog_damage.bitm
+importbitmap 0 DDS\warthog_damage.dds
+savetagchanges
+exitto tags
+
+edittag ms23\objects\vehicles\warthog\bitmaps\warthog_snow.bitm
+importbitmap 0 DDS\warthog_snow.dds
+savetagchanges
+exitto tags
+
+edittag objects\vehicles\warthog\warthog_snow\material_5\base_map.bitm
+importbitmap 0 DDS\hub_snow.dds
+savetagchanges
+exitto tags
+
+edittag objects\vehicles\warthog\warthog_snow\material_4\base_map.bitm
+importbitmap 0 DDS\warthog_snow_tire.dds
+savetagchanges
+exitto tags
+
+edittag objects\vehicles\warthog\warthog_snow\material_11\base_map.bitm
+importbitmap 0 DDS\warthog_snow_damage.dds
+savetagchanges
+exitto tags

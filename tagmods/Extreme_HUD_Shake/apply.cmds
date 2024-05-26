@@ -1,0 +1,23 @@
+edittag ui\chud\parallax\spartan.cprl
+setfield Unknown 0.07
+setfield Unknown2 0.075
+savetagchanges
+exitto tags
+
+edittag ui\chud\parallax\weapons.cprl
+setfield Unknown 0.05
+setfield Unknown2 0.075
+savetagchanges
+exitto tags
+
+edittag ui\chud\parallax\weapons2.cprl
+setfield Unknown 0.08
+setfield Unknown2 0.075
+savetagchanges
+exitto tags
+
+edittag ui\chud\parallax\weapons3.cprl
+setfield Unknown 0.03
+setfield Unknown2 0.075
+savetagchanges
+exitto tags

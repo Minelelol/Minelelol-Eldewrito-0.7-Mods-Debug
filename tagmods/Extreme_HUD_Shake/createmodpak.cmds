@@ -1,0 +1,9 @@
+createmodpackage
+Extreme HUD Shake
+Make sure to enable hud shake in the game option.
+Minelelol
+1.0
+Multiplayer
+
+Runcommands "apply.cmds"
+savemodpackage "ExtremeHUDShake.pak"

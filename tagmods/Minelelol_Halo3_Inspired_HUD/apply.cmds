@@ -232,6 +232,27 @@ savetagchanges
 exitto tags
 
 ECHO -------------
+ECHO | TANK MODE |
+ECHO -------------
+generatebitmap objects\equipment\tankmode_equipment\tankmodehackyfix DDS\tankmodeborder.dds
+edittag ui\chud\tankmode.chdt
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor Crosshair
+setfield HUDWidgets[0].BitmapWidgets[0].PlacementData[0].Offset 0 -1416
+setfield HUDWidgets[0].BitmapWidgets[1].PlacementData[0].Anchor Crosshair
+setfield HUDWidgets[0].BitmapWidgets[1].PlacementData[0].Offset 0 1135
+removeblockelements HUDWidgets[0].BitmapWidgets 2 *
+copyblockelements HUDWidgets[0].BitmapWidgets 0 2
+pasteblockelements HUDWidgets[0].BitmapWidgets
+setfield HUDWidgets[0].BitmapWidgets[2].Bitmap objects\equipment\tankmode_equipment\tankmodehackyfix.bitm
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Offset 0 -1750
+setfield HUDWidgets[0].BitmapWidgets[2].PlacementData[0].Scale 4.8 4.8
+setfield HUDWidgets[0].BitmapWidgets[3].Bitmap objects\equipment\tankmode_equipment\tankmodehackyfix.bitm
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Offset 0 1800
+setfield HUDWidgets[0].BitmapWidgets[3].PlacementData[0].Scale 4.8 4.8
+savetagchanges
+exitto tags
+
+ECHO -------------
 ECHO | AMMO ICON |
 ECHO -------------
 edittag ui\chud\bitmaps\ammo_h2fp.bitm

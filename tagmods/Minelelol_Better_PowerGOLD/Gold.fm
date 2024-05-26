@@ -1,0 +1,6 @@
+ECHO FMM_OUTPUT Installing Better Weapon Gold Variant Texture
+
+cd mods\tagMods\Minelelol_Better_PowerGOLD
+Install.bat
+
+ECHO FMM_OUTPUT Better Weapon Gold Variant Texture has been installed!

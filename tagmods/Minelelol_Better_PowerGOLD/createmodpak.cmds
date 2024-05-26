@@ -1,0 +1,9 @@
+createmodpackage
+Better Weapon Gold Variant Texture
+Adds a tint of red to every gold variant weapons so it doesn't look like piss yellow.
+Minelelol
+1.0
+Multiplayer
+
+Runcommands "apply.cmds"
+savemodpackage "Minelelol_BetterGOLD.pak"

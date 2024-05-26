@@ -1,0 +1,166 @@
+ECHO AR------------------------------
+edittag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\specular_mask_texture.bitm
+importbitmap 0 DDS\AR\specular_mask_texture.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_12\specular_mask_texture.bitm
+importbitmap 0 DDS\AR\specular_mask_texture2.dds
+savetagchanges
+exitto tags
+
+ECHO BATTLE RIFLE--------------------
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_v6\material_0\specular_mask_texture.bitm
+importbitmap 0 DDS\BR\specular_mask_texture.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_v6\material_9\specular_mask_texture.bitm
+importbitmap 0 DDS\BR\specular_mask_texture2.dds
+savetagchanges
+exitto tags
+
+ECHO CARBINE-------------------------
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_v6\material_2\specular_mask_texture.bitm
+importbitmap 0 DDS\CARB\specular_mask_texture.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_v6\material_6\specular_mask_texture.bitm
+importbitmap 0 DDS\CARB\specular_mask_texture2.dds
+savetagchanges
+exitto tags
+
+ECHO DMR-----------------------------
+edittag objects\weapons\rifle\dmr\dmr_v6\material_0\specular_mask_texture.bitm
+importbitmap 0 DDS\DMR\specular_mask_texture.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\dmr\dmr_v6\material_2\specular_mask_texture.bitm
+importbitmap 0 DDS\DMR\specular_mask_texture2.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\dmr\dmr_v6\material_3\specular_mask_texture.bitm
+importbitmap 0 DDS\DMR\specular_mask_texture3.dds
+savetagchanges
+exitto tags
+
+ECHO MAG-----------------------------
+edittag objects\weapons\pistol\magnum\magnum_v6\material_1\specular_mask_texture.bitm
+importbitmap 0 DDS\MAG\specular_mask_texture.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\magnum\magnum_v6\material_1.rmsh
+setfield Shaderproperties[0].Realconstants[3].Values 1 0.1647059 0.0627451 1
+setfield Shaderproperties[0].Realconstants[21].Values 0 0 0 0
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\magnum\magnum_v6\material_3\specular_mask_texture.bitm
+importbitmap 0 DDS\MAG\specular_mask_texture2.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\magnum\magnum_v6\material_3\material_texture.bitm
+importbitmap 0 DDS\MAG\material_texture.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\magnum\magnum_v6\material_3\color_mask_map.bitm
+importbitmap 0 DDS\MAG\color_mask_map.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\magnum\magnum_v6\material_3.rmsh
+setfield Shaderproperties[0].Realconstants[3].Values 1 0.1647059 0.0627451 1
+setfield Shaderproperties[0].Realconstants[21].Values 0 0 0 0
+savetagchanges
+exitto tags
+
+ECHO MAU-----------------------------
+edittag objects\weapons\pistol\excavator\excavator_v6\material_1\specular_mask_texture.bitm
+importbitmap 0 DDS\MAU\specular_mask_texture.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\excavator\excavator_v6\material_1.rmsh
+setfield Shaderproperties[0].Realconstants[31].Values 1.45 0.5921569 0.2196079 1
+setfield Shaderproperties[0].Realconstants[25].Values 0.65 0.65 0.65 0.65
+setfield Shaderproperties[0].Realconstants[18].Values 8 8 8 8
+setfield Shaderproperties[0].Realconstants[17].Values 1.2 1.2 1.2 1.2
+setfield Shaderproperties[0].Realconstants[4].Values 0.002196079 0.001647059 0.000627451 0.01
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\excavator\excavator_v6\material_2.rmsh
+setfield Shaderproperties[0].Realconstants[31].Values 1.45 0.5921569 0.2196079 1
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\excavator\excavator_v6\material_2\specular_mask_texture.bitm
+importbitmap 0 DDS\MAU\specular_mask_texture2.dds
+savetagchanges
+exitto tags
+
+ECHO PP------------------------------
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_v6\material_8\specular_mask_texture.bitm
+importbitmap 0 DDS\PP\specular_mask_texture.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_v6\material_12\specular_mask_texture.bitm
+importbitmap 0 DDS\PP\specular_mask_texture2.dds
+savetagchanges
+exitto tags
+
+ECHO PR------------------------------
+edittag objects\weapons\rifle\plasma_rifle\plasma_rifle_v6\material_10\specular_mask_texture.bitm
+importbitmap 0 DDS\PR\specular_mask_texture.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\plasma_rifle\plasma_rifle_v6\material_10.rmsh
+setfield Shaderproperties[0].Realconstants[2].Values 1.25 0.1647059 0.0627451 1
+setfield Shaderproperties[0].Realconstants[15].Values 0 0 0 0
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle_v6_metal_top\specular_mask_texture.bitm
+importbitmap 0 DDS\PR\specular_mask_texture2.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle_v6_metal_fins.rmsh
+setfield Shaderproperties[0].Realconstants[29].Values 0.8 0.5921569 0.2196079 0.9
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle_v6_metal_fins\specular_mask_texture.bitm
+importbitmap 0 DDS\PR\specular_mask_texture3.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle_v6_metal_bottom_lip\specular_mask_texture.bitm
+importbitmap 0 DDS\PR\specular_mask_texture4.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle_v6_metal_bottom_lip.rmsh
+setfield Shaderproperties[0].Realconstants[2].Values 1.25 0.1647059 0.0627451 1
+setfield Shaderproperties[0].Realconstants[15].Values 0 0 0 0
+savetagchanges
+exitto tags
+
+ECHO SMG-----------------------------
+edittag objects\weapons\rifle\smg\smg_v6\material_0\specular_mask_texture.bitm
+importbitmap 0 DDS\SMG\specular_mask_texture.dds
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\smg\smg_v6\material_2\specular_mask_texture.bitm
+importbitmap 0 DDS\SMG\specular_mask_texture2.dds
+savetagchanges
+exitto tags

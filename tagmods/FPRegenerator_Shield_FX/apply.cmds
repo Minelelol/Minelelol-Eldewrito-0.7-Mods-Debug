@@ -1,0 +1,30 @@
+generatebitmap objects\equipment\bitmaps\regenerator_plasma_noise Tag\DDS\plasma_noise.dds
+generatebitmap objects\equipment\bitmaps\regenerator_noise_blur_256_a Tag\DDS\blur256A.dds
+generatebitmap objects\equipment\bitmaps\regenerator_noise_blur_256_b Tag\DDS\blur256B.dds
+
+createtag effe
+nametag * objects\equipment\regenerator\fx\fp_effect
+savetagnames
+importtag objects\equipment\regenerator\fx\fp_effect.effect Tag\RegeneratorEffect
+
+createtag shit
+nametag * objects\equipment\regenerator\fx\regenerator_shield_FP
+savetagnames
+importtag objects\equipment\regenerator\fx\regenerator_shield_FP.shit Tag\ShieldFP
+edittag objects\equipment\regenerator\fx\regenerator_shield_FP.shit
+setfield Plasma.PlasmaNoiseBitmap1 objects\equipment\bitmaps\regenerator_plasma_noise.bitm
+setfield Plasma.PlasmaNoiseBitmap2 objects\equipment\bitmaps\regenerator_plasma_noise.bitm
+setfield ExtrusionOscillation.OscillationBitmap1 objects\equipment\bitmaps\regenerator_noise_blur_256_a.bitm
+setfield ExtrusionOscillation.OscillationBitmap2 objects\equipment\bitmaps\regenerator_noise_blur_256_b.bitm
+savetagchanges
+exitto tags
+
+edittag objects\equipment\regenerator\regenerator.eqip
+setfield Regenerator[0].RegeneratingEffect objects\equipment\regenerator\fx\fp_effect.effect
+savetagchanges
+exitto tags
+
+edittag objects\equipment\regenerator\fx\fp_effect.effect
+setfield Events[0].Parts[1].Type objects\equipment\regenerator\fx\regenerator_shield_FP.shit
+savetagchanges
+exitto tags

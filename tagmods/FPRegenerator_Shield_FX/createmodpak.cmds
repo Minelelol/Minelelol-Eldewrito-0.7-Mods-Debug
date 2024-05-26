@@ -1,0 +1,9 @@
+createmodpackage
+Regenerator ShieldFX
+Added regenerator shield effect for first person model
+Yokim, Minelelol
+1.0
+Multiplayer
+
+Runcommands "apply.cmds"
+savemodpackage "RipOFFH3Warthog.pak"

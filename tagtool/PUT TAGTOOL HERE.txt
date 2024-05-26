@@ -1,1 +1,2 @@
 TagTool [1.5.8909.15659 (Built 5/23/2024 8:42:12 AM UTC)]
+https://github.com/TheGuardians/TagTool/releases/tag/a710826

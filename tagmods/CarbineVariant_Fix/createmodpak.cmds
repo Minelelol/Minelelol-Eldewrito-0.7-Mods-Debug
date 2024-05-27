@@ -1,0 +1,9 @@
+createmodpackage
+Carbine Variant Texture Fixup
+Changes the color of AMMO, DAMAGE, RANGE carbine to match the base carbine purple color.
+Minelelol
+1.0
+Multiplayer
+
+Runcommands "apply.cmds"
+savemodpackage "Carbine_VariantFixup.pak"

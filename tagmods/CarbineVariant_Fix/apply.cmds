@@ -1,0 +1,18 @@
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5\base_map.bitm
+importbitmap 0 DDS\carbineV2.dds
+savetagchanges
+exitto tags
+
+importtag objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5.rmsh material_4.shader
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5.rmsh
+setfield Parameters[0].Bitmap objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5\base_map.bitm
+setfield Parameters[1].Bitmap objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5\bump_map.bitm
+setfield Parameters[2].Bitmap objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5\self_illum_map.bitm
+setfield Parameters[5].Bitmap objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5\bitmap_5.bitm
+setfield Parameters[28].Bitmap objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5\material_texture.bitm
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5\base_map.bitm
+setfield ShaderProperties[0].TextureConstants[3].Bitmap objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5\bump_map.bitm
+setfield ShaderProperties[0].TextureConstants[5].Bitmap objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5\material_texture.bitm
+setfield ShaderProperties[0].TextureConstants[6].Bitmap objects\weapons\rifle\covenant_carbine\covenant_carbine_v2\material_5\self_illum_map.bitm
+savetagchanges
+exitto tags

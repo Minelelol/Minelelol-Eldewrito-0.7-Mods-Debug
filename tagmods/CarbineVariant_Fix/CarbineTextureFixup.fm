@@ -1,0 +1,7 @@
+color 0A
+cd mods\tagMods\CarbineVariant_Fix
+ECHO FMM_OUTPUT Installing Carbine Variant Texture Fixup...
+
+Install.bat
+
+ECHO FMM_OUTPUT Carbine Variant Texture Fixup Has been installed Succesfully.

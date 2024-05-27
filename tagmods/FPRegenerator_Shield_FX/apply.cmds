@@ -1,7 +1,3 @@
-generatebitmap objects\equipment\bitmaps\regenerator_plasma_noise Tag\DDS\plasma_noise.dds
-generatebitmap objects\equipment\bitmaps\regenerator_noise_blur_256_a Tag\DDS\blur256A.dds
-generatebitmap objects\equipment\bitmaps\regenerator_noise_blur_256_b Tag\DDS\blur256B.dds
-
 createtag effe
 nametag * objects\equipment\regenerator\fx\fp_effect
 savetagnames
@@ -12,10 +8,10 @@ nametag * objects\equipment\regenerator\fx\regenerator_shield_FP
 savetagnames
 importtag objects\equipment\regenerator\fx\regenerator_shield_FP.shit Tag\ShieldFP
 edittag objects\equipment\regenerator\fx\regenerator_shield_FP.shit
-setfield Plasma.PlasmaNoiseBitmap1 objects\equipment\bitmaps\regenerator_plasma_noise.bitm
-setfield Plasma.PlasmaNoiseBitmap2 objects\equipment\bitmaps\regenerator_plasma_noise.bitm
-setfield ExtrusionOscillation.OscillationBitmap1 objects\equipment\bitmaps\regenerator_noise_blur_256_a.bitm
-setfield ExtrusionOscillation.OscillationBitmap2 objects\equipment\bitmaps\regenerator_noise_blur_256_b.bitm
+setfield Plasma.PlasmaNoiseBitmap1 fx\bitmaps\plasma\plasma_clouds_512_a.bitm
+setfield Plasma.PlasmaNoiseBitmap2 fx\bitmaps\plasma\plasma_clouds_512_b.bitm
+setfield ExtrusionOscillation.OscillationBitmap1 fx\bitmaps\plasma\plasma_clouds_256_a.bitm
+setfield ExtrusionOscillation.OscillationBitmap2 fx\bitmaps\plasma\plasma_clouds_256_b.bitm
 savetagchanges
 exitto tags
 

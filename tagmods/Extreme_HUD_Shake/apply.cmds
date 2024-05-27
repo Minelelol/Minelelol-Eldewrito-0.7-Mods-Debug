@@ -10,13 +10,13 @@ setfield Unknown2 0.075
 savetagchanges
 exitto tags
 
-edittag ui\chud\parallax\weapons2.cprl
+edittag ui\chud\parallax\weapons_2.cprl
 setfield Unknown 0.08
 setfield Unknown2 0.075
 savetagchanges
 exitto tags
 
-edittag ui\chud\parallax\weapons3.cprl
+edittag ui\chud\parallax\weapons_3.cprl
 setfield Unknown 0.03
 setfield Unknown2 0.075
 savetagchanges

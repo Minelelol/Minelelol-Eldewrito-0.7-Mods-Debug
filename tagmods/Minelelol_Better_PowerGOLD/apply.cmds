@@ -80,6 +80,11 @@ setfield Shaderproperties[0].Realconstants[21].Values 0 0 0 0
 savetagchanges
 exitto tags
 
+edittag objects\weapons\pistol\magnum_power\magnum_power.mode
+setfield Materials[0].RenderMethod objects\weapons\pistol\magnum\magnum_v6\material_3.rmsh
+savetagchanges
+exitto tags
+
 ECHO MAU-----------------------------
 edittag objects\weapons\pistol\excavator\excavator_v6\material_1\specular_mask_texture.bitm
 importbitmap 0 DDS\MAU\specular_mask_texture.dds

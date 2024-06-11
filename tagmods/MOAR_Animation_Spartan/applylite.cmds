@@ -594,6 +594,7 @@ setfield animations[37].animationdata.FrameCount 21
 
 setfield animations[27].weight 0.555
 setfield animations[27].animationdata.NextAnimation 46
+setfield animations[27].PlaybackFlags DisableWeaponAim1stPerson
 
 addblockelements animations[46].animationdata.FrameEvents 3
 addblockelements animations[46].animationdata.SoundEvents 1
@@ -815,7 +816,7 @@ setfield animations[58].animationdata.Frameevents[1].Frame 15
 setfield animations[58].animationdata.Frameevents[2].TypeED AllowInterruption
 setfield animations[58].animationdata.Frameevents[2].Frame 29
 setfield animations[58].PlaybackFlags DisableWeaponAim1stPerson
-addanimation Animation\FallSET\lite\3
+addanimation Animation\FallSET\lite\11
 removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 20 *
 savetagchanges
 exitto tags
@@ -909,7 +910,26 @@ echo ---------------------------------------------------------------------------
 echo I                                              SHOTGUN                                                 I
 echo --------------------------------------------------------------------------------------------------------
 echo Shotty
+deletetag sound\weapons\sg\sg_fp\shotgun_melee_catch.snd!
+createtag snd!
+nametag * sound\weapons\sg\sg_fp\shotgun_melee_catch
+edittag sound\weapons\sg\sg_fp\shotgun_melee_catch.snd!
+importsound _sound_files_\SHOTGUN
+setfield soundclass.haloonline WeaponMelee
+setfield flags InternalDontTouch
+setfield playback.FieldDisableFlags DistanceA,DistanceB,DistanceC,DistanceD,Bit4
+setfield playback.Gainbase -3
+setfield playback.InnerConeAngle 180
+setfield playback.OuterConeAngle 180
+setfield scale.SkipFractionModifierBounds 1 1
+savetagchanges
+exitto tags
+
 edittag objects\characters\masterchief\fp\weapons\rifle\fp_shotgun\fp_shotgun.jmad
+removeblockelements SoundReferences 8 *
+addblockelements SoundReferences
+setfield SoundReferences[8].Reference sound\weapons\sg\sg_fp\shotgun_melee_catch.snd!
+
 addanimation Animation\Shotgun
 addblockelements animations[8].animationdata.FrameEvents 3
 addblockelements animations[8].animationdata.SoundEvents 1
@@ -951,10 +971,12 @@ setfield animations[9].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
 setfield animations[9].animationdata.Productionflags VerifySoundEvents
 
 addblockelements animations[27].animationdata.FrameEvents 3
-addblockelements animations[27].animationdata.SoundEvents 1
+addblockelements animations[27].animationdata.SoundEvents 2
 setfield animations[27].weight 1
 setfield animations[27].animationdata.ParentAnimation 9
 setfield animations[27].animationdata.Soundevents[0].Sound 1
+setfield animations[27].animationdata.Soundevents[1].Sound 8
+setfield animations[27].animationdata.Soundevents[1].Frame 10
 setfield animations[27].animationdata.Frameevents[0].Frame 5
 setfield animations[27].animationdata.Frameevents[1].TypeED SecondaryKeyframe
 setfield animations[27].animationdata.Frameevents[1].Frame 15
@@ -1001,8 +1023,24 @@ echo ---------------------------------------------------------------------------
 echo SMG Sub Machine Gun
 edittag objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.jmad
 addanimation Animation\SMG
+setfield animations[23].weight 0.555
+setfield animations[23].animationdata.NextAnimation 43
+addblockelements animations[43].animationdata.FrameEvents 3
+addblockelements animations[43].animationdata.SoundEvents 1
+setfield animations[43].weight 1
+setfield animations[43].animationdata.ParentAnimation 9
+setfield animations[43].animationdata.Soundevents[0].Sound 10
+setfield animations[43].animationdata.Frameevents[0].Frame 3
+setfield animations[43].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[43].animationdata.Frameevents[1].Frame 14
+setfield animations[43].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[43].animationdata.Frameevents[2].Frame 18
+setfield animations[43].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[43].animationdata.Productionflags VerifySoundEvents
+
 setfield animations[31].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
 addanimation Animation\FallSET\lite\3
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
 savetagchanges
 exitto tags
 echo --------------------------------------------------------------------------------------------------------

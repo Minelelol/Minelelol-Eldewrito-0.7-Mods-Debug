@@ -1,0 +1,411 @@
+Echo SOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUNNNNNNDDDDD
+echo --------------------------------------------------------------------------------------------------------
+echo |                                                DMR                                                   |
+echo --------------------------------------------------------------------------------------------------------
+edittag sound\weapons\dmr\dmr_reload_full.snd!
+setfield Playback.GainBase -6
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-
+
+echo --------------------------------------------------------------------------------------------------------
+echo |                                        PLASMA_PISTOL                                                 |
+echo --------------------------------------------------------------------------------------------------------
+deletetag sound\weapons\plasma_pistol\plaspistol_fp\plasma_pistol_ready_initial.snd!
+createtag snd!
+nametag * sound\weapons\plasma_pistol\plaspistol_fp\plasma_pistol_ready_initial
+edittag sound\weapons\plasma_pistol\plaspistol_fp\plasma_pistol_ready_initial.snd!
+importsound Sounds\PP
+setfield soundclass.haloonline weaponready
+setfield flags InternalDontTouch
+setfield playback.FieldDisableFlags DistanceA,DistanceB,DistanceC,DistanceD,Bit4
+setfield playback.InnerConeAngle 180
+setfield playback.OuterConeAngle 180
+setfield scale.SkipFractionModifierBounds 1 1
+setfield Pitchranges[0].Permutations[0].Importname plasma_pistol_ready_1
+setfield Pitchranges[0].Permutations[1].Importname plasma_pistol_ready_2
+setfield Pitchranges[0].Permutations[2].Importname plasma_pistol_ready_3
+setfield Pitchranges[0].Permutations[3].Importname plasma_pistol_ready_4
+setfield Pitchranges[0].Permutations[4].Importname plasma_pistol_ready_5
+setfield Pitchranges[0].Permutations[5].Importname plasma_pistol_ready_6
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-
+
+echo --------------------------------------------------------------------------------------------------------
+echo |                                              SHOTGUN                                                 |
+echo --------------------------------------------------------------------------------------------------------
+deletetag sound\weapons\sg\sg_fp\shotgun_melee_catch.snd!
+createtag snd!
+nametag * sound\weapons\sg\sg_fp\shotgun_melee_catch
+edittag sound\weapons\sg\sg_fp\shotgun_melee_catch.snd!
+importsound Sounds\SHOTGUN
+setfield soundclass.haloonline WeaponMelee
+setfield flags InternalDontTouch
+setfield playback.FieldDisableFlags DistanceA,DistanceB,DistanceC,DistanceD,Bit4
+setfield playback.Gainbase -3
+setfield playback.InnerConeAngle 180
+setfield playback.OuterConeAngle 180
+setfield scale.SkipFractionModifierBounds 1 1
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                           SNIPER_RIFLE                                               I
+echo --------------------------------------------------------------------------------------------------------
+deletetag sound\weapons\sr\sr_fp\sniper_rifle_ready_initial.snd!
+createtag snd!
+nametag * sound\weapons\sr\sr_fp\sniper_rifle_ready_initial
+edittag sound\weapons\sr\sr_fp\sniper_rifle_ready_initial.snd!
+importsound Sounds\SNIPERINITIAL
+setfield soundclass.haloonline weaponready
+setfield flags InternalDontTouch
+setfield playback.FieldDisableFlags DistanceA,DistanceB,DistanceC,DistanceD,Bit4
+setfield playback.Gainbase -3
+setfield playback.InnerConeAngle 180
+setfield playback.OuterConeAngle 180
+setfield scale.SkipFractionModifierBounds 1 1
+setfield Pitchranges[0].Permutations[0].Importname sniper_rifle_ready_1
+setfield Pitchranges[0].Permutations[1].Importname sniper_rifle_ready_2
+setfield Pitchranges[0].Permutations[2].Importname sniper_rifle_ready_3
+savetagchanges
+exitto tags
+
+deletetag sound\weapons\sr\sr_fp\sniper_rifle_reload_empty.snd!
+createtag snd!
+nametag * sound\weapons\sr\sr_fp\sniper_rifle_reload_empty
+edittag sound\weapons\sr\sr_fp\sniper_rifle_reload_empty.snd!
+importsound Sounds\SNIPEREMPTY
+setfield soundclass.haloonline WeaponReload
+setfield flags InternalDontTouch
+setfield playback.FieldDisableFlags DistanceA,DistanceB,DistanceC,DistanceD,Bit4
+setfield playback.Gainbase -3
+setfield playback.InnerConeAngle 180
+setfield playback.OuterConeAngle 180
+setfield scale.SkipFractionModifierBounds 1 1
+setfield Pitchranges[0].Permutations[0].Importname sniper_rifle_reload_1
+setfield Pitchranges[0].Permutations[1].Importname sniper_rifle_reload_2
+setfield Pitchranges[0].Permutations[2].Importname sniper_rifle_reload_3
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-
+
+ECHO -------------------------------
+ECHO |       MISC WEAPON TAG       |
+ECHO -------------------------------
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO -------------------- DMR ----------------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\rifle\dmr\dmr\material_7.shader
+setfield SortLayer PostPass
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\dmr\dmr\material_5.shader
+setfield SortLayer PostPass
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+
+ECHO ------------------------------------
+ECHO |       WEAPON RENDER MODEL        |
+ECHO ------------------------------------
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ ASSAULT BOMB -----------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\multiplayer\assault_bomb\fp_assault_bomb\fp_assault_bomb.mode
+removeblockelements MarkerGroups 2 *
+addblockelements MarkerGroups 1
+addblockelements MarkerGroups[2].Markers 1
+setfield MarkerGroups[2].Name left_hand
+setfield MarkerGroups[2].Markers[0].RegionIndex -1
+setfield MarkerGroups[2].Markers[0].PermutationIndex -1
+setfield MarkerGroups[2].Markers[0].Translation 0.015 -0.034 -0.013
+setfield MarkerGroups[2].Markers[0].Rotation -0.569594 -0.175651 -0.6980489 0.0516044
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ ODDBALL ----------------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\multiplayer\ball\fp_ball\fp_ball.mode
+setfield MarkerGroups[1].Markers[0].Translation -0.0065 -0.022 -0.008
+setfield MarkerGroups[1].Markers[0].Rotation -0.165 -0.01 -0.295 -0.11
+
+setfield MarkerGroups[2].Markers[0].Translation -0.0127 -0.019 -0.0032
+setfield MarkerGroups[2].Markers[0].Rotation -0.135 -0.005 -0.295 -0.07
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ FLAG -------------------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\multiplayer\flag\fp_flag\fp_flag.mode
+setfield MarkerGroups[0].Markers[0].Translation 0.0005 0.007 0.048
+setfield MarkerGroups[0].Markers[0].Rotation -0.125 -0.34 -1.24 1.175
+
+removeblockelements MarkerGroups 1 *
+addblockelements MarkerGroups 1
+addblockelements MarkerGroups[1].Markers 1
+setfield MarkerGroups[1].Name left_hand_elite
+setfield MarkerGroups[1].Markers[0].RegionIndex -1
+setfield MarkerGroups[1].Markers[0].PermutationIndex -1
+setfield MarkerGroups[1].Markers[0].Translation -0.002 0.0083 0.0492
+setfield MarkerGroups[1].Markers[0].Rotation -0.04 -0.238 -1.03 1.18
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ ASSAULT RIFLE ----------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
+removeblockelements MarkerGroups 5 *
+addblockelements MarkerGroups 1
+addblockelements MarkerGroups[5].Markers 1
+setfield MarkerGroups[5].Name left_hand_elite
+setfield MarkerGroups[5].Markers[0].RegionIndex -1
+setfield MarkerGroups[5].Markers[0].PermutationIndex -1
+setfield MarkerGroups[5].Markers[0].Translation 0.1023 -0.001 0.01310136
+setfield MarkerGroups[5].Markers[0].Rotation -0.64 0.2 -0.458 0.57
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\assault_rifle_accuracy\fp_assault_rifle_accuracy.mode
+removeblockelements MarkerGroups 5 *
+addblockelements MarkerGroups 1
+addblockelements MarkerGroups[5].Markers 1
+setfield MarkerGroups[5].Name left_hand_elite
+setfield MarkerGroups[5].Markers[0].RegionIndex -1
+setfield MarkerGroups[5].Markers[0].PermutationIndex -1
+setfield MarkerGroups[5].Markers[0].Translation 0.1023 -0.001 0.01310136
+setfield MarkerGroups[5].Markers[0].Rotation -0.64 0.2 -0.458 0.57
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\assault_rifle_damage\fp_assault_rifle_damage.mode
+removeblockelements MarkerGroups 5 *
+addblockelements MarkerGroups 1
+addblockelements MarkerGroups[5].Markers 1
+setfield MarkerGroups[5].Name left_hand_elite
+setfield MarkerGroups[5].Markers[0].RegionIndex -1
+setfield MarkerGroups[5].Markers[0].PermutationIndex -1
+setfield MarkerGroups[5].Markers[0].Translation 0.1023 -0.001 0.01310136
+setfield MarkerGroups[5].Markers[0].Rotation -0.64 0.2 -0.458 0.57
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\assault_rifle_power\fp_assault_rifle_power.mode
+removeblockelements MarkerGroups 5 *
+addblockelements MarkerGroups 1
+addblockelements MarkerGroups[5].Markers 1
+setfield MarkerGroups[5].Name left_hand_elite
+setfield MarkerGroups[5].Markers[0].RegionIndex -1
+setfield MarkerGroups[5].Markers[0].PermutationIndex -1
+setfield MarkerGroups[5].Markers[0].Translation 0.1023 -0.001 0.01310136
+setfield MarkerGroups[5].Markers[0].Rotation -0.64 0.2 -0.458 0.57
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\assault_rifle_rof\fp_assault_rifle_rof.mode
+removeblockelements MarkerGroups 5 *
+addblockelements MarkerGroups 1
+addblockelements MarkerGroups[5].Markers 1
+setfield MarkerGroups[5].Name left_hand_elite
+setfield MarkerGroups[5].Markers[0].RegionIndex -1
+setfield MarkerGroups[5].Markers[0].PermutationIndex -1
+setfield MarkerGroups[5].Markers[0].Translation 0.1023 -0.001 0.01310136
+setfield MarkerGroups[5].Markers[0].Rotation -0.64 0.2 -0.458 0.57
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ BEAM RIFLE -------------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\rifle\beam_rifle\fp_beam_rifle\fp_beam_rifle.mode
+setfield MarkerGroups[4].Markers[0].Translation -0.075 -0.0024 -0.055
+setfield MarkerGroups[4].Markers[0].Rotation -0.560648 0.1082043 -0.288126 0.6147026
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ BRUTE SHOT -------------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
+removeblockelements MarkerGroups 3 *
+addblockelements MarkerGroups 1
+addblockelements MarkerGroups[3].Markers 1
+setfield MarkerGroups[3].Name left_hand_elite
+setfield MarkerGroups[3].Markers[0].RegionIndex -1
+setfield MarkerGroups[3].Markers[0].PermutationIndex -1
+setfield MarkerGroups[3].Markers[0].NodeIndex 1
+setfield MarkerGroups[3].Markers[0].Translation 0.042 0.0145 0.05
+setfield MarkerGroups[3].Markers[0].Rotation 0.52 0.0125 -0.13 0.85
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ DMR --------------------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\rifle\dmr_accuracy\fp_dmr_accuracy.mode
+setfield Nodes[2].DefaultTranslation 0.003623334 0.003865495 0.05560584
+setfield Nodes[2].DefaultRotation 0.5728751 -2.5E-08 0 -0.8196427
+setfield Nodes[2].InverseForward 1 -2.864376E-08 4.098213E-08
+setfield Nodes[2].InverseLeft -2.864376E-08 0.3436282 0.9391058
+setfield Nodes[2].InverseUp -4.098213E-08 -0.9391058 0.3436282
+setfield Nodes[2].InversePosition -0.003623331 0.05089147 -0.02273784
+setfield Nodes[2].DistanceFromParent 0.05585767
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\dmr_ammo\fp_dmr_ammo.mode
+setfield Nodes[2].DefaultTranslation 0.003623334 0.003865495 0.05560584
+setfield Nodes[2].DefaultRotation 0.5728751 -2.5E-08 0 -0.8196427
+setfield Nodes[2].InverseForward 1 -2.864376E-08 4.098213E-08
+setfield Nodes[2].InverseLeft -2.864376E-08 0.3436282 0.9391058
+setfield Nodes[2].InverseUp -4.098213E-08 -0.9391058 0.3436282
+setfield Nodes[2].InversePosition -0.003623331 0.05089147 -0.02273784
+setfield Nodes[2].DistanceFromParent 0.05585767
+
+ECHO <| For some reason the dmr ammo muzzle flash clipped through the weapon I have no idea which markergroup it uses
+ECHO <| So I've decided to make them all the same value as the one thats on the original dmr render model
+setfield MarkerGroups[3].Markers[0].Translation 0.2391834 -0.006103039 0.04649879
+setfield MarkerGroups[3].Markers[0].Rotation 0.8191519 -0.5735766 3.58E-08 2.51E-08
+
+setfield MarkerGroups[4].Markers[0].Translation 0.2391834 -0.006103039 0.04649879
+setfield MarkerGroups[4].Markers[0].Rotation 0.8191519 -0.5735766 3.58E-08 2.51E-08
+
+setfield MarkerGroups[5].Markers[0].Translation 0.2391834 -0.006103039 0.04649879
+setfield MarkerGroups[5].Markers[0].Rotation 0.8191519 -0.5735766 3.58E-08 2.51E-08
+
+setfield MarkerGroups[6].Markers[0].Translation 0.2391834 -0.006103039 0.04649879
+setfield MarkerGroups[6].Markers[0].Rotation 0.8191519 -0.5735766 3.58E-08 2.51E-08
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\dmr_damage\fp_dmr_damage.mode
+setfield Nodes[2].DefaultTranslation 0.003623334 0.003865495 0.05560584
+setfield Nodes[2].DefaultRotation 0.5728751 -2.5E-08 0 -0.8196427
+setfield Nodes[2].InverseForward 1 -2.864376E-08 4.098213E-08
+setfield Nodes[2].InverseLeft -2.864376E-08 0.3436282 0.9391058
+setfield Nodes[2].InverseUp -4.098213E-08 -0.9391058 0.3436282
+setfield Nodes[2].InversePosition -0.003623331 0.05089147 -0.02273784
+setfield Nodes[2].DistanceFromParent 0.05585767
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\dmr_power\fp_dmr_power.mode
+setfield Nodes[2].DefaultTranslation 0.003623334 0.003865495 0.05560584
+setfield Nodes[2].DefaultRotation 0.5728751 -2.5E-08 0 -0.8196427
+setfield Nodes[2].InverseForward 1 -2.864376E-08 4.098213E-08
+setfield Nodes[2].InverseLeft -2.864376E-08 0.3436282 0.9391058
+setfield Nodes[2].InverseUp -4.098213E-08 -0.9391058 0.3436282
+setfield Nodes[2].InversePosition -0.003623331 0.05089147 -0.02273784
+setfield Nodes[2].DistanceFromParent 0.05585767
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\dmr_rof\fp_dmr_rof.mode
+setfield Nodes[2].DefaultTranslation 0.003623334 0.003865495 0.05560584
+setfield Nodes[2].DefaultRotation 0.5728751 -2.5E-08 0 -0.8196427
+setfield Nodes[2].InverseForward 1 -2.864376E-08 4.098213E-08
+setfield Nodes[2].InverseLeft -2.864376E-08 0.3436282 0.9391058
+setfield Nodes[2].InverseUp -4.098213E-08 -0.9391058 0.3436282
+setfield Nodes[2].InversePosition -0.003623331 0.05089147 -0.02273784
+setfield Nodes[2].DistanceFromParent 0.05585767
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ FUEL ROD ---------------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\support_high\flak_cannon\fp_flak_cannon\fp_flak_cannon.mode
+setfield MarkerGroups[2].Markers[0].Translation 0.1185 0.0032449 -0.081
+setfield MarkerGroups[2].Markers[0].Rotation -0.728405 0.1699 -0.6834367 0.989
+
+removeblockelements MarkerGroups 5 *
+addblockelements MarkerGroups 1
+addblockelements MarkerGroups[5].Markers 1
+setfield MarkerGroups[5].Name left_hand_elite
+setfield MarkerGroups[5].Markers[0].RegionIndex -1
+setfield MarkerGroups[5].Markers[0].PermutationIndex -1
+setfield MarkerGroups[5].Markers[0].Translation 0.116 0.0011 -0.083
+setfield MarkerGroups[5].Markers[0].Rotation -0.83 0.18 -0.89 0.982
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ GRAVITY HAMMER ---------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\melee\gravity_hammer\fp_gravity_hammer\fp_gravity_hammer.mode
+setfield MarkerGroups[3].Markers[0].Translation -0.0089413 0.02415987 -0.10795
+setfield MarkerGroups[3].Markers[0].Rotation 0.085 0.1152043 0.4 -0.763
+
+setfield MarkerGroups[5].Markers[0].Translation -0.015 0.03 -0.107
+setfield MarkerGroups[5].Markers[0].Rotation 0.05 0.08 0.38 -0.91
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ NEEDLER ----------------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\pistol\needler\fp_needler\fp_needler.mode
+setfield MarkerGroups[2].Markers[0].Translation 0.0008397936 0.004685663 -0.04803041
+setfield MarkerGroups[2].Markers[0].Rotation -0.44 0.1 -0.31 0.425
+
+removeblockelements MarkerGroups 6 *
+addblockelements MarkerGroups 1
+addblockelements MarkerGroups[6].Markers 1
+setfield MarkerGroups[6].Name left_hand_elite
+setfield MarkerGroups[6].Markers[0].RegionIndex -1
+setfield MarkerGroups[6].Markers[0].PermutationIndex -1
+setfield MarkerGroups[6].Markers[0].Translation 0.016 -0.0035  -0.06
+setfield MarkerGroups[6].Markers[0].Rotation -0.425 0.08 -0.28 0.52
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ SENTINEL BEAM ----------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\support_low\sentinel_gun\fp_sentinel_gun\fp_sentinel_gun.mode
+setfield MarkerGroups[4].Markers[0].Translation -0.0455 0.0645543 0.05832543
+setfield MarkerGroups[4].Markers[0].Rotation -0.88 0.29 0.42 -1.015
+
+setfield MarkerGroups[3].Markers[0].Translation -0.0515 0.0663 0.052
+setfield MarkerGroups[3].Markers[0].Rotation 0.618 -0.205 -0.18 0.72
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<
+
+
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ECHO ------------------------------------------------------------------------------ SPARTAN LASER ----------------
+ECHO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+edittag objects\weapons\support_high\spartan_laser\fp_spartan_laser\fp_spartan_laser.mode
+setfield MarkerGroups[2].Markers[0].Translation 0.1899436 0.005407727 -0.02994013
+setfield MarkerGroups[2].Markers[0].Rotation -0.1355625 -0.1306562 -0.3608458 0.9549491
+savetagchanges
+exitto tags
+ECHO <-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<

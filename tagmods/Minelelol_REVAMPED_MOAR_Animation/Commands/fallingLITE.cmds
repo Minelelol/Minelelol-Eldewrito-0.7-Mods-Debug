@@ -1,0 +1,47 @@
+foreach jmad named fp_assault_bomb addanimation Animation\Fallset\lite\6
+
+foreach jmad named fp_ball addanimation Animation\Fallset\lite\6
+
+foreach jmad named fp_flag addanimation Animation\Fallset\lite\9
+
+foreach jmad named fp_assault_rifle addanimation Animation\Fallset\lite\4
+
+foreach jmad named fp_battle_rifle addanimation Animation\Fallset\lite\4
+
+foreach jmad named fp_brute_shot addanimation Animation\Fallset\lite\6
+
+foreach jmad named fp_beam_rifle addanimation Animation\Fallset\lite\3
+
+foreach jmad named fp_covenant_carbine addanimation Animation\Fallset\lite\4
+
+foreach jmad named fp_dmr addanimation Animation\Fallset\lite\4
+
+foreach jmad named fp_flak_cannon addanimation Animation\Fallset\lite\5
+
+foreach jmad named fp_gravity_hammer addanimation Animation\Fallset\lite\1
+
+foreach jmad named fp_magnum addanimation Animation\Fallset\lite\2
+
+foreach jmad named fp_excavator addanimation Animation\Fallset\lite\2
+
+foreach jmad named fp_needler addanimation Animation\Fallset\lite\6
+
+foreach jmad named fp_plasma_pistol addanimation Animation\Fallset\lite\11
+
+foreach jmad named fp_plasma_rifle addanimation Animation\Fallset\lite\5
+
+foreach jmad named fp_rocket_launcher addanimation Animation\Fallset\lite\5
+
+foreach jmad named fp_sentinel_beam addanimation Animation\Fallset\lite\10
+
+foreach jmad named fp_shotgun addanimation Animation\Fallset\lite\3
+
+foreach jmad named fp_smg addanimation Animation\Fallset\lite\3
+
+foreach jmad named fp_sniper_rifle addanimation Animation\Fallset\lite\7
+
+foreach jmad named fp_spartan_laser addanimation Animation\Fallset\lite\4
+
+foreach jmad named fp_spike_rifle addanimation Animation\Fallset\lite\3
+
+foreach jmad named fp_energy_blade addanimation Animation\Fallset\lite\1

@@ -1,0 +1,11 @@
+createmodpackage
+REVAMPED MOAR Animation
+Add MOAR first person animation to every weapons for Elites and Spartans
+Minelelol
+1.0
+Multiplayer
+
+Runcommands "Commands\sound_and_render.cmds"
+Runcommands "Commands\animation.cmds"
+Runcommands "Commands\falling.cmds"
+savemodpackage "REVAMPED_MOAR_Animation.pak"

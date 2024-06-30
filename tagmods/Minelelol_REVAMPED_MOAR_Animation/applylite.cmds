@@ -1,0 +1,3 @@
+Runcommands "Commands\sound_and_render.cmds"
+Runcommands "Commands\animation.cmds"
+Runcommands "Commands\fallingLITE.cmds"

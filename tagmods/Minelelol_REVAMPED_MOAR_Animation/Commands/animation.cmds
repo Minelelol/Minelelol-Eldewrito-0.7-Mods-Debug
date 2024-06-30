@@ -1,0 +1,2130 @@
+ECHO --------------------------------------------------------------------------------------------------------
+ECHO I                                           Bomb                                                       I
+ECHO --------------------------------------------------------------------------------------------------------
+ECHO Bomb planted
+
+edittag objects\characters\masterchief\fp\weapons\multiplayer\fp_assault_bomb\fp_assault_bomb.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 3
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand
+setfield animations[1].PlaybackFlags ForceWeaponIkOn
+setfield animations[5].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[6].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[7].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[12].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[13].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[14].PlaybackFlags DisableWeaponAim1stPerson
+savetagchanges
+exitto tags
+
+edittag objects\characters\masterchief\fp\weapons\multiplayer\fp_assault_bomb\fp_assault_bomb.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 3
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].GraphIndex 0
+setfield animations[0].PlaybackFlags ForceWeaponIkOn
+setfield animations[1].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[2].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[2].animationdata.Soundevents[0].Sound 1
+setfield animations[3].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+savetagchanges
+exitto tags
+ECHO --------------------------------------------------------------------------------------------------------
+ECHO I                                           Ball                                                       I
+ECHO --------------------------------------------------------------------------------------------------------
+ECHO Skull Oddball Balls
+
+edittag objects\characters\masterchief\fp\weapons\multiplayer\fp_ball\fp_ball.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 3
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand
+setfield animations[1].PlaybackFlags ForceWeaponIkOn
+setfield animations[5].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[6].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[7].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[12].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[15].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+addanimation Animation\Spartan\ODDBALL
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\multiplayer\fp_ball\fp_ball.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 3
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand_elite
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand_elite
+setfield animations[1].PlaybackFlags ForceWeaponIkOn
+setfield animations[5].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[6].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[6].animationdata.Soundevents[0].Sound 0
+setfield animations[7].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[15].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+addanimation Animation\Elite\ODDBALL
+savetagchanges
+exitto tags
+
+ECHO --------------------------------------------------------------------------------------------------------
+ECHO I                                           Flag                                                       I
+ECHO --------------------------------------------------------------------------------------------------------
+ECHO Flag Taken, Flag Drop, Flag Taken, Flag Drop, Flag Taken, Flag Drop
+
+edittag objects\characters\masterchief\fp\weapons\multiplayer\fp_flag\fp_flag.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 3
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand
+setfield animations[1].PlaybackFlags ForceWeaponIkOn
+setfield animations[5].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[6].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[12].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[13].PlaybackFlags DisableWeaponIk
+addanimation Animation\Spartan\FLAG
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\multiplayer\fp_flag\fp_flag.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 3
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand_elite
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand_elite
+setfield animations[1].PlaybackFlags ForceWeaponIkOn
+setfield animations[5].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[6].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[12].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[13].PlaybackFlags DisableWeaponIk
+addanimation Animation\Elite\FLAG
+savetagchanges
+exitto tags
+
+ECHO --------------------------------------------------------------------------------------------------------
+ECHO I                                         Assault_Rifle                                                I
+ECHO --------------------------------------------------------------------------------------------------------
+ECHO AR Assault
+edittag objects\characters\masterchief\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
+addanimation Animation\Spartan\AR
+addblockelements animations[26].animationdata.FrameEvents 3
+addblockelements animations[26].animationdata.SoundEvents 1
+addblockelements animations[27].animationdata.FrameEvents 3
+addblockelements animations[27].animationdata.SoundEvents 1
+addblockelements animations[28].animationdata.SoundEvents 1
+
+addblockelements animations[18].animationdata.FrameEvents 2
+addblockelements animations[18].animationdata.SoundEvents 1
+setfield animations[18].animationdata.Soundevents[0].Sound 6
+setfield animations[18].animationdata.Frameevents[0].Frame 34
+setfield animations[18].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[18].animationdata.Frameevents[1].Frame 62
+setfield animations[18].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[18].animationdata.Productionflags VerifySoundEvents
+
+addblockelements animations[19].animationdata.FrameEvents 2
+addblockelements animations[19].animationdata.SoundEvents 1
+setfield animations[19].animationdata.Soundevents[0].Sound 0
+setfield animations[19].animationdata.Frameevents[0].Frame 34
+setfield animations[19].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[19].animationdata.Frameevents[1].Frame 52
+setfield animations[19].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[19].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[9].weight 0.555
+setfield animations[9].animationdata.NextAnimation 26
+setfield animations[10].weight 0.555
+setfield animations[10].animationdata.NextAnimation 27
+setfield animations[17].weight 0.555
+setfield animations[17].animationdata.NextAnimation 28
+setfield animations[10].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[26].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[27].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[28].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+setfield animations[26].weight 1
+setfield animations[26].animationdata.ParentAnimation 9
+setfield animations[26].animationdata.Soundevents[0].Sound 3
+setfield animations[26].animationdata.Frameevents[0].Frame 4
+setfield animations[26].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[26].animationdata.Frameevents[1].Frame 14
+setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[26].animationdata.Frameevents[2].Frame 23
+
+setfield animations[27].weight 1
+setfield animations[27].animationdata.ParentAnimation 10
+setfield animations[27].animationdata.Soundevents[0].Sound 2
+setfield animations[27].animationdata.Frameevents[0].Frame 4
+setfield animations[27].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[27].animationdata.Frameevents[1].Frame 14
+setfield animations[27].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[27].animationdata.Frameevents[2].Frame 23
+
+setfield animations[28].weight 1
+setfield animations[28].animationdata.ParentAnimation 17
+setfield animations[28].animationdata.Soundevents[0].Sound 1
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.jmad
+removeblockelements SoundReferences 6 *
+addblockelements SoundReferences
+setfield SoundReferences[6].Reference sound\weapons\assault_rifle\ar_reload_empty_clip.snd!
+setfield Modes[0].WeaponClass[0].WeaponIk[0].AttachToMarker left_hand_elite
+setfield Modes[0].WeaponClass[0].WeaponType[0].set.Overlays[1].Animation 6
+addanimation Animation\Elite\AR
+
+addblockelements animations[16].animationdata.FrameEvents 2
+addblockelements animations[16].animationdata.SoundEvents 1
+setfield animations[16].animationdata.Soundevents[0].Sound 6
+setfield animations[16].animationdata.Frameevents[0].Frame 34
+setfield animations[16].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[16].animationdata.Frameevents[1].Frame 52
+setfield animations[16].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[16].animationdata.Productionflags VerifySoundEvents
+
+addblockelements animations[17].animationdata.FrameEvents 2
+addblockelements animations[17].animationdata.SoundEvents 1
+setfield animations[17].animationdata.Soundevents[0].Sound 3
+setfield animations[17].animationdata.Frameevents[0].Frame 34
+setfield animations[17].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[17].animationdata.Frameevents[1].Frame 52
+setfield animations[17].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[17].animationdata.Productionflags VerifySoundEvents
+
+addblockelements animations[8].animationdata.FrameEvents 3
+addblockelements animations[8].animationdata.SoundEvents 1
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 24
+setfield animations[8].animationdata.Soundevents[0].Sound 0
+setfield animations[8].animationdata.Frameevents[0].Frame 4
+setfield animations[8].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[8].animationdata.Frameevents[1].Frame 14
+setfield animations[8].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[8].animationdata.Frameevents[2].Frame 23
+setfield animations[8].PlaybackFlags DisableWeaponAim1stPerson
+
+setfield animations[9].weight 0.555
+setfield animations[9].animationdata.NextAnimation 25
+
+setfield animations[12].animationdata.BlendScreen 0
+
+setfield animations[15].weight 0.555
+setfield animations[15].animationdata.NextAnimation 26
+
+addblockelements animations[22].animationdata.FrameEvents 1
+setfield animations[22].animationdata.Frameevents[0].Frame 12
+
+addblockelements animations[24].animationdata.FrameEvents 3
+addblockelements animations[24].animationdata.SoundEvents 1
+setfield animations[24].weight 1
+setfield animations[24].animationdata.ParentAnimation 8
+setfield animations[24].animationdata.Soundevents[0].Sound 0
+setfield animations[24].animationdata.Frameevents[0].Frame 4
+setfield animations[24].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[24].animationdata.Frameevents[1].Frame 14
+setfield animations[24].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[24].animationdata.Frameevents[2].Frame 23
+setfield animations[24].PlaybackFlags DisableWeaponAim1stPerson
+
+addblockelements animations[25].animationdata.FrameEvents 3
+addblockelements animations[25].animationdata.SoundEvents 1
+setfield animations[25].weight 1
+setfield animations[25].animationdata.ParentAnimation 9
+setfield animations[25].animationdata.Soundevents[0].Sound 1
+setfield animations[25].animationdata.Frameevents[0].Frame 4
+setfield animations[25].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[25].animationdata.Frameevents[1].Frame 14
+setfield animations[25].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[25].animationdata.Frameevents[2].Frame 23
+setfield animations[25].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+addblockelements animations[26].animationdata.SoundEvents 1
+setfield animations[26].animationdata.Soundevents[0].Sound 2
+setfield animations[26].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                         Battle_Rifle                                                 I
+echo --------------------------------------------------------------------------------------------------------
+ECHO Battle Rifle BR
+
+edittag objects\characters\masterchief\fp\weapons\rifle\fp_battle_rifle\fp_battle_rifle.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
+addanimation Animation\Spartan\BATTLE_RIF
+
+addblockelements animations[16].animationdata.SoundEvents 1
+setfield animations[16].animationdata.Productionflags VerifySoundEvents
+setfield animations[16].weight 0.555
+setfield animations[16].animationdata.NextAnimation 27
+setfield animations[16].animationdata.Soundevents[0].Sound 2
+setfield modes[0].weaponclass[0].weapontype[0].set.actions[4].GraphIndex -1
+setfield modes[0].weaponclass[0].weapontype[0].set.actions[4].Animation 16
+
+addblockelements animations[27].animationdata.SoundEvents 1
+setfield animations[27].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[27].weight 1
+setfield animations[27].animationdata.ParentAnimation 16
+setfield animations[27].animationdata.Soundevents[0].Sound 2
+
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 25
+setfield animations[9].weight 0.555
+setfield animations[9].animationdata.NextAnimation 26
+
+addblockelements animations[25].animationdata.FrameEvents 3
+addblockelements animations[25].animationdata.SoundEvents 1
+addblockelements animations[26].animationdata.FrameEvents 3
+addblockelements animations[26].animationdata.SoundEvents 1
+
+setfield animations[25].weight 1
+setfield animations[25].animationdata.ParentAnimation 8
+setfield animations[25].animationdata.Soundevents[0].Sound 0
+setfield animations[25].animationdata.Frameevents[0].Frame 4
+setfield animations[25].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[25].animationdata.Frameevents[1].Frame 14
+setfield animations[25].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[25].animationdata.Frameevents[2].Frame 23
+setfield animations[25].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+setfield animations[26].weight 1
+setfield animations[26].animationdata.ParentAnimation 9
+setfield animations[26].animationdata.Soundevents[0].Sound 1
+setfield animations[26].animationdata.Frameevents[0].Frame 4
+setfield animations[26].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[26].animationdata.Frameevents[1].Frame 14
+setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[26].animationdata.Frameevents[2].Frame 23
+setfield animations[26].PlaybackFlags DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\rifle\fp_battle_rifle\fp_battle_rifle.jmad
+setfield Modes[0].WeaponClass[0].WeaponType[0].set.Overlays[1].Animation 6
+setfield SoundReferences[0].Reference sound\weapons\dmr\dmr_reload_full.snd!
+addanimation Animation\Elite\BR
+setfield animations[8].weight 0.33
+setfield animations[8].animationdata.NextAnimation 23
+
+addblockelements animations[23].animationdata.FrameEvents 3
+addblockelements animations[23].animationdata.SoundEvents 1
+setfield animations[23].weight 0.44
+setfield animations[23].animationdata.NextAnimation 24
+setfield animations[24].animationdata.ParentAnimation 8
+setfield animations[23].animationdata.Soundevents[0].Sound 4
+setfield animations[23].animationdata.Frameevents[0].Frame 4
+setfield animations[23].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[23].animationdata.Frameevents[1].Frame 14
+setfield animations[23].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[23].animationdata.Frameevents[2].Frame 23
+setfield animations[23].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+addblockelements animations[24].animationdata.FrameEvents 3
+addblockelements animations[24].animationdata.SoundEvents 1
+setfield animations[24].weight 0.66
+setfield animations[24].animationdata.NextAnimation 25
+setfield animations[24].animationdata.ParentAnimation 8
+setfield animations[24].animationdata.Soundevents[0].Sound 2
+setfield animations[24].animationdata.Frameevents[0].Frame 4
+setfield animations[24].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[24].animationdata.Frameevents[1].Frame 14
+setfield animations[24].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[24].animationdata.Frameevents[2].Frame 23
+setfield animations[24].PlaybackFlags DisableWeaponAim1stPerson
+
+addblockelements animations[25].animationdata.FrameEvents 3
+addblockelements animations[25].animationdata.SoundEvents 1
+setfield animations[25].weight 1
+setfield animations[25].animationdata.ParentAnimation 8
+setfield animations[25].animationdata.Soundevents[0].Sound 4
+setfield animations[25].animationdata.Frameevents[0].Frame 4
+setfield animations[25].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[25].animationdata.Frameevents[1].Frame 14
+setfield animations[25].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[25].animationdata.Frameevents[2].Frame 23
+setfield animations[25].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+setfield animations[14].weight 0.555
+setfield animations[14].animationdata.NextAnimation 26
+
+addblockelements animations[26].animationdata.SoundEvents 1
+setfield animations[26].animationdata.Soundevents[0].Sound 1
+setfield animations[26].animationdata.Soundevents[0].Frame 1
+setfield animations[26].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+addblockelements animations[15].animationdata.FrameEvents 2
+addblockelements animations[15].animationdata.SoundEvents 1
+setfield animations[15].animationdata.Soundevents[0].Sound 3
+setfield animations[15].animationdata.Frameevents[0].Frame 34
+setfield animations[15].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[15].animationdata.Frameevents[1].Frame 52
+setfield animations[15].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[15].animationdata.Productionflags VerifySoundEvents
+
+addblockelements animations[16].animationdata.FrameEvents 2
+addblockelements animations[16].animationdata.SoundEvents 1
+setfield animations[16].animationdata.Soundevents[0].Sound 0
+setfield animations[16].animationdata.Frameevents[0].Frame 34
+setfield animations[16].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[16].animationdata.Frameevents[1].Frame 52
+setfield animations[16].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[16].animationdata.Productionflags VerifySoundEvents
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
+setfield animations[17].PlaybackFlags none
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                         Brute_Shot                                                   I
+echo --------------------------------------------------------------------------------------------------------
+ECHO BS
+
+edittag objects\characters\masterchief\fp\weapons\support_low\fp_brute_shot\fp_brute_shot.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\support_low\fp_brute_shot\fp_brute_shot.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].GraphIndex 0
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[4].Animation 12
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[4].GraphIndex 0
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand_elite
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand_elite
+addanimation Animation\Elite\BRUTESHOT
+
+setfield animations[12].PlaybackFlags ForceWeaponIkOn
+setfield animations[13].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[14].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+addblockelements animations[20].animationdata.FrameEvents 1
+setfield animations[20].animationdata.Frameevents[0].Frame 12
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                         Beam_Rifle                                                   I
+echo --------------------------------------------------------------------------------------------------------
+ECHO Beam Rifle. Sniper jackal
+
+edittag objects\characters\masterchief\fp\weapons\rifle\fp_beam_rifle\fp_beam_rifle.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand
+addanimation Animation\Spartan\BEAM_RIF
+
+setfield animations[8].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[11].PlaybackFlags DisableWeaponIk
+setfield animations[12].PlaybackFlags DisableWeaponIk
+setfield animations[13].PlaybackFlags DisableWeaponIk
+setfield animations[16].PlaybackFlags DisableWeaponIk
+setfield animations[17].PlaybackFlags DisableWeaponIk
+setfield animations[20].PlaybackFlags ForceWeaponIkOn
+setfield animations[21].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+setfield animations[22].PlaybackFlags ForceWeaponIkOn
+setfield animations[26].PlaybackFlags DisableWeaponIk
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\rifle\fp_beam_rifle\fp_beam_rifle.jmad
+addanimation Animation\Elite\BEAM
+setfield animations[11].PlaybackFlags DisableWeaponIk
+setfield animations[12].PlaybackFlags DisableWeaponIk
+setfield animations[13].PlaybackFlags DisableWeaponIk
+setfield animations[16].PlaybackFlags DisableWeaponIk
+
+addblockelements animations[18].animationdata.SoundEvents 1
+setfield animations[18].animationdata.Soundevents[0].Sound 1
+setfield animations[18].animationdata.Soundevents[0].Frame 1
+
+addblockelements animations[25].animationdata.FrameEvents 1
+setfield animations[25].animationdata.Frameevents[0].Frame 10
+setfield animations[25].PlaybackFlags DisableWeaponIk
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                           CARBINE                                                    I
+echo --------------------------------------------------------------------------------------------------------
+ECHO Carb Carby
+
+edittag objects\characters\masterchief\fp\weapons\rifle\fp_covenant_carbine\fp_covenant_carbine.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
+addanimation Animation\Spartan\CARBINE
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 28
+
+addblockelements animations[28].animationdata.FrameEvents 3
+addblockelements animations[28].animationdata.SoundEvents 1
+setfield animations[28].weight 1
+setfield animations[28].animationdata.ParentAnimation 8
+setfield animations[28].animationdata.Soundevents[0].Sound 6
+setfield animations[28].animationdata.Frameevents[0].Frame 4
+setfield animations[28].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[28].animationdata.Frameevents[1].Frame 14
+setfield animations[28].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[28].animationdata.Frameevents[2].Frame 23
+setfield animations[28].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+setfield animations[10].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[11].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[12].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[27].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 19 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\rifle\fp_covenant_carbine\fp_covenant_carbine.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
+addanimation Animation\Elite\CARB
+
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 28
+
+addblockelements animations[28].animationdata.FrameEvents 3
+addblockelements animations[28].animationdata.SoundEvents 1
+setfield animations[28].weight 1
+setfield animations[28].animationdata.ParentAnimation 8
+setfield animations[28].animationdata.Soundevents[0].Sound 1
+setfield animations[28].animationdata.Frameevents[0].Frame 4
+setfield animations[28].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[28].animationdata.Frameevents[1].Frame 14
+setfield animations[28].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[28].animationdata.Frameevents[2].Frame 23
+setfield animations[28].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+setfield animations[16].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[17].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+setfield animations[24].PlaybackFlags DisableWeaponIk
+setfield animations[25].PlaybackFlags DisableWeaponIk
+setfield animations[26].PlaybackFlags DisableWeaponIk
+setfield animations[27].PlaybackFlags DisableWeaponIk
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 18 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                              DMR                                                     I
+echo --------------------------------------------------------------------------------------------------------
+ECHO DMR the other Br
+
+edittag objects\characters\masterchief\fp\weapons\rifle\fp_dmr\fp_dmr.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
+addanimation Animation\Spartan\DMR
+
+addblockelements animations[17].animationdata.FrameEvents 2
+addblockelements animations[17].animationdata.SoundEvents 1
+setfield animations[17].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[17].animationdata.Productionflags VerifySoundEvents
+setfield animations[17].animationdata.Soundevents[0].Sound 4
+setfield animations[17].animationdata.Frameevents[0].Frame 34
+setfield animations[17].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[17].animationdata.Frameevents[1].Frame 62
+addblockelements animations[18].animationdata.FrameEvents 2
+addblockelements animations[18].animationdata.SoundEvents 1
+setfield animations[18].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[18].animationdata.Productionflags VerifySoundEvents
+setfield animations[18].animationdata.Soundevents[0].Sound 3
+setfield animations[18].animationdata.Frameevents[0].Frame 34
+setfield animations[18].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[18].animationdata.Frameevents[1].Frame 52
+
+setfield animations[16].weight 0.555
+setfield animations[16].animationdata.NextAnimation 27
+
+addblockelements animations[27].animationdata.SoundEvents 1
+setfield animations[27].animationdata.Productionflags VerifySoundEvents
+setfield animations[27].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[27].weight 1
+setfield animations[27].animationdata.ParentAnimation 16
+setfield animations[27].animationdata.Soundevents[0].Sound 2
+
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 25
+setfield animations[9].weight 0.555
+setfield animations[9].animationdata.NextAnimation 26
+
+addblockelements animations[25].animationdata.FrameEvents 3
+addblockelements animations[25].animationdata.SoundEvents 1
+addblockelements animations[26].animationdata.FrameEvents 3
+addblockelements animations[26].animationdata.SoundEvents 1
+
+setfield animations[25].weight 1
+setfield animations[25].animationdata.ParentAnimation 8
+setfield animations[25].animationdata.Soundevents[0].Sound 0
+setfield animations[25].animationdata.Frameevents[0].Frame 4
+setfield animations[25].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[25].animationdata.Frameevents[1].Frame 14
+setfield animations[25].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[25].animationdata.Frameevents[2].Frame 23
+setfield animations[25].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+setfield animations[26].weight 1
+setfield animations[26].animationdata.ParentAnimation 9
+setfield animations[26].animationdata.Soundevents[0].Sound 1
+setfield animations[26].animationdata.Frameevents[0].Frame 4
+setfield animations[26].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[26].animationdata.Frameevents[1].Frame 14
+setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[26].animationdata.Frameevents[2].Frame 23
+setfield animations[26].PlaybackFlags DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\rifle\fp_dmr\fp_dmr.jmad
+setfield Modes[0].WeaponClass[0].WeaponType[0].set.Overlays[1].Animation 6
+setfield SoundReferences[0].Reference sound\weapons\dmr\dmr_reload_full.snd!
+addanimation Animation\Elite\DMR
+
+setfield animations[1].weight 0.3333333
+setfield animations[1].animationdata.NextAnimation 2
+setfield animations[2].weight 0.6666667
+setfield animations[2].animationdata.NextAnimation 3
+setfield animations[2].animationdata.ParentAnimation 1
+setfield animations[3].weight 1
+setfield animations[3].animationdata.ParentAnimation 1
+
+addblockelements animations[8].animationdata.FrameEvents 3
+addblockelements animations[8].animationdata.SoundEvents 1
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 25
+setfield animations[8].animationdata.Soundevents[0].Sound 2
+setfield animations[8].animationdata.Soundevents[0].Frame 1
+setfield animations[8].animationdata.Frameevents[0].Frame 4
+setfield animations[8].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[8].animationdata.Frameevents[1].Frame 14
+setfield animations[8].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[8].animationdata.Frameevents[2].Frame 23
+setfield animations[8].PlaybackFlags DisableWeaponAim1stPerson
+
+addblockelements animations[25].animationdata.FrameEvents 3
+addblockelements animations[25].animationdata.SoundEvents 1
+setfield animations[25].weight 1
+setfield animations[25].animationdata.ParentAnimation 8
+setfield animations[25].animationdata.Soundevents[0].Sound 2
+setfield animations[25].animationdata.Frameevents[0].Frame 4
+setfield animations[25].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[25].animationdata.Frameevents[1].Frame 14
+setfield animations[25].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[25].animationdata.Frameevents[2].Frame 23
+setfield animations[25].PlaybackFlags DisableWeaponAim1stPerson
+
+addblockelements animations[9].animationdata.FrameEvents 3
+addblockelements animations[9].animationdata.SoundEvents 1
+setfield animations[9].weight 0.555
+setfield animations[9].animationdata.NextAnimation 26
+setfield animations[9].animationdata.Soundevents[0].Sound 4
+setfield animations[9].animationdata.Soundevents[0].Frame 1
+setfield animations[9].animationdata.Frameevents[0].Frame 4
+setfield animations[9].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[9].animationdata.Frameevents[1].Frame 14
+setfield animations[9].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[9].animationdata.Frameevents[2].Frame 23
+setfield animations[9].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+addblockelements animations[26].animationdata.FrameEvents 3
+addblockelements animations[26].animationdata.SoundEvents 1
+setfield animations[26].weight 1
+setfield animations[26].animationdata.ParentAnimation 9
+setfield animations[26].animationdata.Soundevents[0].Sound 4
+setfield animations[26].animationdata.Frameevents[0].Frame 4
+setfield animations[26].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[26].animationdata.Frameevents[1].Frame 14
+setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[26].animationdata.Frameevents[2].Frame 23
+setfield animations[26].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+addblockelements animations[13].animationdata.SoundEvents 1
+setfield animations[13].weight 0.5
+setfield animations[13].animationdata.NextAnimation 14
+setfield animations[13].animationdata.Soundevents[0].Sound 5
+
+addblockelements animations[14].animationdata.SoundEvents 1
+setfield animations[14].weight 1
+setfield animations[14].animationdata.ParentAnimation 13
+setfield animations[14].animationdata.Soundevents[0].Sound 6
+
+addblockelements animations[16].animationdata.SoundEvents 1
+setfield animations[16].weight 0.555
+setfield animations[16].animationdata.NextAnimation 27
+setfield animations[16].animationdata.Soundevents[0].Sound 1
+setfield animations[16].animationdata.Soundevents[0].Frame 1
+
+addblockelements animations[27].animationdata.SoundEvents 1
+setfield animations[27].weight 1
+setfield animations[27].animationdata.ParentAnimation 16
+setfield animations[27].animationdata.Soundevents[0].Sound 1
+setfield animations[27].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+addblockelements animations[17].animationdata.FrameEvents 2
+addblockelements animations[17].animationdata.SoundEvents 1
+setfield animations[17].animationdata.Soundevents[0].Sound 3
+setfield animations[17].animationdata.Frameevents[0].Frame 34
+setfield animations[17].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[17].animationdata.Frameevents[1].Frame 52
+setfield animations[17].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+addblockelements animations[18].animationdata.FrameEvents 2
+addblockelements animations[18].animationdata.SoundEvents 1
+setfield animations[18].animationdata.Soundevents[0].Sound 0
+setfield animations[18].animationdata.Frameevents[0].Frame 34
+setfield animations[18].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[18].animationdata.Frameevents[1].Frame 52
+setfield animations[18].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+addblockelements animations[23].animationdata.FrameEvents 1
+setfield animations[23].animationdata.Frameevents[0].Frame 12
+
+addblockelements animations[24].animationdata.FrameEvents 1
+setfield animations[24].animationdata.Frameevents[0].Frame 12
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                              FUEL_ROD                                                I
+echo --------------------------------------------------------------------------------------------------------
+echo Fl Flak Flak Cannon Fuel Rod
+
+edittag objects\characters\masterchief\fp\weapons\support_high\fp_flak_cannon\fp_flak_cannon.jmad
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
+
+addanimation Animation\Spartan\FUELROD
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 24
+addblockelements animations[24].animationdata.FrameEvents 3
+addblockelements animations[24].animationdata.SoundEvents 1
+setfield animations[24].weight 1
+setfield animations[24].animationdata.ParentAnimation 8
+setfield animations[24].animationdata.Soundevents[0].Sound 4
+setfield animations[24].animationdata.Frameevents[0].Frame 5
+setfield animations[24].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[24].animationdata.Frameevents[1].Frame 15
+setfield animations[24].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[24].animationdata.Frameevents[2].Frame 30
+setfield animations[24].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[15].PlaybackFlags DisableWeaponIk
+setfield animations[16].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[17].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[22].PlaybackFlags DisableWeaponIk
+setfield animations[23].PlaybackFlags DisableWeaponIk
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\support_high\fp_flak_cannon\fp_flak_cannon.jmad
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand_elite
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand_elite
+addanimation Animation\Elite\FUELROD
+
+setfield animations[1].PlaybackFlags ForceWeaponIkOn
+setfield animations[2].PlaybackFlags ForceWeaponIkOn
+setfield animations[3].PlaybackFlags ForceWeaponIkOn
+setfield animations[4].PlaybackFlags ForceWeaponIkOn
+
+addblockelements animations[8].animationdata.FrameEvents 3
+addblockelements animations[8].animationdata.SoundEvents 1
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 23
+setfield animations[8].animationdata.Soundevents[0].Sound 0
+setfield animations[8].animationdata.Frameevents[0].Frame 5
+setfield animations[8].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[8].animationdata.Frameevents[1].Frame 15
+setfield animations[8].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[8].animationdata.Frameevents[2].Frame 30
+setfield animations[8].PlaybackFlags ForceWeaponIkOn
+
+addblockelements animations[23].animationdata.FrameEvents 3
+addblockelements animations[23].animationdata.SoundEvents 1
+setfield animations[23].weight 1
+setfield animations[23].animationdata.ParentAnimation 8
+setfield animations[23].animationdata.Soundevents[0].Sound 0
+setfield animations[23].animationdata.Frameevents[0].Frame 5
+setfield animations[23].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[23].animationdata.Frameevents[1].Frame 15
+setfield animations[23].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[23].animationdata.Frameevents[2].Frame 30
+setfield animations[23].PlaybackFlags ForceWeaponIkOn
+
+setfield animations[12].PlaybackFlags ForceWeaponIkOn
+setfield animations[17].PlaybackFlags ForceWeaponIkOn
+setfield animations[18].PlaybackFlags ForceWeaponIkOn
+setfield animations[19].PlaybackFlags ForceWeaponIkOn
+setfield animations[20].PlaybackFlags ForceWeaponIkOn
+
+addblockelements animations[14].animationdata.SoundEvents 1
+setfield animations[14].animationdata.Soundevents[0].Sound 3
+
+setfield animations[15].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[16].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                              HAMMER                                                  I
+echo --------------------------------------------------------------------------------------------------------
+ECHO Gravity Ham
+
+edittag objects\characters\masterchief\fp\weapons\melee\fp_gravity_hammer\fp_gravity_hammer.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 3
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand
+addanimation Animation\Spartan\Hammer
+
+addblockelements animations[15].animationdata.SoundEvents 1
+setfield animations[15].animationdata.Productionflags VerifySoundEvents
+setfield animations[15].PlaybackFlags ForceWeaponIkOn
+setfield animations[15].weight 0.666
+setfield animations[15].animationdata.NextAnimation 24
+setfield animations[15].animationdata.Soundevents[0].Sound 0
+
+addblockelements animations[24].animationdata.SoundEvents 1
+setfield animations[24].animationdata.Productionflags VerifySoundEvents
+setfield animations[24].PlaybackFlags ForceWeaponIkOn
+setfield animations[24].weight 1
+setfield animations[24].animationdata.ParentAnimation 15
+setfield animations[24].animationdata.Soundevents[0].Sound 0
+
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 22
+setfield animations[8].PlaybackFlags DisableWeaponAim1stPerson
+removeblockelements animations[8].Animationdata.Effectevents 0 *
+
+addblockelements animations[22].animationdata.FrameEvents 3
+addblockelements animations[22].animationdata.SoundEvents 1
+setfield animations[22].weight 1
+setfield animations[22].animationdata.ParentAnimation 8
+setfield animations[22].animationdata.Soundevents[0].Sound 2
+setfield animations[22].animationdata.Frameevents[0].Frame 4
+setfield animations[22].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[22].animationdata.Frameevents[1].Frame 15
+setfield animations[22].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[22].animationdata.Frameevents[2].Frame 15
+setfield animations[22].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+setfield animations[9].weight 0.555
+setfield animations[9].animationdata.NextAnimation 23
+setfield animations[9].PlaybackFlags DisableWeaponAim1stPerson
+removeblockelements animations[9].Animationdata.Effectevents 0 *
+
+addblockelements animations[23].animationdata.FrameEvents 3
+addblockelements animations[23].animationdata.SoundEvents 1
+setfield animations[23].weight 1
+setfield animations[23].animationdata.ParentAnimation 9
+setfield animations[23].animationdata.Soundevents[0].Sound 2
+setfield animations[23].animationdata.Frameevents[0].Frame 4
+setfield animations[23].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[23].animationdata.Frameevents[1].Frame 15
+setfield animations[23].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[23].animationdata.Frameevents[2].Frame 15
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 18 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\melee\fp_gravity_hammer\fp_gravity_hammer.jmad
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand_elite
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand_elite
+addanimation Animation\Elite\Hammer
+
+addblockelements animations[12].animationdata.SoundEvents 1
+setfield animations[12].PlaybackFlags ForceWeaponIkOn
+setfield animations[12].animationdata.Soundevents[0].Sound 0
+
+setfield animations[6].weight 0.555
+setfield animations[6].animationdata.NextAnimation 21
+setfield animations[6].PlaybackFlags DisableWeaponAim1stPerson
+removeblockelements animations[6].Animationdata.Effectevents 0 *
+
+addblockelements animations[21].animationdata.FrameEvents 3
+addblockelements animations[21].animationdata.SoundEvents 1
+setfield animations[21].weight 1
+setfield animations[21].animationdata.ParentAnimation 6
+setfield animations[21].animationdata.Soundevents[0].Sound 2
+setfield animations[21].animationdata.Frameevents[0].Frame 4
+setfield animations[21].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[21].animationdata.Frameevents[1].Frame 15
+setfield animations[21].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[21].animationdata.Frameevents[2].Frame 15
+setfield animations[21].PlaybackFlags DisableWeaponAim1stPerson
+
+setfield animations[7].weight 0.555
+setfield animations[7].animationdata.NextAnimation 22
+setfield animations[7].PlaybackFlags DisableWeaponAim1stPerson
+removeblockelements animations[7].Animationdata.Effectevents 0 *
+
+addblockelements animations[22].animationdata.FrameEvents 3
+addblockelements animations[22].animationdata.SoundEvents 1
+setfield animations[22].weight 1
+setfield animations[22].animationdata.ParentAnimation 7
+setfield animations[22].animationdata.Soundevents[0].Sound 2
+setfield animations[22].animationdata.Frameevents[0].Frame 4
+setfield animations[22].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[22].animationdata.Frameevents[1].Frame 15
+setfield animations[22].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[22].animationdata.Frameevents[2].Frame 15
+setfield animations[22].PlaybackFlags DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 17 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                              MAGNUM                                                  I
+echo --------------------------------------------------------------------------------------------------------
+echo Magnum Pistol
+
+edittag objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.jmad
+setfield animations[39].PlaybackFlags ForceWeaponIkOn
+setfield animations[40].PlaybackFlags ForceWeaponIkOn
+setfield animations[41].PlaybackFlags ForceWeaponIkOn
+setfield animations[42].PlaybackFlags ForceWeaponIkOn
+addanimation Animation\Spartan\MAG
+
+addblockelements animations[37].animationdata.FrameEvents 2
+addblockelements animations[37].animationdata.SoundEvents 2
+setfield animations[37].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[37].animationdata.Soundevents[0].Sound 8
+setfield animations[37].animationdata.Soundevents[1].Sound 7
+setfield animations[37].animationdata.Soundevents[1].Frame 29
+setfield animations[37].animationdata.Frameevents[0].Frame 34
+setfield animations[37].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[37].animationdata.Frameevents[1].Frame 47
+
+addblockelements animations[38].animationdata.FrameEvents 2
+addblockelements animations[38].animationdata.SoundEvents 1
+setfield animations[38].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[38].animationdata.Soundevents[0].Sound 8
+setfield animations[38].animationdata.Frameevents[0].Frame 34
+setfield animations[38].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[38].animationdata.Frameevents[1].Frame 47
+
+setfield animations[36].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+setfield animations[36].weight 0.555
+setfield animations[36].animationdata.NextAnimation 50
+
+addblockelements animations[50].animationdata.SoundEvents 1
+setfield animations[50].animationdata.Productionflags VerifySoundEvents
+setfield animations[50].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[50].weight 1
+setfield animations[50].animationdata.ParentAnimation 36
+setfield animations[50].animationdata.Soundevents[0].Sound 7
+
+setfield animations[28].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[29].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[29].weight 0.555
+setfield animations[29].animationdata.NextAnimation 49
+
+addblockelements animations[49].animationdata.FrameEvents 3
+addblockelements animations[49].animationdata.SoundEvents 2
+
+setfield animations[49].weight 1
+setfield animations[49].animationdata.ParentAnimation 29
+setfield animations[49].animationdata.Soundevents[0].Sound 4
+setfield animations[49].animationdata.Soundevents[1].Sound 7
+setfield animations[49].animationdata.Soundevents[1].Frame 16
+setfield animations[49].animationdata.Frameevents[0].Frame 3
+setfield animations[49].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[49].animationdata.Frameevents[1].Frame 15
+setfield animations[49].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[49].animationdata.Frameevents[2].Frame 23
+setfield animations[49].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\pistol\magnum\fp_magnum\fp_magnum.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 30
+addanimation Animation\Elite\MAGNUM
+
+setfield animations[8].animationdata.blendscreen 0
+
+setfield animations[40].weight 0.555
+setfield animations[40].animationdata.NextAnimation 54
+
+addblockelements animations[54].animationdata.SoundEvents 1
+setfield animations[54].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[54].weight 1
+setfield animations[54].animationdata.ParentAnimation 36
+setfield animations[54].animationdata.Soundevents[0].Sound 5
+
+addblockelements animations[41].animationdata.FrameEvents 2
+addblockelements animations[41].animationdata.SoundEvents 2
+setfield animations[41].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[41].animationdata.Soundevents[0].Sound 6
+setfield animations[41].animationdata.Soundevents[1].Sound 5
+setfield animations[41].animationdata.Soundevents[1].Frame 29
+setfield animations[41].animationdata.Frameevents[0].Frame 34
+setfield animations[41].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[41].animationdata.Frameevents[1].Frame 47
+
+setfield animations[42].PlaybackFlags DisableWeaponAim1stPerson
+
+setfield animations[32].PlaybackFlags DisableWeaponAim1stPerson
+
+setfield animations[33].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[33].weight 0.555
+setfield animations[33].animationdata.NextAnimation 53
+
+addblockelements animations[53].animationdata.FrameEvents 3
+addblockelements animations[53].animationdata.SoundEvents 2
+setfield animations[53].weight 1
+setfield animations[53].animationdata.ParentAnimation 33
+setfield animations[53].animationdata.Soundevents[0].Sound 4
+setfield animations[53].animationdata.Soundevents[1].Sound 5
+setfield animations[53].animationdata.Soundevents[1].Frame 16
+setfield animations[53].animationdata.Frameevents[0].Frame 3
+setfield animations[53].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[53].animationdata.Frameevents[1].Frame 15
+setfield animations[53].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[53].animationdata.Frameevents[2].Frame 23
+setfield animations[53].PlaybackFlags DisableWeaponAim1stPerson
+
+addblockelements animations[44].animationdata.FrameEvents 1
+setfield animations[44].animationdata.Frameevents[0].Frame 11
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                              MAULER                                                  I
+echo --------------------------------------------------------------------------------------------------------
+echo Excavator, Maul, ML
+
+edittag objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.jmad
+setfield animations[37].animationdata.FrameCount 21
+addanimation Animation\Spartan\MAULER
+
+setfield animations[27].weight 0.555
+setfield animations[27].animationdata.NextAnimation 46
+setfield animations[27].PlaybackFlags DisableWeaponAim1stPerson
+
+addblockelements animations[46].animationdata.FrameEvents 3
+addblockelements animations[46].animationdata.SoundEvents 1
+setfield animations[46].weight 1
+setfield animations[46].animationdata.ParentAnimation 27
+setfield animations[46].animationdata.Soundevents[0].Sound 6
+setfield animations[46].animationdata.Frameevents[0].Frame 5
+setfield animations[46].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[46].animationdata.Frameevents[1].Frame 15
+setfield animations[46].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[46].animationdata.Frameevents[2].Frame 22
+setfield animations[46].PlaybackFlags DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
+sortmodes
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\pistol\excavator\fp_excavator\fp_excavator.jmad
+addanimation Animation\Elite\MAULER
+
+setfield animations[27].weight 0.555
+setfield animations[27].animationdata.NextAnimation 46
+setfield animations[27].PlaybackFlags DisableWeaponAim1stPerson
+
+addblockelements animations[46].animationdata.FrameEvents 3
+addblockelements animations[46].animationdata.SoundEvents 1
+setfield animations[46].weight 1
+setfield animations[46].animationdata.ParentAnimation 27
+setfield animations[46].animationdata.Soundevents[0].Sound 6
+setfield animations[46].animationdata.Frameevents[0].Frame 5
+setfield animations[46].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[46].animationdata.Frameevents[1].Frame 15
+setfield animations[46].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[46].animationdata.Frameevents[2].Frame 22
+setfield animations[46].PlaybackFlags DisableWeaponAim1stPerson
+
+setfield animations[34].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[35].PlaybackFlags DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                              NEEDLER                                                 I
+echo --------------------------------------------------------------------------------------------------------
+echo LeNeedlers
+
+edittag objects\characters\masterchief\fp\weapons\pistol\fp_needler\fp_needler.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 7
+addanimation Animation\Spartan\NEEDLER
+
+setfield animations[9].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[9].weight 0.444
+setfield animations[9].animationdata.NextAnimation 25
+
+addblockelements animations[25].animationdata.FrameEvents 3
+addblockelements animations[25].animationdata.SoundEvents 1
+setfield animations[25].weight 0.777
+setfield animations[25].animationdata.NextAnimation 26
+setfield animations[25].animationdata.Soundevents[0].Sound 0
+setfield animations[25].animationdata.Frameevents[0].Frame 4
+setfield animations[25].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[25].animationdata.Frameevents[1].Frame 28
+setfield animations[25].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[25].animationdata.Frameevents[2].Frame 22
+setfield animations[25].PlaybackFlags DisableWeaponAim1stPerson
+
+addblockelements animations[26].animationdata.FrameEvents 3
+addblockelements animations[26].animationdata.SoundEvents 1
+setfield animations[26].weight 1
+setfield animations[26].animationdata.ParentAnimation 9
+setfield animations[26].animationdata.Soundevents[0].Sound 0
+setfield animations[26].animationdata.Frameevents[0].Frame 4
+setfield animations[26].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[26].animationdata.Frameevents[1].Frame 28
+setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[26].animationdata.Frameevents[2].Frame 22
+setfield animations[26].PlaybackFlags DisableWeaponAim1stPerson
+
+setfield animations[16].weight 0.555
+setfield animations[16].animationdata.NextAnimation 27
+
+addblockelements animations[27].animationdata.SoundEvents 1
+setfield animations[27].animationdata.Productionflags VerifySoundEvents
+setfield animations[27].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[27].weight 1
+setfield animations[27].animationdata.ParentAnimation 16
+setfield animations[27].animationdata.Soundevents[0].Sound 3
+setfield animations[27].animationdata.Soundevents[0].Frame 1
+
+addblockelements animations[17].animationdata.FrameEvents 2
+addblockelements animations[17].animationdata.SoundEvents 1
+setfield animations[17].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[17].animationdata.Productionflags VerifySoundEvents
+setfield animations[17].animationdata.Soundevents[0].Sound 4
+setfield animations[17].animationdata.Frameevents[0].Frame 25
+setfield animations[17].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[17].animationdata.Frameevents[1].Frame 34
+
+addblockelements animations[18].animationdata.FrameEvents 2
+addblockelements animations[18].animationdata.SoundEvents 1
+setfield animations[18].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[18].animationdata.Productionflags VerifySoundEvents
+setfield animations[18].animationdata.Soundevents[0].Sound 4
+setfield animations[18].animationdata.Frameevents[0].Frame 25
+setfield animations[18].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[18].animationdata.Frameevents[1].Frame 34
+
+setfield animations[19].PlaybackFlags ForceWeaponIkOn
+setfield animations[20].PlaybackFlags ForceWeaponIkOn
+setfield animations[21].PlaybackFlags ForceWeaponIkOn
+setfield animations[22].PlaybackFlags ForceWeaponIkOn
+
+addblockelements animations[23].animationdata.FrameEvents 1
+setfield animations[23].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[23].animationdata.Frameevents[0].Frame 12
+
+addblockelements animations[24].animationdata.FrameEvents 1
+setfield animations[24].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[24].animationdata.Frameevents[0].Frame 10
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\pistol\fp_needler\fp_needler.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 7
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand_elite
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand_elite
+addanimation Animation\Elite\NEEDLER
+
+setfield animations[2].PlaybackFlags ForceWeaponIkOn
+setfield animations[3].PlaybackFlags ForceWeaponIkOn
+setfield animations[4].PlaybackFlags ForceWeaponIkOn
+setfield animations[5].PlaybackFlags ForceWeaponIkOn
+setfield animations[15].PlaybackFlags ForceWeaponIkOn
+setfield animations[16].PlaybackFlags ForceWeaponIkOn
+
+setfield animations[9].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[9].weight 0.444
+setfield animations[9].animationdata.NextAnimation 26
+
+addblockelements animations[26].animationdata.FrameEvents 3
+addblockelements animations[26].animationdata.SoundEvents 1
+setfield animations[26].weight 0.777
+setfield animations[26].animationdata.NextAnimation 27
+setfield animations[26].animationdata.Soundevents[0].Sound 0
+setfield animations[26].animationdata.Frameevents[0].Frame 4
+setfield animations[26].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[26].animationdata.Frameevents[1].Frame 28
+setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[26].animationdata.Frameevents[2].Frame 22
+setfield animations[26].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+addblockelements animations[27].animationdata.FrameEvents 3
+addblockelements animations[27].animationdata.SoundEvents 1
+setfield animations[27].weight 1
+setfield animations[27].animationdata.ParentAnimation 9
+setfield animations[27].animationdata.Soundevents[0].Sound 0
+setfield animations[27].animationdata.Frameevents[0].Frame 4
+setfield animations[27].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[27].animationdata.Frameevents[1].Frame 28
+setfield animations[27].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[27].animationdata.Frameevents[2].Frame 22
+setfield animations[27].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+setfield animations[17].weight 0.555
+setfield animations[17].animationdata.NextAnimation 28
+
+addblockelements animations[28].animationdata.SoundEvents 1
+setfield animations[28].animationdata.Productionflags VerifySoundEvents
+setfield animations[28].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[28].weight 1
+setfield animations[28].animationdata.ParentAnimation 17
+setfield animations[28].animationdata.Soundevents[0].Sound 3
+setfield animations[28].animationdata.Soundevents[0].Frame 1
+
+addblockelements animations[18].animationdata.FrameEvents 2
+addblockelements animations[18].animationdata.SoundEvents 1
+setfield animations[18].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[18].animationdata.Productionflags VerifySoundEvents
+setfield animations[18].animationdata.Soundevents[0].Sound 4
+setfield animations[18].animationdata.Soundevents[0].Frame 1
+setfield animations[18].animationdata.Frameevents[0].Frame 25
+setfield animations[18].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[18].animationdata.Frameevents[1].Frame 34
+
+addblockelements animations[19].animationdata.FrameEvents 2
+addblockelements animations[19].animationdata.SoundEvents 1
+setfield animations[19].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[19].animationdata.Productionflags VerifySoundEvents
+setfield animations[19].animationdata.Soundevents[0].Sound 4
+setfield animations[19].animationdata.Soundevents[0].Frame 1
+setfield animations[19].animationdata.Frameevents[0].Frame 25
+setfield animations[19].animationdata.Frameevents[1].TypeED AllowInterruption
+setfield animations[19].animationdata.Frameevents[1].Frame 34
+
+setfield animations[20].PlaybackFlags ForceWeaponIkOn
+setfield animations[21].PlaybackFlags ForceWeaponIkOn
+setfield animations[22].PlaybackFlags ForceWeaponIkOn
+setfield animations[23].PlaybackFlags ForceWeaponIkOn
+
+addblockelements animations[24].animationdata.FrameEvents 1
+setfield animations[24].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[24].animationdata.Frameevents[0].Frame 12
+
+setfield animations[25].PlaybackFlags DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                        PLASMA_PISTOL                                                 I
+echo --------------------------------------------------------------------------------------------------------
+echo PP Plasma Pistol
+
+edittag objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.jmad
+removeblockelements SoundReferences 21 *
+addblockelements SoundReferences 1
+setfield SoundReferences[21].Reference sound\weapons\plasma_pistol\plaspistol_fp\plasma_pistol_ready_initial.snd!
+addanimation Animation\Spartan\PP
+setfield animations[24].weight 0.5
+setfield animations[24].animationdata.NextAnimation 25
+
+setfield animations[25].weight 0.75
+setfield animations[25].animationdata.NextAnimation 26
+
+setfield animations[26].weight 1
+setfield animations[26].animationdata.ParentAnimation 24
+
+setfield animations[16].animationdata.blendscreen 0
+setfield animations[27].PlaybackFlags DisableWeaponIk
+setfield animations[32].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[33].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[35].PlaybackFlags DisableWeaponIk
+setfield animations[37].PlaybackFlags DisableWeaponIk
+setfield animations[38].PlaybackFlags DisableWeaponIk
+setfield animations[49].PlaybackFlags DisableWeaponIk
+
+addblockelements animations[50].animationdata.FrameEvents 1
+setfield animations[50].animationdata.Frameevents[0].Frame 12
+
+addblockelements animations[52].animationdata.FrameEvents 1
+setfield animations[52].animationdata.Frameevents[0].Frame 10
+setfield animations[52].PlaybackFlags DisableWeaponIk
+
+setfield animations[44].weight 0.555
+setfield animations[44].animationdata.NextAnimation 59
+addblockelements animations[59].animationdata.SoundEvents 1
+setfield animations[59].PlaybackFlags DisableWeaponIk
+setfield animations[59].weight 1
+setfield animations[59].animationdata.ParentAnimation 44
+setfield animations[59].animationdata.Soundevents[0].Sound 21
+
+setfield animations[32].weight 0.444
+setfield animations[32].animationdata.NextAnimation 57
+addblockelements animations[57].animationdata.FrameEvents 3
+addblockelements animations[57].animationdata.SoundEvents 1
+setfield animations[57].weight 1
+setfield animations[57].animationdata.ParentAnimation 32
+setfield animations[57].animationdata.Soundevents[0].Sound 0
+setfield animations[57].animationdata.Frameevents[0].Frame 3
+setfield animations[57].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[57].animationdata.Frameevents[1].Frame 14
+setfield animations[57].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[57].animationdata.Frameevents[2].Frame 25
+setfield animations[57].PlaybackFlags DisableWeaponAim1stPerson
+
+setfield animations[33].weight 0.444
+setfield animations[33].animationdata.NextAnimation 58
+addblockelements animations[58].animationdata.FrameEvents 3
+addblockelements animations[58].animationdata.SoundEvents 1
+setfield animations[58].weight 1
+setfield animations[58].animationdata.ParentAnimation 33
+setfield animations[58].animationdata.Soundevents[0].Sound 0
+setfield animations[58].animationdata.Frameevents[0].Frame 3
+setfield animations[58].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[58].animationdata.Frameevents[1].Frame 15
+setfield animations[58].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[58].animationdata.Frameevents[2].Frame 29
+setfield animations[58].PlaybackFlags DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 20 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.jmad
+addanimation Animation\Elite\PP
+
+setfield animations[13].animationdata.blendscreen 0
+
+addblockelements animations[22].animationdata.SoundEvents 1
+setfield animations[22].animationdata.Soundevents[0].Sound 2
+setfield animations[22].animationdata.Soundevents[0].Frame 1
+
+setfield animations[27].weight 0.555
+setfield animations[27].animationdata.NextAnimation 51
+addblockelements animations[51].animationdata.FrameEvents 3
+addblockelements animations[51].animationdata.SoundEvents 1
+setfield animations[51].weight 1
+setfield animations[51].animationdata.ParentAnimation 27
+setfield animations[51].animationdata.Soundevents[0].Sound 0
+setfield animations[51].animationdata.Frameevents[0].Frame 3
+setfield animations[51].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[51].animationdata.Frameevents[1].Frame 14
+setfield animations[51].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[51].animationdata.Frameevents[2].Frame 25
+setfield animations[51].PlaybackFlags DisableWeaponAim1stPerson
+
+setfield animations[28].animationdata.Soundevents[0].Sound 0
+
+addblockelements animations[30].animationdata.SoundEvents 1
+setfield animations[30].animationdata.Soundevents[0].Sound 3
+setfield animations[30].animationdata.Soundevents[0].Frame 1
+
+addblockelements animations[32].animationdata.SoundEvents 1
+setfield animations[32].animationdata.Soundevents[0].Sound 2
+
+addblockelements animations[33].animationdata.SoundEvents 1
+setfield animations[33].animationdata.Soundevents[0].Sound 2
+setfield animations[33].animationdata.Soundevents[0].Frame 1
+
+addblockelements animations[44].animationdata.FrameEvents 1
+setfield animations[44].animationdata.Frameevents[0].Frame 12
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                        PLASMA_RIFLES                                                 I
+echo --------------------------------------------------------------------------------------------------------
+echo Pr Plasma Rifle
+
+edittag objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.jmad
+addanimation Animation\Spartan\PR
+
+setfield animations[36].weight 0.555
+setfield animations[36].animationdata.NextAnimation 49
+addblockelements animations[49].animationdata.FrameEvents 1
+addblockelements animations[49].animationdata.SoundEvents 1
+setfield animations[49].animationdata.Frameevents[0].TypeED AllowInterruption
+setfield animations[49].animationdata.Frameevents[0].Frame 15
+setfield animations[49].animationdata.Productionflags VerifySoundEvents
+setfield animations[49].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[49].weight 1
+setfield animations[49].animationdata.ParentAnimation 36
+setfield animations[49].animationdata.Soundevents[0].Sound 5
+setfield animations[49].animationdata.Soundevents[0].Frame 4
+
+setfield animations[28].PlaybackFlags DisableWeaponIk
+setfield animations[29].PlaybackFlags DisableWeaponIk
+setfield animations[30].PlaybackFlags DisableWeaponIk
+setfield animations[43].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[44].PlaybackFlags DisableWeaponIk
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 18 *
+sortmodes
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.jmad
+addanimation Animation\Elite\PR
+
+setfield animations[37].weight 0.555
+setfield animations[37].animationdata.NextAnimation 46
+addblockelements animations[46].animationdata.FrameEvents 1
+addblockelements animations[46].animationdata.SoundEvents 1
+setfield animations[46].animationdata.Frameevents[0].TypeED AllowInterruption
+setfield animations[46].animationdata.Frameevents[0].Frame 15
+setfield animations[46].animationdata.Productionflags VerifySoundEvents
+setfield animations[46].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[46].weight 1
+setfield animations[46].animationdata.ParentAnimation 37
+setfield animations[46].animationdata.Soundevents[0].Sound 5
+setfield animations[46].animationdata.Soundevents[0].Frame 4
+
+addblockelements animations[27].animationdata.FrameEvents 3
+addblockelements animations[27].animationdata.SoundEvents 1
+setfield animations[27].animationdata.Soundevents[0].Sound 2
+setfield animations[27].animationdata.Frameevents[0].Frame 3
+setfield animations[27].animationdata.Frameevents[1].Frame 16
+setfield animations[27].animationdata.Frameevents[2].Frame 16
+setfield animations[27].PlaybackFlags DisableWeaponAim1stPerson
+
+addblockelements animations[43].animationdata.FrameEvents 1
+setfield animations[43].animationdata.Frameevents[0].Frame 12
+
+addblockelements animations[45].animationdata.FrameEvents 1
+setfield animations[45].animationdata.Frameevents[0].Frame 10
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 17 *
+sortmodes
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                        ROCKET_LAUNCHER                                               I
+echo --------------------------------------------------------------------------------------------------------
+echo RL Rocket
+
+edittag objects\characters\masterchief\fp\weapons\support_high\fp_rocket_launcher\fp_rocket_launcher.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
+addanimation Animation\Spartan\Rocket
+setfield animations[19].PlaybackFlags DisableWeaponIk
+
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 26
+addblockelements animations[26].animationdata.FrameEvents 3
+addblockelements animations[26].animationdata.SoundEvents 1
+setfield animations[26].weight 1
+setfield animations[26].animationdata.ParentAnimation 8
+setfield animations[26].animationdata.Soundevents[0].Sound 0
+setfield animations[26].animationdata.Frameevents[0].Frame 5
+setfield animations[26].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[26].animationdata.Frameevents[1].Frame 15
+setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[26].animationdata.Frameevents[2].Frame 30
+setfield animations[26].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[17].weight 0.555
+setfield animations[17].animationdata.NextAnimation 27
+addblockelements animations[27].animationdata.SoundEvents 1
+setfield animations[27].animationdata.Productionflags VerifySoundEvents
+setfield animations[27].PlaybackFlags DisableWeaponIk
+setfield animations[27].weight 1
+setfield animations[27].animationdata.ParentAnimation 17
+setfield animations[27].animationdata.Soundevents[0].Sound 4
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 15 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\support_high\fp_rocket_launcher\fp_rocket_launcher.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 6
+addanimation Animation\Elite\ROCKET
+setfield animations[18].PlaybackFlags None
+
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 25
+addblockelements animations[25].animationdata.FrameEvents 3
+addblockelements animations[25].animationdata.SoundEvents 1
+setfield animations[25].weight 1
+setfield animations[25].animationdata.ParentAnimation 8
+setfield animations[25].animationdata.Soundevents[0].Sound 1
+setfield animations[25].animationdata.Frameevents[0].Frame 5
+setfield animations[25].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[25].animationdata.Frameevents[1].Frame 15
+setfield animations[25].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[25].animationdata.Frameevents[2].Frame 30
+setfield animations[25].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[16].weight 0.555
+setfield animations[16].animationdata.NextAnimation 26
+addblockelements animations[26].animationdata.SoundEvents 1
+setfield animations[26].animationdata.Productionflags VerifySoundEvents
+setfield animations[26].weight 1
+setfield animations[26].animationdata.ParentAnimation 16
+setfield animations[26].animationdata.Soundevents[0].Sound 3
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                        SENTINEL_BEAM                                                 I
+echo --------------------------------------------------------------------------------------------------------
+echo SB Sentient
+
+edittag objects\characters\masterchief\fp\weapons\support_low\fp_sentinel_beam\fp_sentinel_beam.jmad
+removeblockelements animations[14].animationdata.SoundEvents 0 *
+addblockelements animations[14].animationdata.SoundEvents 1
+addanimation Animation\Spartan\sentinel
+setfield animations[14].PlaybackFlags ForceWeaponIkOn
+setfield animations[15].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[16].PlaybackFlags DisableWeaponAim1stPerson
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\support_low\fp_sentinel_beam\fp_sentinel_beam.jmad
+addanimation Animation\Elite\SENTINEL
+setfield animations[5].PlaybackFlags ForceWeaponIkOn
+setfield animations[7].PlaybackFlags ForceWeaponIkOn
+setfield animations[8].PlaybackFlags ForceWeaponIkOn
+setfield animations[11].PlaybackFlags ForceWeaponIkOn
+setfield animations[12].PlaybackFlags ForceWeaponIkOn
+setfield animations[13].PlaybackFlags ForceWeaponIkOn
+setfield animations[14].PlaybackFlags ForceWeaponIkOn
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                              SHOTGUN                                                 I
+echo --------------------------------------------------------------------------------------------------------
+echo Shotty
+
+edittag objects\characters\masterchief\fp\weapons\rifle\fp_shotgun\fp_shotgun.jmad
+removeblockelements SoundReferences 8 *
+addblockelements SoundReferences
+setfield SoundReferences[8].Reference sound\weapons\sg\sg_fp\shotgun_melee_catch.snd!
+addanimation Animation\Spartan\Shotgun
+
+addblockelements animations[8].animationdata.FrameEvents 3
+addblockelements animations[8].animationdata.SoundEvents 1
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 26
+setfield animations[8].animationdata.Soundevents[0].Sound 1
+setfield animations[8].animationdata.Frameevents[0].Frame 5
+setfield animations[8].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[8].animationdata.Frameevents[1].Frame 15
+setfield animations[8].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[8].animationdata.Frameevents[2].Frame 20
+setfield animations[8].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+setfield animations[8].animationdata.Productionflags VerifySoundEvents
+
+addblockelements animations[26].animationdata.FrameEvents 3
+addblockelements animations[26].animationdata.SoundEvents 1
+setfield animations[26].weight 1
+setfield animations[26].animationdata.ParentAnimation 8
+setfield animations[26].animationdata.Soundevents[0].Sound 1
+setfield animations[26].animationdata.Frameevents[0].Frame 5
+setfield animations[26].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[26].animationdata.Frameevents[1].Frame 15
+setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[26].animationdata.Frameevents[2].Frame 20
+setfield animations[26].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+setfield animations[26].animationdata.Productionflags VerifySoundEvents
+
+addblockelements animations[9].animationdata.FrameEvents 3
+addblockelements animations[9].animationdata.SoundEvents 1
+setfield animations[9].weight 0.555
+setfield animations[9].animationdata.NextAnimation 27
+setfield animations[9].animationdata.Soundevents[0].Sound 2
+setfield animations[9].animationdata.Frameevents[0].Frame 5
+setfield animations[9].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[9].animationdata.Frameevents[1].Frame 15
+setfield animations[9].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[9].animationdata.Frameevents[2].Frame 20
+setfield animations[9].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+setfield animations[9].animationdata.Productionflags VerifySoundEvents
+
+addblockelements animations[27].animationdata.FrameEvents 3
+addblockelements animations[27].animationdata.SoundEvents 2
+setfield animations[27].weight 1
+setfield animations[27].animationdata.ParentAnimation 9
+setfield animations[27].animationdata.Soundevents[0].Sound 1
+setfield animations[27].animationdata.Soundevents[1].Sound 8
+setfield animations[27].animationdata.Soundevents[1].Frame 8
+setfield animations[27].animationdata.Frameevents[0].Frame 5
+setfield animations[27].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[27].animationdata.Frameevents[1].Frame 15
+setfield animations[27].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[27].animationdata.Frameevents[2].Frame 20
+setfield animations[27].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[27].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[16].weight 0.555
+setfield animations[16].animationdata.NextAnimation 28
+addblockelements animations[16].animationdata.SoundEvents 1
+setfield animations[16].animationdata.Soundevents[0].Sound 5
+setfield animations[16].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+setfield animations[16].animationdata.Productionflags VerifySoundEvents
+
+addblockelements animations[28].animationdata.SoundEvents 1
+setfield animations[28].animationdata.Soundevents[0].Sound 5
+setfield animations[28].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+setfield animations[28].animationdata.Productionflags VerifySoundEvents
+setfield animations[28].weight 1
+setfield animations[28].animationdata.ParentAnimation 16
+
+addblockelements animations[19].animationdata.SoundEvents 1
+setfield animations[19].animationdata.Soundevents[0].Sound 6
+setfield animations[19].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[19].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[20].PlaybackFlags ForceWeaponIkOn
+setfield animations[21].PlaybackFlags ForceWeaponIkOn
+setfield animations[22].PlaybackFlags ForceWeaponIkOn
+setfield animations[23].PlaybackFlags ForceWeaponIkOn
+
+addblockelements animations[24].animationdata.FrameEvents 1
+setfield animations[24].animationdata.Frameevents[0].Frame 12
+setfield animations[24].PlaybackFlags DisableWeaponIk
+setfield animations[25].PlaybackFlags DisableWeaponIk
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 21 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\rifle\fp_shotgun\fp_shotgun.jmad
+removeblockelements SoundReferences 8 *
+addblockelements SoundReferences
+setfield SoundReferences[8].Reference sound\weapons\sg\sg_fp\shotgun_melee_catch.snd!
+setfield BlendScreens[0].RightYawPerFrame 170
+setfield BlendScreens[0].LeftYawPerFrame 170
+addanimation Animation\Elite\SHOTGUN
+
+setfield animations[1].PlaybackFlags none
+setfield animations[2].PlaybackFlags none
+setfield animations[3].PlaybackFlags none
+
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.Nextanimation 26
+setfield animations[8].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+
+addblockelements animations[26].animationdata.FrameEvents 3
+addblockelements animations[26].animationdata.SoundEvents 2
+setfield animations[26].weight 1
+setfield animations[26].animationdata.Parentanimation 8
+setfield animations[26].animationdata.Soundevents[0].Sound 2
+setfield animations[26].animationdata.Soundevents[1].Sound 8
+setfield animations[26].animationdata.Soundevents[1].Frame 8
+setfield animations[26].animationdata.Frameevents[0].Frame 5
+setfield animations[26].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[26].animationdata.Frameevents[1].Frame 15
+setfield animations[26].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[26].animationdata.Frameevents[2].Frame 25
+setfield animations[26].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+
+setfield animations[11].animationdata.BlendScreen 0
+
+addblockelements animations[15].animationdata.SoundEvents 1
+setfield animations[15].weight 0.555
+setfield animations[15].animationdata.Nextanimation 27
+setfield animations[15].animationdata.Soundevents[0].Sound 5
+setfield animations[15].animationdata.Soundevents[0].Frame 1
+setfield animations[15].animationdata.Productionflags VerifySoundEvents
+setfield animations[15].PlaybackFlags ForceWeaponIkOn
+
+addblockelements animations[27].animationdata.SoundEvents 1
+setfield animations[27].weight 1
+setfield animations[27].animationdata.Parentanimation 15
+setfield animations[27].animationdata.Soundevents[0].Sound 5
+setfield animations[27].animationdata.Productionflags VerifySoundEvents
+setfield animations[27].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+
+setfield animations[16].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+addblockelements animations[19].animationdata.SoundEvents 1
+setfield animations[19].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[19].animationdata.Soundevents[0].Sound 6
+
+addblockelements animations[24].animationdata.FrameEvents 1
+setfield animations[24].animationdata.Frameevents[0].Frame 12
+setfield animations[24].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 16 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                         SUB_MACHINE_GUN                                              I
+echo --------------------------------------------------------------------------------------------------------
+echo SMG Sub Machine Gun
+
+edittag objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.jmad
+addanimation Animation\Spartan\SMG
+
+setfield animations[23].weight 0.555
+setfield animations[23].animationdata.NextAnimation 43
+addblockelements animations[43].animationdata.FrameEvents 3
+addblockelements animations[43].animationdata.SoundEvents 1
+setfield animations[43].weight 1
+setfield animations[43].animationdata.ParentAnimation 9
+setfield animations[43].animationdata.Soundevents[0].Sound 10
+setfield animations[43].animationdata.Frameevents[0].Frame 3
+setfield animations[43].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[43].animationdata.Frameevents[1].Frame 14
+setfield animations[43].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[43].animationdata.Frameevents[2].Frame 18
+setfield animations[43].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[43].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[31].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\rifle\fp_smg\fp_smg.jmad
+addanimation Animation\Elite\SMG
+
+addblockelements animations[19].animationdata.FrameEvents 3
+addblockelements animations[19].animationdata.SoundEvents 1
+setfield animations[19].animationdata.Soundevents[0].Sound 0
+setfield animations[19].animationdata.Soundevents[0].Frame 1
+setfield animations[19].animationdata.Frameevents[0].Frame 3
+setfield animations[19].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[19].animationdata.Frameevents[1].Frame 14
+setfield animations[19].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[19].animationdata.Frameevents[2].Frame 18
+setfield animations[19].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[19].animationdata.Productionflags VerifySoundEvents
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                           SNIPER_RIFLE                                               I
+echo --------------------------------------------------------------------------------------------------------
+echo SP SPR Snipe Rifles
+
+edittag objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.jmad
+removeblockelements SoundReferences 5 *
+addblockelements SoundReferences 2
+setfield SoundReferences[5].Reference sound\weapons\sr\sr_fp\sniper_rifle_reload_empty.snd!
+setfield SoundReferences[6].Reference sound\weapons\sr\sr_fp\sniper_rifle_ready_initial.snd!
+
+addanimation Animation\Spartan\SNIPER
+setfield animations[19].PlaybackFlags ForceWeaponIkOn
+addblockelements animations[22].animationdata.Frameevents 1
+setfield animations[22].animationdata.Frameevents[0].Frame 12
+
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 24
+addblockelements animations[8].animationdata.Soundevents 1
+addblockelements animations[8].animationdata.Frameevents 1
+setfield animations[8].animationdata.Frameevents[0].Frame 5
+setfield animations[8].animationdata.Soundevents[0].Sound 0
+setfield animations[8].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+
+setfield animations[24].weight 1
+setfield animations[24].animationdata.ParentAnimation 8
+addblockelements animations[24].animationdata.Soundevents 1
+addblockelements animations[24].animationdata.Frameevents 1
+setfield animations[24].animationdata.Frameevents[0].Frame 5
+setfield animations[24].animationdata.Soundevents[0].Sound 0
+setfield animations[24].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+
+setfield animations[15].weight 0.555
+setfield animations[15].animationdata.NextAnimation 25
+addblockelements animations[25].animationdata.SoundEvents 1
+setfield animations[25].weight 1
+setfield animations[25].animationdata.ParentAnimation 9
+setfield animations[25].animationdata.Soundevents[0].Sound 6
+setfield animations[25].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[25].animationdata.Productionflags VerifySoundEvents
+
+addblockelements animations[16].animationdata.FrameEvents 1
+addblockelements animations[16].animationdata.SoundEvents 1
+setfield animations[16].animationdata.Soundevents[0].Sound 5
+setfield animations[16].animationdata.Frameevents[0].Frame 43
+setfield animations[16].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[16].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[1].PlaybackFlags ForceWeaponIkOn
+setfield animations[2].PlaybackFlags ForceWeaponIkOn
+setfield animations[3].PlaybackFlags ForceWeaponIkOn
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.jmad
+addanimation Animation\Elite\SNIPER
+
+setfield animations[8].weight 0.555
+setfield animations[8].animationdata.NextAnimation 23
+addblockelements animations[8].animationdata.Soundevents 1
+addblockelements animations[8].animationdata.Frameevents 3
+setfield animations[8].animationdata.Soundevents[0].Sound 0
+setfield animations[8].animationdata.Frameevents[0].Frame 4
+setfield animations[8].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[8].animationdata.Frameevents[1].Frame 14
+setfield animations[8].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[8].animationdata.Frameevents[2].Frame 26
+setfield animations[8].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+
+setfield animations[23].weight 1
+setfield animations[23].animationdata.ParentAnimation 8
+addblockelements animations[23].animationdata.Soundevents 1
+addblockelements animations[23].animationdata.Frameevents 3
+setfield animations[23].animationdata.Soundevents[0].Sound 0
+setfield animations[23].animationdata.Frameevents[0].Frame 4
+setfield animations[23].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[23].animationdata.Frameevents[1].Frame 14
+setfield animations[23].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[23].animationdata.Frameevents[2].Frame 26
+setfield animations[23].PlaybackFlags DisableWeaponAim1stPerson,ForceWeaponIkOn
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 14 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                          SPARTAN_LASER                                               I
+echo --------------------------------------------------------------------------------------------------------
+echo SP SPLASER Laser Slaser
+
+edittag objects\characters\masterchief\fp\weapons\support_high\fp_spartan_laser\fp_spartan_laser.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 9
+addblockelements modes[0].weaponclass[0].weaponik 1
+removeblockelements modes[0].weaponclass[0].weaponik 1 *
+setfield modes[0].weaponclass[0].weaponik[0].marker left_hand
+setfield modes[0].weaponclass[0].weaponik[0].attachtomarker left_hand
+
+addanimation Animation\Spartan\spartan_laser
+setfield animations[26].PlaybackFlags ForceWeaponIkOn
+setfield animations[23].PlaybackFlags DisableWeaponIk
+setfield animations[29].PlaybackFlags DisableWeaponIk
+
+addblockelements animations[30].animationdata.Frameevents 1
+setfield animations[30].animationdata.Frameevents[0].Frame 11
+setfield animations[30].PlaybackFlags DisableWeaponIk
+setfield animations[31].PlaybackFlags DisableWeaponIk
+
+setfield animations[2].PlaybackFlags ForceWeaponIkOn
+setfield animations[3].PlaybackFlags ForceWeaponIkOn
+setfield animations[4].PlaybackFlags ForceWeaponIkOn
+setfield animations[15].PlaybackFlags ForceWeaponIkOn
+setfield animations[16].PlaybackFlags ForceWeaponIkOn
+
+setfield animations[12].weight 0.555
+setfield animations[12].animationdata.NextAnimation 32
+addblockelements animations[32].animationdata.FrameEvents 3
+addblockelements animations[32].animationdata.SoundEvents 1
+setfield animations[32].weight 1
+setfield animations[32].animationdata.ParentAnimation 12
+setfield animations[32].animationdata.Soundevents[0].Sound 1
+setfield animations[32].animationdata.Frameevents[0].Frame 5
+setfield animations[32].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[32].animationdata.Frameevents[1].Frame 15
+setfield animations[32].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[32].animationdata.Frameevents[2].Frame 32
+setfield animations[32].animationdata.Productionflags VerifySoundEvents
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 19 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\support_high\fp_spartan_laser\fp_spartan_laser.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 26
+addanimation Animation\Elite\SPARTANLASER
+
+setfield animations[3].weight 0.6666667
+setfield animations[3].animationdata.NextAnimation 4
+setfield animations[3].animationdata.ParentAnimation 2
+setfield Modes[0].Weaponclass[0].Weapontype[0].Set.Actions[2].Animation 2
+
+setfield animations[5].weight 0.555
+setfield animations[5].animationdata.NextAnimation 28
+addblockelements animations[28].animationdata.FrameEvents 3
+addblockelements animations[28].animationdata.SoundEvents 1
+setfield animations[28].weight 1
+setfield animations[28].animationdata.ParentAnimation 12
+setfield animations[28].animationdata.Soundevents[0].Sound 0
+setfield animations[28].animationdata.Frameevents[0].Frame 5
+setfield animations[28].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[28].animationdata.Frameevents[1].Frame 15
+setfield animations[28].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[28].animationdata.Frameevents[2].Frame 32
+setfield animations[28].animationdata.Productionflags VerifySoundEvents
+
+addblockelements animations[15].animationdata.SoundEvents 1
+setfield animations[15].animationdata.Soundevents[0].Sound 4
+
+addblockelements animations[21].animationdata.FrameEvents 1
+setfield animations[21].animationdata.Frameevents[0].Frame 12
+sortmodes
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 0
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                           SPIKE_RIFLE                                                I
+echo --------------------------------------------------------------------------------------------------------
+echo SR Spiky Spike Rifle Spiker
+
+edittag objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.jmad
+addanimation Animation\Spartan\Spiker
+setfield animations[7].animationdata.blendscreen 0
+setfield animations[0].weight 0.5
+setfield animations[0].animationdata.NextAnimation 1
+setfield animations[1].weight 1
+setfield animations[1].animationdata.ParentAnimation 0
+
+setfield animations[26].PlaybackFlags DisableWeaponIk,DisableWeaponAim1stPerson
+setfield animations[35].PlaybackFlags ForceWeaponIkOn
+setfield animations[36].PlaybackFlags ForceWeaponIkOn
+setfield animations[37].PlaybackFlags ForceWeaponIkOn
+setfield animations[38].PlaybackFlags ForceWeaponIkOn
+sortmodes
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.jmad
+addanimation Animation\Elite\SPIKER
+
+setfield animations[0].weight 0.5
+setfield animations[0].animationdata.NextAnimation 1
+setfield animations[1].weight 1
+setfield animations[1].animationdata.ParentAnimation 0
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                          ENERGY_SWORD                                                I
+echo --------------------------------------------------------------------------------------------------------
+echo I'd lived for your crusade, I'd die for my crusade
+
+edittag objects\characters\masterchief\fp\weapons\melee\fp_energy_blade\fp_energy_blade.jmad
+setfield modes[0].weaponclass[0].weapontype[0].set.overlays[1].Animation 3
+addanimation Animation\Spartan\sword
+
+setfield animations[7].weight 0.555
+setfield animations[7].animationdata.NextAnimation 25
+addblockelements animations[25].animationdata.FrameEvents 3
+addblockelements animations[25].animationdata.SoundEvents 2
+setfield animations[25].animationdata.Soundevents[0].Sound 6
+setfield animations[25].animationdata.Soundevents[1].Sound 5
+setfield animations[25].animationdata.Frameevents[0].Frame 2
+setfield animations[25].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[25].animationdata.Frameevents[1].Frame 15
+setfield animations[25].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[25].animationdata.Frameevents[2].Frame 37
+setfield animations[25].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[25].animationdata.Productionflags VerifySoundEvents
+setfield animations[25].weight 1
+setfield animations[25].animationdata.ParentAnimation 7
+
+setfield animations[9].weight 0.555
+setfield animations[9].animationdata.NextAnimation 26
+addblockelements animations[26].animationdata.FrameEvents 1
+addblockelements animations[26].animationdata.SoundEvents 2
+setfield animations[26].animationdata.Soundevents[0].Sound 6
+setfield animations[26].animationdata.Soundevents[1].Sound 5
+setfield animations[26].animationdata.Frameevents[0].Frame 5
+setfield animations[26].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[26].animationdata.Productionflags VerifySoundEvents
+setfield animations[26].weight 1
+setfield animations[26].animationdata.ParentAnimation 9
+
+setfield animations[10].weight 0.555
+setfield animations[10].animationdata.NextAnimation 27
+addblockelements animations[27].animationdata.FrameEvents 1
+addblockelements animations[27].animationdata.SoundEvents 2
+setfield animations[27].animationdata.Soundevents[0].Sound 7
+setfield animations[27].animationdata.Soundevents[1].Sound 8
+setfield animations[27].animationdata.Frameevents[0].Frame 5
+setfield animations[27].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[27].animationdata.Productionflags VerifySoundEvents
+setfield animations[27].weight 1
+setfield animations[27].animationdata.ParentAnimation 10
+
+setfield animations[11].weight 0.555
+setfield animations[11].animationdata.NextAnimation 28
+addblockelements animations[28].animationdata.FrameEvents 3
+addblockelements animations[28].animationdata.SoundEvents 2
+setfield animations[28].animationdata.Soundevents[0].Sound 1
+setfield animations[28].animationdata.Soundevents[1].Sound 5
+setfield animations[28].animationdata.Frameevents[0].Frame 5
+setfield animations[28].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[28].animationdata.Frameevents[1].Frame 11
+setfield animations[28].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[28].animationdata.Frameevents[2].Frame 11
+setfield animations[28].animationdata.Productionflags VerifySoundEvents
+setfield animations[28].weight 1
+setfield animations[28].animationdata.ParentAnimation 11
+
+setfield animations[12].weight 0.555
+setfield animations[12].animationdata.NextAnimation 29
+addblockelements animations[29].animationdata.FrameEvents 3
+addblockelements animations[29].animationdata.SoundEvents 2
+setfield animations[29].animationdata.Soundevents[0].Sound 2
+setfield animations[29].animationdata.Soundevents[1].Sound 5
+setfield animations[29].animationdata.Frameevents[0].Frame 5
+setfield animations[29].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[29].animationdata.Frameevents[1].Frame 11
+setfield animations[29].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[29].animationdata.Frameevents[2].Frame 11
+setfield animations[29].animationdata.Productionflags VerifySoundEvents
+setfield animations[29].weight 1
+setfield animations[29].animationdata.ParentAnimation 12
+
+setfield animations[18].weight 0.333
+setfield animations[18].animationdata.NextAnimation 30
+addblockelements animations[30].animationdata.FrameEvents 1
+setfield animations[30].animationdata.Frameevents[0].Frame 15
+setfield animations[30].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[30].animationdata.Productionflags VerifySoundEvents
+setfield animations[30].weight 0.555
+setfield animations[30].animationdata.NextAnimation 31
+
+addblockelements animations[31].animationdata.FrameEvents 1
+setfield animations[31].animationdata.Frameevents[0].Frame 15
+setfield animations[31].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[31].animationdata.Productionflags VerifySoundEvents
+setfield animations[31].weight 1
+setfield animations[31].animationdata.ParentAnimation 18
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 19 *
+savetagchanges
+exitto tags
+
+edittag objects\characters\dervish\fp\weapons\melee\fp_energy_blade\fp_energy_blade.jmad
+addanimation Animation\Elite\SWORD
+
+setfield animations[7].weight 0.555
+setfield animations[7].animationdata.NextAnimation 25
+
+setfield animations[25].weight 1
+setfield animations[25].animationdata.ParentAnimation 7
+addblockelements animations[25].animationdata.FrameEvents 3
+addblockelements animations[25].animationdata.SoundEvents 2
+setfield animations[25].animationdata.Soundevents[0].Sound 4
+setfield animations[25].animationdata.Soundevents[1].Sound 5
+setfield animations[25].animationdata.Frameevents[0].Frame 2
+setfield animations[25].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[25].animationdata.Frameevents[1].Frame 15
+setfield animations[25].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[25].animationdata.Frameevents[2].Frame 37
+setfield animations[25].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[25].animationdata.Productionflags VerifySoundEvents
+
+addblockelements animations[8].animationdata.FrameEvents 3
+addblockelements animations[8].animationdata.SoundEvents 2
+setfield animations[8].animationdata.Soundevents[0].Sound 4
+setfield animations[8].animationdata.Soundevents[1].Sound 5
+setfield animations[8].animationdata.Frameevents[0].Frame 2
+setfield animations[8].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[8].animationdata.Frameevents[1].Frame 12
+setfield animations[8].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[8].animationdata.Frameevents[2].Frame 36
+setfield animations[8].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[8].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[9].weight 0.555
+setfield animations[9].animationdata.NextAnimation 26
+addblockelements animations[9].animationdata.FrameEvents 1
+addblockelements animations[9].animationdata.SoundEvents 2
+setfield animations[9].animationdata.Soundevents[0].Sound 4
+setfield animations[9].animationdata.Soundevents[1].Sound 5
+setfield animations[9].animationdata.Frameevents[0].Frame 5
+setfield animations[9].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[9].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[26].weight 1
+setfield animations[26].animationdata.ParentAnimation 9
+addblockelements animations[26].animationdata.FrameEvents 1
+addblockelements animations[26].animationdata.SoundEvents 2
+setfield animations[26].animationdata.Soundevents[0].Sound 4
+setfield animations[26].animationdata.Soundevents[1].Sound 5
+setfield animations[26].animationdata.Frameevents[0].Frame 5
+setfield animations[26].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[26].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[10].weight 0.555
+setfield animations[10].animationdata.NextAnimation 27
+
+setfield animations[27].weight 1
+setfield animations[27].animationdata.ParentAnimation 10
+addblockelements animations[27].animationdata.FrameEvents 1
+addblockelements animations[27].animationdata.SoundEvents 2
+setfield animations[27].animationdata.Soundevents[0].Sound 8
+setfield animations[27].animationdata.Soundevents[1].Sound 7
+setfield animations[27].animationdata.Frameevents[0].Frame 5
+setfield animations[27].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[27].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[11].weight 0.555
+setfield animations[11].animationdata.NextAnimation 28
+
+setfield animations[28].weight 1
+setfield animations[28].animationdata.ParentAnimation 11
+addblockelements animations[28].animationdata.FrameEvents 3
+addblockelements animations[28].animationdata.SoundEvents 2
+setfield animations[28].animationdata.Soundevents[0].Sound 2
+setfield animations[28].animationdata.Soundevents[0].Frame 1
+setfield animations[28].animationdata.Soundevents[1].Sound 6
+setfield animations[28].animationdata.Frameevents[0].Frame 5
+setfield animations[28].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[28].animationdata.Frameevents[1].Frame 11
+setfield animations[28].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[28].animationdata.Frameevents[2].Frame 11
+setfield animations[28].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[12].weight 0.555
+setfield animations[12].animationdata.NextAnimation 29
+
+setfield animations[29].weight 1
+setfield animations[29].animationdata.ParentAnimation 12
+addblockelements animations[29].animationdata.FrameEvents 3
+addblockelements animations[29].animationdata.SoundEvents 2
+setfield animations[29].animationdata.Soundevents[0].Sound 1
+setfield animations[29].animationdata.Soundevents[0].Frame 1
+setfield animations[29].animationdata.Soundevents[1].Sound 6
+setfield animations[29].animationdata.Frameevents[0].Frame 5
+setfield animations[29].animationdata.Frameevents[1].TypeED SecondaryKeyframe
+setfield animations[29].animationdata.Frameevents[1].Frame 11
+setfield animations[29].animationdata.Frameevents[2].TypeED AllowInterruption
+setfield animations[29].animationdata.Frameevents[2].Frame 11
+setfield animations[29].animationdata.Productionflags VerifySoundEvents
+
+setfield animations[18].weight 0.333
+setfield animations[18].animationdata.NextAnimation 30
+addblockelements animations[30].animationdata.FrameEvents 1
+setfield animations[30].animationdata.Frameevents[0].Frame 15
+setfield animations[30].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[30].animationdata.Productionflags VerifySoundEvents
+setfield animations[30].weight 0.555
+setfield animations[30].animationdata.NextAnimation 31
+
+addblockelements animations[31].animationdata.FrameEvents 1
+setfield animations[31].animationdata.Frameevents[0].Frame 15
+setfield animations[31].PlaybackFlags DisableWeaponAim1stPerson
+setfield animations[31].animationdata.Productionflags VerifySoundEvents
+setfield animations[31].weight 1
+setfield animations[31].animationdata.ParentAnimation 18
+
+addblockelements animations[23].animationdata.FrameEvents 1
+setfield animations[23].animationdata.Frameevents[0].Frame 15
+removeblockelements Modes[0].Weaponclass[0].Weapontype[0].Set.Actions 18 *
+savetagchanges
+exitto tags
+
+echo --------------------------------------------------------------------------------------------------------
+echo I                                            UNARMED                                                   I
+echo --------------------------------------------------------------------------------------------------------
+echo this aint how elite run my guy
+
+edittag objects\characters\dervish\fp\weapons\melee\fp_energy_blade\fp_unarmed.jmad
+addanimation Animation\Elite\UNARMED
+savetagchanges
+exitto tags

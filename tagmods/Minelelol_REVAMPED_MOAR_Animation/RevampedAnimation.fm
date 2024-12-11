@@ -1,0 +1,7 @@
+color 0A
+cd mods\tagMods\Minelelol_REVAMPED_MOAR_Animation
+ECHO FMM_OUTPUT Installing REVAMPED MOAR Animation...
+
+Install.bat
+
+ECHO FMM_OUTPUT REVAMPED MOAR Animation Has been installed Succesfully.

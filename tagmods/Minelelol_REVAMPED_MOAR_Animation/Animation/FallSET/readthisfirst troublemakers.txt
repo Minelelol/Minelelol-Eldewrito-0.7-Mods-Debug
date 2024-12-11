@@ -28,4 +28,8 @@
 :::::-                                  
 =:::- 
 Oh btw, I extracted the model using newer tagtool that export the filetype as amf, put the scaling at 30.
+IF YOU WANT MORE ACCURATE SCALE (1:1)
+Extract the model using the latest tagtool
+And then use reclaimer amf importer addons (https://github.com/Gravemind2401/Reclaimer/blob/master/Reclaimer.Blam/Resources/Blender%20AMF2.py)
+From there when you're about to import AMF model make sure to change the Units to "Halo" and the Multiplier scale to "100"
 -Minelelol
